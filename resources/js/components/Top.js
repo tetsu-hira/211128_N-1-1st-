@@ -1,7 +1,28 @@
 import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import AnchorLink from "react-anchor-link-smooth-scroll/";
 
 function Top() {
-  return <h1>Topページ</h1>;
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    getUsers()
+  },[])
+
+  const getUsers = async () => {
+    const response = await axios.get('/api/user');
+    setUsers(response.data.users)
+  }
+
+  return (
+    <div>
+      <h1>Topページ</h1>
+      <ul>
+        {users.map((user) => <li key="{user.id}">{user.name}</li>)}
+      </ul>
+    </div>
+  );
 }
 
 export default Top;

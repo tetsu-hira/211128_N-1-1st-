@@ -9,10 +9,10 @@ function NavBar() {
           <li className="ml-2">Top</li>
         </Link>
         <Link to="/pre">
-          <li className="ml-2">About</li>
+          <li className="ml-2">Pre</li>
         </Link>
         <Link to="mid">
-          <li className="ml-2">User</li>
+          <li className="ml-2">Mid</li>
         </Link>
       </ul>
     </nav>
