@@ -17,6 +17,10 @@ Route::get('/{any}', function () {
     return view('welcome');
 })->where('any','.*');
 
+Route::get('/post', 'PostController@index');
+
+Route::resource('posts', 'PostController');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

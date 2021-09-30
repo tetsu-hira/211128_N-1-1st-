@@ -11,8 +11,8 @@ function Top() {
   },[])
 
   const getUsers = async () => {
-    const response = await axios.get('/api/user');
-    setUsers(response.data.users)
+    const response = await axios.get('/api/post');
+    setUsers(response.data.posts)
   }
 
   return (

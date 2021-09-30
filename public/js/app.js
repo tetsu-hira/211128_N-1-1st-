@@ -2371,11 +2371,11 @@ function Top() {
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return axios__WEBPACK_IMPORTED_MODULE_2___default().get('/api/user');
+              return axios__WEBPACK_IMPORTED_MODULE_2___default().get('/api/post');
 
             case 2:
               response = _context.sent;
-              setUsers(response.data.users);
+              setUsers(response.data.posts);
 
             case 4:
             case "end":
