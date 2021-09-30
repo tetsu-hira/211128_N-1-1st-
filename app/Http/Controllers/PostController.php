@@ -6,6 +6,7 @@ use App\Models\Post;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+
 class PostController extends Controller
 {
     /**
@@ -13,12 +14,12 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function showHelloWorld()
     {
-      $posts = DB::select('select * from posts');
-      $data = ['msg' => 'データ一覧', 'posts' => $posts];
+      // $posts = DB::select('select * from posts');
+      // $data = ['msg' => 'データ一覧', 'posts' => $posts];
 
-      return view('post.index', $data);
+      return 'Hello World!!';
     }
 
     /**

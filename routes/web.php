@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+// PostControllerクラスを使えるようにする
+use app\Http\Controllers\PostController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +25,7 @@ Route::resource('posts', 'PostController');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+// ルートを追加する※Laravel8の場合
+Route::get('/hello', [PostController::class, 'showHelloWorld']);

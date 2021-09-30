@@ -16,6 +16,7 @@ const Top = () => {
     const response = await axios.get('/api/post');
     setTeam(response.data.posts)
   }
+
   useEffect(() => {
     getCourt()
   },[])
@@ -23,6 +24,7 @@ const Top = () => {
     const response = await axios.get('/api/court');
     setCourt(response.data.courts)
   }
+
   useEffect(() => {
     getNumber()
   },[])
@@ -81,7 +83,7 @@ const Top = () => {
                           <form>
                             <select className="court" defaultValue={team.court} name="itemCourt">
                               {court.map(court=>(
-                                <option menuitem={court.court} key={court.id} name={court.id} value={court.court}></option>
+                                <option menuitem={court.court} key={court.id} name={court.id} value={court.court}>{court.court}</option>
                               ))}
                                 <option hidden={team.court}>{team.court}</option>
                             </select>
@@ -91,7 +93,7 @@ const Top = () => {
                           <form>
                             <select className="number" defaultValue={team.number} name="itemNumber">
                               {number.map(number=>(
-                                <option menuitem={number.number} key={number.id} name={number.id} value={number.number}></option>
+                                <option menuitem={number.number} key={number.id} name={number.id} value={number.number}>{number.number}</option>
                               ))}
                                 <option hidden={team.number}>{team.number}</option>
                             </select>
@@ -103,7 +105,7 @@ const Top = () => {
                           <form>
                             <select className="court" defaultValue={team.mid_court} name="itemCourt">
                               {court.map(court=>(
-                                <option menuitem={court.court} key={court.id} name={court.id} value={court.court}></option>
+                                <option menuitem={court.court} key={court.id} name={court.id} value={court.court}>{court.court}</option>
                               ))}
                                 <option hidden={team.mid_court}>{team.mid_court}</option>
                             </select>
@@ -113,7 +115,7 @@ const Top = () => {
                           <form>
                             <select className="number" defaultValue={team.mid_number} name="itemNumber">
                               {number.map(number=>(
-                                <option menuitem={number.number} key={number.id} name={number.id} value={number.number}></option>
+                                <option menuitem={number.number} key={number.id} name={number.id} value={number.number}>{number.number}</option>
                               ))}
                                 <option hidden={team.mid_number}>{team.mid_number}</option>
                             </select>

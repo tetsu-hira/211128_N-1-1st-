@@ -2569,7 +2569,8 @@ var Top = function Top() {
                             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                               menuitem: court.court,
                               name: court.id,
-                              value: court.court
+                              value: court.court,
+                              children: court.court
                             }, court.id);
                           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                             hidden: team.court,
@@ -2588,7 +2589,8 @@ var Top = function Top() {
                             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                               menuitem: number.number,
                               name: number.id,
-                              value: number.number
+                              value: number.number,
+                              children: number.number
                             }, number.id);
                           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                             hidden: team.number,
@@ -2613,7 +2615,8 @@ var Top = function Top() {
                             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                               menuitem: court.court,
                               name: court.id,
-                              value: court.court
+                              value: court.court,
+                              children: court.court
                             }, court.id);
                           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                             hidden: team.mid_court,
@@ -2632,7 +2635,8 @@ var Top = function Top() {
                             return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                               menuitem: number.number,
                               name: number.id,
-                              value: number.number
+                              value: number.number,
+                              children: number.number
                             }, number.id);
                           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                             hidden: team.mid_number,
