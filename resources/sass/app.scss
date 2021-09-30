@@ -6,3 +6,13 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Rdataからコピー
+@import 'Config';
+@import 'Base';
+@import 'Button';
+@import 'Header';
+@import 'Sort';
+@import 'Form';
+@import 'Index';
+@import 'Pre';

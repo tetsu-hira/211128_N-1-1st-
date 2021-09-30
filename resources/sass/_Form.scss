@@ -1,0 +1,43 @@
+.Form {
+  display: flex;
+  &Content {
+    display: flex;
+    // background-color: #fff;
+    &__id {
+      height: 40px;
+      border: 1px solid #b7cadc;
+      // border-top: none;
+      display: flex;
+      align-items: center;
+      width: 56px;
+      margin: auto 0;
+    }
+    &__name {
+      height: 40px;
+      border: 1px solid #b7cadc;
+      // border-top: none;
+      display: flex;
+      align-items: center;
+      margin: auto 8px;
+      width: 222px;
+    }
+  }
+  button {
+    background: $SecondaryColor;
+    // border-radius: 30px;
+    font-size: 12px;
+    width: 100px;
+    height: 40px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid $SecondaryColor;
+    margin: 8px 0;
+    box-shadow: 3px 2px 8px 0 rgba(0, 0, 0, 20%);
+    &:hover {
+      background-color: #ffffff;
+      color: $SecondaryColor;
+      transition: all 0.3s ease;
+    }
+  }
+}

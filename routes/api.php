@@ -22,3 +22,11 @@ Route::get('/post',function (Request $request) {
   $posts = App\Models\post::all();
   return response()->json(['posts'=> $posts]);
 });
+Route::get('/court',function (Request $request) {
+  $courts = App\Models\court::all();
+  return response()->json(['courts'=> $courts]);
+});
+Route::get('/number',function (Request $request) {
+  $numbers = App\Models\number::all();
+  return response()->json(['numbers'=> $numbers]);
+});
