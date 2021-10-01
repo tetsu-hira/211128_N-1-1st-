@@ -18,6 +18,14 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
+// 追加機能
+Route::group(['middleware' => 'api'], function(){
+  Route::get('get', 'PostController@addTeam');
+  Route::post('add', 'PostController@addTeam');
+  Route::get('get', 'PostController@delTeam');
+  Route::post('del', 'PostController@delTeam');
+});
+
 Route::get('/post',function (Request $request) {
   $posts = App\Models\post::all();
   return response()->json(['posts'=> $posts]);
@@ -30,3 +38,4 @@ Route::get('/number',function (Request $request) {
   $numbers = App\Models\number::all();
   return response()->json(['numbers'=> $numbers]);
 });
+

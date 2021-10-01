@@ -14,12 +14,10 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function showHelloWorld()
+    public function __invoke()
     {
       // $posts = DB::select('select * from posts');
       // $data = ['msg' => 'データ一覧', 'posts' => $posts];
-
-      return 'Hello World!!';
     }
 
     /**
@@ -87,4 +85,23 @@ class PostController extends Controller
     {
         //
     }
+    // チーム登録機能
+    public function addTeam(Request $request)
+    {
+      $add = new Post;
+      $add->name = $request->name;
+      $add->timestamps = false;
+      $add->save();
+      return redirect('/');
+    }
+    // チーム削除機能
+    public function delTeam(Request $request)
+    {
+      $del = Post::findOrFail($request->id);
+      $del->delete();
+      $add->timestamps = false;
+      // $add->save();
+      return redirect('/');
+    }
+
 }

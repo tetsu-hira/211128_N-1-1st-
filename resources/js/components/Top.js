@@ -1,13 +1,21 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Form from "./Form";
 import AnchorLink from "react-anchor-link-smooth-scroll/";
 
 const Top = () => {
   const [team, setTeam] = useState([]);
   const [court, setCourt] = useState([]);
   const [number, setNumber] = useState([]);
+  const [id, setId] = useState();
+  
 
+  const handleDelete = () => {
+    axios.post('/api/del', {
+      id: id
+    });
+  };
 
   useEffect(() => {
     getUsers()
@@ -35,23 +43,11 @@ const Top = () => {
 
   return (
     <>
-      <div className="Header">
-        <a href="/" className="HeaderButton">HOME</a>
-      </div>
       <div className="Index">
         <div className="IndexContainer">
           <div className="IndexContent__header">
             <h1>ResultSheet</h1>
-            <ul className="Navlist">
-              <li className="NavList__item">
-                <div className="Match">予選リーグ結果入力</div>
-              </li>
-              <li className="NavList__item">
-                <div className="Midway">中間リーグ結果入力</div>
-              </li>
-            </ul>
           </div>
-
           <div className="IndexTable">
             <div className="IndexTable__container">
               <div className="IndexTable__head">
@@ -123,15 +119,15 @@ const Top = () => {
                         </div>
                         <div className="point">{team.sum_point}</div>
                         <div className="score">{team.sum_score}</div>
-                        <form>
-                          <input type="submit" className="edit" value="削除"></input>
+                        <form action="/api/del" method="POST" onSubmit={handleDelete}>
+                          <input type="submit" className="edit" value="削除" name={team.id} onClick={() => setId(team.id)}></input>
                         </form>
-                                
                       </div>
                     </div>
                   </li>
               ))}
             </ul>
+            <Form />
           </div>
         </div>
       </div>

@@ -13,19 +13,19 @@ use app\Http\Controllers\PostController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// ルートを追加する※Laravel8の場合
+// Route::get('/hello', "PostController");
 
 Route::get('/{any}', function () {
     return view('welcome');
 })->where('any','.*');
 
-Route::get('/post', 'PostController@index');
+// Route::get('/post', 'PostController@index');
 
-Route::resource('posts', 'PostController');
+// Route::resource('posts', 'PostController');
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-// ルートを追加する※Laravel8の場合
-Route::get('/hello', [PostController::class, 'showHelloWorld']);

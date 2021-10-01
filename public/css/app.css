@@ -10205,6 +10205,7 @@ input {
   display: flex;
   align-items: center;
   margin: auto 8px;
+  margin-left: 0;
   width: 222px;
 }
 .Form button {
