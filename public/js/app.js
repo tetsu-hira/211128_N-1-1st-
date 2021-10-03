@@ -2266,8 +2266,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-anchor-link-smooth-scroll */ "./node_modules/react-anchor-link-smooth-scroll/lib/anchor-link.js");
+/* harmony import */ var react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
 
 
 
@@ -2275,31 +2291,448 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function NavBar() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState2 = _slicedToArray(_useState, 2),
+      countA1 = _useState2[0],
+      setCountA1 = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState4 = _slicedToArray(_useState3, 2),
+      countA2 = _useState4[0],
+      setCountA2 = _useState4[1];
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState6 = _slicedToArray(_useState5, 2),
+      countA3 = _useState6[0],
+      setCountA3 = _useState6[1];
+
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState8 = _slicedToArray(_useState7, 2),
+      countA4 = _useState8[0],
+      setCountA4 = _useState8[1];
+
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState10 = _slicedToArray(_useState9, 2),
+      countA5 = _useState10[0],
+      setCountA5 = _useState10[1];
+
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState12 = _slicedToArray(_useState11, 2),
+      countA6 = _useState12[0],
+      setCountA6 = _useState12[1];
+
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState14 = _slicedToArray(_useState13, 2),
+      countA7 = _useState14[0],
+      setCountA7 = _useState14[1];
+
+  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState16 = _slicedToArray(_useState15, 2),
+      countA8 = _useState16[0],
+      setCountA8 = _useState16[1];
+
+  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState18 = _slicedToArray(_useState17, 2),
+      countA9 = _useState18[0],
+      setCountA9 = _useState18[1];
+
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState20 = _slicedToArray(_useState19, 2),
+      countA10 = _useState20[0],
+      setCountA10 = _useState20[1];
+
+  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState22 = _slicedToArray(_useState21, 2),
+      countA11 = _useState22[0],
+      setCountA11 = _useState22[1];
+
+  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState24 = _slicedToArray(_useState23, 2),
+      countA12 = _useState24[0],
+      setCountA12 = _useState24[1];
+
+  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState26 = _slicedToArray(_useState25, 2),
+      countA13 = _useState26[0],
+      setCountA13 = _useState26[1];
+
+  var _useState27 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState28 = _slicedToArray(_useState27, 2),
+      countA14 = _useState28[0],
+      setCountA14 = _useState28[1];
+
+  var _useState29 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState30 = _slicedToArray(_useState29, 2),
+      countA15 = _useState30[0],
+      setCountA15 = _useState30[1];
+
+  var _useState31 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState32 = _slicedToArray(_useState31, 2),
+      countA16 = _useState32[0],
+      setCountA16 = _useState32[1];
+
+  var _useState33 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState34 = _slicedToArray(_useState33, 2),
+      countB1 = _useState34[0],
+      setCountB1 = _useState34[1];
+
+  var _useState35 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState36 = _slicedToArray(_useState35, 2),
+      countB2 = _useState36[0],
+      setCountB2 = _useState36[1];
+
+  var _useState37 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState38 = _slicedToArray(_useState37, 2),
+      countB3 = _useState38[0],
+      setCountB3 = _useState38[1];
+
+  var _useState39 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState40 = _slicedToArray(_useState39, 2),
+      countB4 = _useState40[0],
+      setCountB4 = _useState40[1];
+
+  var _useState41 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState42 = _slicedToArray(_useState41, 2),
+      countB5 = _useState42[0],
+      setCountB5 = _useState42[1];
+
+  var _useState43 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState44 = _slicedToArray(_useState43, 2),
+      countB6 = _useState44[0],
+      setCountB6 = _useState44[1];
+
+  var _useState45 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState46 = _slicedToArray(_useState45, 2),
+      countB7 = _useState46[0],
+      setCountB7 = _useState46[1];
+
+  var _useState47 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState48 = _slicedToArray(_useState47, 2),
+      countB8 = _useState48[0],
+      setCountB8 = _useState48[1];
+
+  var _useState49 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState50 = _slicedToArray(_useState49, 2),
+      countB9 = _useState50[0],
+      setCountB9 = _useState50[1];
+
+  var _useState51 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState52 = _slicedToArray(_useState51, 2),
+      countB10 = _useState52[0],
+      setCountB10 = _useState52[1];
+
+  var _useState53 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState54 = _slicedToArray(_useState53, 2),
+      countB11 = _useState54[0],
+      setCountB11 = _useState54[1];
+
+  var _useState55 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState56 = _slicedToArray(_useState55, 2),
+      countB12 = _useState56[0],
+      setCountB12 = _useState56[1];
+
+  var _useState57 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState58 = _slicedToArray(_useState57, 2),
+      countB13 = _useState58[0],
+      setCountB13 = _useState58[1];
+
+  var _useState59 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState60 = _slicedToArray(_useState59, 2),
+      countB14 = _useState60[0],
+      setCountB14 = _useState60[1];
+
+  var _useState61 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState62 = _slicedToArray(_useState61, 2),
+      countB15 = _useState62[0],
+      setCountB15 = _useState62[1];
+
+  var _useState63 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState64 = _slicedToArray(_useState63, 2),
+      countB16 = _useState64[0],
+      setCountB16 = _useState64[1];
+
+  var _useState65 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState66 = _slicedToArray(_useState65, 2),
+      countC1 = _useState66[0],
+      setCountC1 = _useState66[1];
+
+  var _useState67 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState68 = _slicedToArray(_useState67, 2),
+      countC2 = _useState68[0],
+      setCountC2 = _useState68[1];
+
+  var _useState69 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState70 = _slicedToArray(_useState69, 2),
+      countC3 = _useState70[0],
+      setCountC3 = _useState70[1];
+
+  var _useState71 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState72 = _slicedToArray(_useState71, 2),
+      countC4 = _useState72[0],
+      setCountC4 = _useState72[1];
+
+  var _useState73 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState74 = _slicedToArray(_useState73, 2),
+      countC5 = _useState74[0],
+      setCountC5 = _useState74[1];
+
+  var _useState75 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState76 = _slicedToArray(_useState75, 2),
+      countC6 = _useState76[0],
+      setCountC6 = _useState76[1];
+
+  var _useState77 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState78 = _slicedToArray(_useState77, 2),
+      countC7 = _useState78[0],
+      setCountC7 = _useState78[1];
+
+  var _useState79 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState80 = _slicedToArray(_useState79, 2),
+      countC8 = _useState80[0],
+      setCountC8 = _useState80[1];
+
+  var _useState81 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState82 = _slicedToArray(_useState81, 2),
+      countC9 = _useState82[0],
+      setCountC9 = _useState82[1];
+
+  var _useState83 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState84 = _slicedToArray(_useState83, 2),
+      countC10 = _useState84[0],
+      setCountC10 = _useState84[1];
+
+  var _useState85 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState86 = _slicedToArray(_useState85, 2),
+      countC11 = _useState86[0],
+      setCountC11 = _useState86[1];
+
+  var _useState87 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState88 = _slicedToArray(_useState87, 2),
+      countC12 = _useState88[0],
+      setCountC12 = _useState88[1];
+
+  var _useState89 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState90 = _slicedToArray(_useState89, 2),
+      countC13 = _useState90[0],
+      setCountC13 = _useState90[1];
+
+  var _useState91 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState92 = _slicedToArray(_useState91, 2),
+      countC14 = _useState92[0],
+      setCountC14 = _useState92[1];
+
+  var _useState93 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState94 = _slicedToArray(_useState93, 2),
+      countC15 = _useState94[0],
+      setCountC15 = _useState94[1];
+
+  var _useState95 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState96 = _slicedToArray(_useState95, 2),
+      countC16 = _useState96[0],
+      setCountC16 = _useState96[1];
+
+  var _useState97 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState98 = _slicedToArray(_useState97, 2),
+      countD1 = _useState98[0],
+      setCountD1 = _useState98[1];
+
+  var _useState99 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState100 = _slicedToArray(_useState99, 2),
+      countD2 = _useState100[0],
+      setCountD2 = _useState100[1];
+
+  var _useState101 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState102 = _slicedToArray(_useState101, 2),
+      countD3 = _useState102[0],
+      setCountD3 = _useState102[1];
+
+  var _useState103 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState104 = _slicedToArray(_useState103, 2),
+      countD4 = _useState104[0],
+      setCountD4 = _useState104[1];
+
+  var _useState105 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState106 = _slicedToArray(_useState105, 2),
+      countD5 = _useState106[0],
+      setCountD5 = _useState106[1];
+
+  var _useState107 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState108 = _slicedToArray(_useState107, 2),
+      countD6 = _useState108[0],
+      setCountD6 = _useState108[1];
+
+  var _useState109 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState110 = _slicedToArray(_useState109, 2),
+      countD7 = _useState110[0],
+      setCountD7 = _useState110[1];
+
+  var _useState111 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState112 = _slicedToArray(_useState111, 2),
+      countD8 = _useState112[0],
+      setCountD8 = _useState112[1];
+
+  var _useState113 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState114 = _slicedToArray(_useState113, 2),
+      countD9 = _useState114[0],
+      setCountD9 = _useState114[1];
+
+  var _useState115 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState116 = _slicedToArray(_useState115, 2),
+      countD10 = _useState116[0],
+      setCountD10 = _useState116[1];
+
+  var _useState117 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState118 = _slicedToArray(_useState117, 2),
+      countD11 = _useState118[0],
+      setCountD11 = _useState118[1];
+
+  var _useState119 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState120 = _slicedToArray(_useState119, 2),
+      countD12 = _useState120[0],
+      setCountD12 = _useState120[1];
+
+  var _useState121 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState122 = _slicedToArray(_useState121, 2),
+      countD13 = _useState122[0],
+      setCountD13 = _useState122[1];
+
+  var _useState123 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState124 = _slicedToArray(_useState123, 2),
+      countD14 = _useState124[0],
+      setCountD14 = _useState124[1];
+
+  var _useState125 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState126 = _slicedToArray(_useState125, 2),
+      countD15 = _useState126[0],
+      setCountD15 = _useState126[1];
+
+  var _useState127 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(),
+      _useState128 = _slicedToArray(_useState127, 2),
+      countD16 = _useState128[0],
+      setCountD16 = _useState128[1];
+
+  var handleChangeCount = function handleChangeCount() {
+    axios.post('/api/count', {
+      countA1: countA1,
+      countA2: countA2,
+      countA3: countA3,
+      countA4: countA4,
+      countA5: countA5,
+      countA6: countA6,
+      countA7: countA7,
+      countA8: countA8,
+      countA9: countA9,
+      countA10: countA10,
+      countA11: countA11,
+      countA12: countA12,
+      countA13: countA13,
+      countA14: countA14,
+      countA15: countA15,
+      countA16: countA16,
+      countB1: countB1,
+      countB2: countB2,
+      countB3: countB3,
+      countB4: countB4,
+      countB5: countB5,
+      countB6: countB6,
+      countB7: countB7,
+      countB8: countB8,
+      countB9: countB9,
+      countB10: countB10,
+      countB11: countB11,
+      countB12: countB12,
+      countB13: countB13,
+      countB14: countB14,
+      countB15: countB15,
+      countB16: countB16,
+      countC1: countC1,
+      countC2: countC2,
+      countC3: countC3,
+      countC4: countC4,
+      countC5: countC5,
+      countC6: countC6,
+      countC7: countC7,
+      countC8: countC8,
+      countC9: countC9,
+      countC10: countC10,
+      countC11: countC11,
+      countC12: countC12,
+      countC13: countC13,
+      countC14: countC14,
+      countC15: countC15,
+      countC16: countC16,
+      countD1: countD1,
+      countD2: countD2,
+      countD3: countD3,
+      countD4: countD4,
+      countD5: countD5,
+      countD6: countD6,
+      countD7: countD7,
+      countD8: countD8,
+      countD9: countD9,
+      countD10: countD10,
+      countD11: countD11,
+      countD12: countD12,
+      countD13: countD13,
+      countD14: countD14,
+      countD15: countD15,
+      countD16: countD16
+    });
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "Header",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("ul", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
         className: "nav",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
           to: "/",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          onClick: handleChangeCount,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
             className: "HeaderButton",
-            children: "Top"
+            children: "\u7DCF\u5408\u7D50\u679C"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
           to: "/pre",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
             className: "HeaderButton",
-            children: "Pre"
+            children: "\u4E88\u9078\u30EA\u30FC\u30B0"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
           to: "mid",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
             className: "HeaderButton",
-            children: "Mid"
+            children: "\u4E2D\u9593\u30EA\u30FC\u30B0"
           })
         })]
-      })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
+        className: "JumpList",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+          className: "JumpList__item",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)((react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_1___default()), {
+            href: "#courtA",
+            children: "A\u30B3\u30FC\u30C8"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+          className: "JumpList__item",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)((react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_1___default()), {
+            href: "#courtB",
+            children: "B\u30B3\u30FC\u30C8"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+          className: "JumpList__item",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)((react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_1___default()), {
+            href: "#courtC",
+            children: "C\u30B3\u30FC\u30C8"
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+          className: "JumpList__item",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)((react_anchor_link_smooth_scroll__WEBPACK_IMPORTED_MODULE_1___default()), {
+            href: "#courtD",
+            children: "D\u30B3\u30FC\u30C8"
+          })
+        })]
+      })]
     })
   });
 }
@@ -2319,38 +2752,3199 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_anchor_link_smooth_scroll___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-anchor-link-smooth-scroll/ */ "./node_modules/react-anchor-link-smooth-scroll/lib/anchor-link.js");
+/* harmony import */ var react_anchor_link_smooth_scroll___WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_anchor_link_smooth_scroll___WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
 
-function Pre() {
-  var users = [{
-    id: 1,
-    name: 'John',
-    email: 'john@example.com'
-  }, {
-    id: 2,
-    name: 'Kevin',
-    email: 'kevin@test.com'
-  }, {
-    id: 3,
-    name: 'Joshua',
-    email: 'joshua@example.com'
-  }];
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
-      children: "Pre\u30DA\u30FC\u30B8"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ul", {
-      children: users.map(function (user) {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("li", {
-          children: user.name
-        }, user.id);
+
+
+
+
+
+var Pre = function Pre() {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState2 = _slicedToArray(_useState, 2),
+      team = _useState2[0],
+      setTeam = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState4 = _slicedToArray(_useState3, 2),
+      game = _useState4[0],
+      setGame = _useState4[1];
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState6 = _slicedToArray(_useState5, 2),
+      court = _useState6[0],
+      setCourt = _useState6[1];
+
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState8 = _slicedToArray(_useState7, 2),
+      countA1 = _useState8[0],
+      setCountA1 = _useState8[1];
+
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState10 = _slicedToArray(_useState9, 2),
+      countA2 = _useState10[0],
+      setCountA2 = _useState10[1];
+
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState12 = _slicedToArray(_useState11, 2),
+      countA3 = _useState12[0],
+      setCountA3 = _useState12[1];
+
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState14 = _slicedToArray(_useState13, 2),
+      countA4 = _useState14[0],
+      setCountA4 = _useState14[1];
+
+  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState16 = _slicedToArray(_useState15, 2),
+      countA5 = _useState16[0],
+      setCountA5 = _useState16[1];
+
+  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState18 = _slicedToArray(_useState17, 2),
+      countA6 = _useState18[0],
+      setCountA6 = _useState18[1];
+
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState20 = _slicedToArray(_useState19, 2),
+      countA7 = _useState20[0],
+      setCountA7 = _useState20[1];
+
+  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState22 = _slicedToArray(_useState21, 2),
+      countA8 = _useState22[0],
+      setCountA8 = _useState22[1];
+
+  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState24 = _slicedToArray(_useState23, 2),
+      countA9 = _useState24[0],
+      setCountA9 = _useState24[1];
+
+  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState26 = _slicedToArray(_useState25, 2),
+      countA10 = _useState26[0],
+      setCountA10 = _useState26[1];
+
+  var _useState27 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState28 = _slicedToArray(_useState27, 2),
+      countA11 = _useState28[0],
+      setCountA11 = _useState28[1];
+
+  var _useState29 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState30 = _slicedToArray(_useState29, 2),
+      countA12 = _useState30[0],
+      setCountA12 = _useState30[1];
+
+  var _useState31 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState32 = _slicedToArray(_useState31, 2),
+      countA13 = _useState32[0],
+      setCountA13 = _useState32[1];
+
+  var _useState33 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState34 = _slicedToArray(_useState33, 2),
+      countA14 = _useState34[0],
+      setCountA14 = _useState34[1];
+
+  var _useState35 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState36 = _slicedToArray(_useState35, 2),
+      countA15 = _useState36[0],
+      setCountA15 = _useState36[1];
+
+  var _useState37 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState38 = _slicedToArray(_useState37, 2),
+      countA16 = _useState38[0],
+      setCountA16 = _useState38[1];
+
+  var _useState39 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState40 = _slicedToArray(_useState39, 2),
+      countB1 = _useState40[0],
+      setCountB1 = _useState40[1];
+
+  var _useState41 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState42 = _slicedToArray(_useState41, 2),
+      countB2 = _useState42[0],
+      setCountB2 = _useState42[1];
+
+  var _useState43 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState44 = _slicedToArray(_useState43, 2),
+      countB3 = _useState44[0],
+      setCountB3 = _useState44[1];
+
+  var _useState45 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState46 = _slicedToArray(_useState45, 2),
+      countB4 = _useState46[0],
+      setCountB4 = _useState46[1];
+
+  var _useState47 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState48 = _slicedToArray(_useState47, 2),
+      countB5 = _useState48[0],
+      setCountB5 = _useState48[1];
+
+  var _useState49 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState50 = _slicedToArray(_useState49, 2),
+      countB6 = _useState50[0],
+      setCountB6 = _useState50[1];
+
+  var _useState51 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState52 = _slicedToArray(_useState51, 2),
+      countB7 = _useState52[0],
+      setCountB7 = _useState52[1];
+
+  var _useState53 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState54 = _slicedToArray(_useState53, 2),
+      countB8 = _useState54[0],
+      setCountB8 = _useState54[1];
+
+  var _useState55 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState56 = _slicedToArray(_useState55, 2),
+      countB9 = _useState56[0],
+      setCountB9 = _useState56[1];
+
+  var _useState57 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState58 = _slicedToArray(_useState57, 2),
+      countB10 = _useState58[0],
+      setCountB10 = _useState58[1];
+
+  var _useState59 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState60 = _slicedToArray(_useState59, 2),
+      countB11 = _useState60[0],
+      setCountB11 = _useState60[1];
+
+  var _useState61 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState62 = _slicedToArray(_useState61, 2),
+      countB12 = _useState62[0],
+      setCountB12 = _useState62[1];
+
+  var _useState63 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState64 = _slicedToArray(_useState63, 2),
+      countB13 = _useState64[0],
+      setCountB13 = _useState64[1];
+
+  var _useState65 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState66 = _slicedToArray(_useState65, 2),
+      countB14 = _useState66[0],
+      setCountB14 = _useState66[1];
+
+  var _useState67 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState68 = _slicedToArray(_useState67, 2),
+      countB15 = _useState68[0],
+      setCountB15 = _useState68[1];
+
+  var _useState69 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState70 = _slicedToArray(_useState69, 2),
+      countB16 = _useState70[0],
+      setCountB16 = _useState70[1];
+
+  var _useState71 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState72 = _slicedToArray(_useState71, 2),
+      countC1 = _useState72[0],
+      setCountC1 = _useState72[1];
+
+  var _useState73 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState74 = _slicedToArray(_useState73, 2),
+      countC2 = _useState74[0],
+      setCountC2 = _useState74[1];
+
+  var _useState75 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState76 = _slicedToArray(_useState75, 2),
+      countC3 = _useState76[0],
+      setCountC3 = _useState76[1];
+
+  var _useState77 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState78 = _slicedToArray(_useState77, 2),
+      countC4 = _useState78[0],
+      setCountC4 = _useState78[1];
+
+  var _useState79 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState80 = _slicedToArray(_useState79, 2),
+      countC5 = _useState80[0],
+      setCountC5 = _useState80[1];
+
+  var _useState81 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState82 = _slicedToArray(_useState81, 2),
+      countC6 = _useState82[0],
+      setCountC6 = _useState82[1];
+
+  var _useState83 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState84 = _slicedToArray(_useState83, 2),
+      countC7 = _useState84[0],
+      setCountC7 = _useState84[1];
+
+  var _useState85 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState86 = _slicedToArray(_useState85, 2),
+      countC8 = _useState86[0],
+      setCountC8 = _useState86[1];
+
+  var _useState87 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState88 = _slicedToArray(_useState87, 2),
+      countC9 = _useState88[0],
+      setCountC9 = _useState88[1];
+
+  var _useState89 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState90 = _slicedToArray(_useState89, 2),
+      countC10 = _useState90[0],
+      setCountC10 = _useState90[1];
+
+  var _useState91 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState92 = _slicedToArray(_useState91, 2),
+      countC11 = _useState92[0],
+      setCountC11 = _useState92[1];
+
+  var _useState93 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState94 = _slicedToArray(_useState93, 2),
+      countC12 = _useState94[0],
+      setCountC12 = _useState94[1];
+
+  var _useState95 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState96 = _slicedToArray(_useState95, 2),
+      countC13 = _useState96[0],
+      setCountC13 = _useState96[1];
+
+  var _useState97 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState98 = _slicedToArray(_useState97, 2),
+      countC14 = _useState98[0],
+      setCountC14 = _useState98[1];
+
+  var _useState99 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState100 = _slicedToArray(_useState99, 2),
+      countC15 = _useState100[0],
+      setCountC15 = _useState100[1];
+
+  var _useState101 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState102 = _slicedToArray(_useState101, 2),
+      countC16 = _useState102[0],
+      setCountC16 = _useState102[1];
+
+  var _useState103 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState104 = _slicedToArray(_useState103, 2),
+      countD1 = _useState104[0],
+      setCountD1 = _useState104[1];
+
+  var _useState105 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState106 = _slicedToArray(_useState105, 2),
+      countD2 = _useState106[0],
+      setCountD2 = _useState106[1];
+
+  var _useState107 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState108 = _slicedToArray(_useState107, 2),
+      countD3 = _useState108[0],
+      setCountD3 = _useState108[1];
+
+  var _useState109 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState110 = _slicedToArray(_useState109, 2),
+      countD4 = _useState110[0],
+      setCountD4 = _useState110[1];
+
+  var _useState111 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState112 = _slicedToArray(_useState111, 2),
+      countD5 = _useState112[0],
+      setCountD5 = _useState112[1];
+
+  var _useState113 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState114 = _slicedToArray(_useState113, 2),
+      countD6 = _useState114[0],
+      setCountD6 = _useState114[1];
+
+  var _useState115 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState116 = _slicedToArray(_useState115, 2),
+      countD7 = _useState116[0],
+      setCountD7 = _useState116[1];
+
+  var _useState117 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState118 = _slicedToArray(_useState117, 2),
+      countD8 = _useState118[0],
+      setCountD8 = _useState118[1];
+
+  var _useState119 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState120 = _slicedToArray(_useState119, 2),
+      countD9 = _useState120[0],
+      setCountD9 = _useState120[1];
+
+  var _useState121 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState122 = _slicedToArray(_useState121, 2),
+      countD10 = _useState122[0],
+      setCountD10 = _useState122[1];
+
+  var _useState123 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState124 = _slicedToArray(_useState123, 2),
+      countD11 = _useState124[0],
+      setCountD11 = _useState124[1];
+
+  var _useState125 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState126 = _slicedToArray(_useState125, 2),
+      countD12 = _useState126[0],
+      setCountD12 = _useState126[1];
+
+  var _useState127 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState128 = _slicedToArray(_useState127, 2),
+      countD13 = _useState128[0],
+      setCountD13 = _useState128[1];
+
+  var _useState129 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState130 = _slicedToArray(_useState129, 2),
+      countD14 = _useState130[0],
+      setCountD14 = _useState130[1];
+
+  var _useState131 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState132 = _slicedToArray(_useState131, 2),
+      countD15 = _useState132[0],
+      setCountD15 = _useState132[1];
+
+  var _useState133 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(),
+      _useState134 = _slicedToArray(_useState133, 2),
+      countD16 = _useState134[0],
+      setCountD16 = _useState134[1];
+
+  var _useState135 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState136 = _slicedToArray(_useState135, 2),
+      A1 = _useState136[0],
+      setA1 = _useState136[1];
+
+  var _useState137 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState138 = _slicedToArray(_useState137, 2),
+      A2 = _useState138[0],
+      setA2 = _useState138[1];
+
+  var _useState139 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState140 = _slicedToArray(_useState139, 2),
+      A3 = _useState140[0],
+      setA3 = _useState140[1];
+
+  var _useState141 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState142 = _slicedToArray(_useState141, 2),
+      A4 = _useState142[0],
+      setA4 = _useState142[1];
+
+  var _useState143 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState144 = _slicedToArray(_useState143, 2),
+      B1 = _useState144[0],
+      setB1 = _useState144[1];
+
+  var _useState145 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState146 = _slicedToArray(_useState145, 2),
+      B2 = _useState146[0],
+      setB2 = _useState146[1];
+
+  var _useState147 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState148 = _slicedToArray(_useState147, 2),
+      B3 = _useState148[0],
+      setB3 = _useState148[1];
+
+  var _useState149 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState150 = _slicedToArray(_useState149, 2),
+      B4 = _useState150[0],
+      setB4 = _useState150[1];
+
+  var _useState151 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState152 = _slicedToArray(_useState151, 2),
+      C1 = _useState152[0],
+      setC1 = _useState152[1];
+
+  var _useState153 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState154 = _slicedToArray(_useState153, 2),
+      C2 = _useState154[0],
+      setC2 = _useState154[1];
+
+  var _useState155 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState156 = _slicedToArray(_useState155, 2),
+      C3 = _useState156[0],
+      setC3 = _useState156[1];
+
+  var _useState157 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState158 = _slicedToArray(_useState157, 2),
+      C4 = _useState158[0],
+      setC4 = _useState158[1];
+
+  var _useState159 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState160 = _slicedToArray(_useState159, 2),
+      D1 = _useState160[0],
+      setD1 = _useState160[1];
+
+  var _useState161 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState162 = _slicedToArray(_useState161, 2),
+      D2 = _useState162[0],
+      setD2 = _useState162[1];
+
+  var _useState163 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState164 = _slicedToArray(_useState163, 2),
+      D3 = _useState164[0],
+      setD3 = _useState164[1];
+
+  var _useState165 = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)([]),
+      _useState166 = _slicedToArray(_useState165, 2),
+      D4 = _useState166[0],
+      setD4 = _useState166[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(function () {
+    getUsers();
+  }, []);
+
+  var getUsers = /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
+      var response;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.next = 2;
+              return axios__WEBPACK_IMPORTED_MODULE_1___default().get('/api/post');
+
+            case 2:
+              response = _context.sent;
+              setTeam(response.data.posts);
+              setA1(response.data.posts.filter(function (item, index) {
+                return item.court === "A" && item.number === 1;
+              }));
+              setA2(response.data.posts.filter(function (item, index) {
+                return item.court === "A" && item.number === 2;
+              }));
+              setA3(response.data.posts.filter(function (item, index) {
+                return item.court === "A" && item.number === 3;
+              }));
+              setA4(response.data.posts.filter(function (item, index) {
+                return item.court === "A" && item.number === 4;
+              }));
+              setB1(response.data.posts.filter(function (item, index) {
+                return item.court === "B" && item.number === 1;
+              }));
+              setB2(response.data.posts.filter(function (item, index) {
+                return item.court === "B" && item.number === 2;
+              }));
+              setB3(response.data.posts.filter(function (item, index) {
+                return item.court === "B" && item.number === 3;
+              }));
+              setB4(response.data.posts.filter(function (item, index) {
+                return item.court === "B" && item.number === 4;
+              }));
+              setC1(response.data.posts.filter(function (item, index) {
+                return item.court === "C" && item.number === 1;
+              }));
+              setC2(response.data.posts.filter(function (item, index) {
+                return item.court === "C" && item.number === 2;
+              }));
+              setC3(response.data.posts.filter(function (item, index) {
+                return item.court === "C" && item.number === 3;
+              }));
+              setC4(response.data.posts.filter(function (item, index) {
+                return item.court === "C" && item.number === 4;
+              }));
+              setD1(response.data.posts.filter(function (item, index) {
+                return item.court === "D" && item.number === 1;
+              }));
+              setD2(response.data.posts.filter(function (item, index) {
+                return item.court === "D" && item.number === 2;
+              }));
+              setD3(response.data.posts.filter(function (item, index) {
+                return item.court === "D" && item.number === 3;
+              }));
+              setD4(response.data.posts.filter(function (item, index) {
+                return item.court === "D" && item.number === 4;
+              }));
+
+            case 20:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }));
+
+    return function getUsers() {
+      return _ref.apply(this, arguments);
+    };
+  }();
+
+  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(function () {
+    getGames();
+  }, []);
+
+  var getGames = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2() {
+      var response;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
+        while (1) {
+          switch (_context2.prev = _context2.next) {
+            case 0:
+              _context2.next = 2;
+              return axios__WEBPACK_IMPORTED_MODULE_1___default().get('/api/game');
+
+            case 2:
+              response = _context2.sent;
+              setGame(response.data.games);
+              setCountA1(response.data.games[0].result1);
+              setCountA2(response.data.games[0].result2);
+              setCountA3(response.data.games[0].result3);
+              setCountA4(response.data.games[0].result4);
+              setCountA5(response.data.games[1].result1);
+              setCountA6(response.data.games[1].result2);
+              setCountA7(response.data.games[1].result3);
+              setCountA8(response.data.games[1].result4);
+              setCountA9(response.data.games[2].result1);
+              setCountA10(response.data.games[2].result2);
+              setCountA11(response.data.games[2].result3);
+              setCountA12(response.data.games[2].result4);
+              setCountA13(response.data.games[3].result1);
+              setCountA14(response.data.games[3].result2);
+              setCountA15(response.data.games[3].result3);
+              setCountA16(response.data.games[3].result4);
+              setCountB1(response.data.games[4].result1);
+              setCountB2(response.data.games[4].result2);
+              setCountB3(response.data.games[4].result3);
+              setCountB4(response.data.games[4].result4);
+              setCountB5(response.data.games[5].result1);
+              setCountB6(response.data.games[5].result2);
+              setCountB7(response.data.games[5].result3);
+              setCountB8(response.data.games[5].result4);
+              setCountB9(response.data.games[6].result1);
+              setCountB10(response.data.games[6].result2);
+              setCountB11(response.data.games[6].result3);
+              setCountB12(response.data.games[6].result4);
+              setCountB13(response.data.games[7].result1);
+              setCountB14(response.data.games[7].result2);
+              setCountB15(response.data.games[7].result3);
+              setCountB16(response.data.games[7].result4);
+              setCountC1(response.data.games[8].result1);
+              setCountC2(response.data.games[8].result2);
+              setCountC3(response.data.games[8].result3);
+              setCountC4(response.data.games[8].result4);
+              setCountC5(response.data.games[9].result1);
+              setCountC6(response.data.games[9].result2);
+              setCountC7(response.data.games[9].result3);
+              setCountC8(response.data.games[9].result4);
+              setCountC9(response.data.games[10].result1);
+              setCountC10(response.data.games[10].result2);
+              setCountC11(response.data.games[10].result3);
+              setCountC12(response.data.games[10].result4);
+              setCountC13(response.data.games[11].result1);
+              setCountC14(response.data.games[11].result2);
+              setCountC15(response.data.games[11].result3);
+              setCountC16(response.data.games[11].result4);
+              setCountD1(response.data.games[12].result1);
+              setCountD2(response.data.games[12].result2);
+              setCountD3(response.data.games[12].result3);
+              setCountD4(response.data.games[12].result4);
+              setCountD5(response.data.games[13].result1);
+              setCountD6(response.data.games[13].result2);
+              setCountD7(response.data.games[13].result3);
+              setCountD8(response.data.games[13].result4);
+              setCountD9(response.data.games[14].result1);
+              setCountD10(response.data.games[14].result2);
+              setCountD11(response.data.games[14].result3);
+              setCountD12(response.data.games[14].result4);
+              setCountD13(response.data.games[15].result1);
+              setCountD14(response.data.games[15].result2);
+              setCountD15(response.data.games[15].result3);
+              setCountD16(response.data.games[15].result4);
+
+            case 68:
+            case "end":
+              return _context2.stop();
+          }
+        }
+      }, _callee2);
+    }));
+
+    return function getGames() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+
+  (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(function () {
+    getCourt();
+  }, []);
+
+  var getCourt = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3() {
+      var response;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
+        while (1) {
+          switch (_context3.prev = _context3.next) {
+            case 0:
+              _context3.next = 2;
+              return axios__WEBPACK_IMPORTED_MODULE_1___default().get('/api/court');
+
+            case 2:
+              response = _context3.sent;
+              setCourt(response.data.courts);
+
+            case 4:
+            case "end":
+              return _context3.stop();
+          }
+        }
+      }, _callee3);
+    }));
+
+    return function getCourt() {
+      return _ref3.apply(this, arguments);
+    };
+  }();
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("section", {
+      id: "courtA",
+      className: "JumpPoint"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      className: "Pre",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+        className: "PreContainer",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "PreMain",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
+            children: "\u4E88\u9078\u30EA\u30FC\u30B0A\u30B3\u30FC\u30C8"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            className: "Table",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+              border: "1",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableTitle",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__number",
+                    children: "\u8A66\u5408"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__team",
+                    children: "\u30C1\u30FC\u30E0A"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__point",
+                    children: "\u8A66\u5408\u7D50\u679C"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__team",
+                    children: "\u30C1\u30FC\u30E0B"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__referee",
+                    children: "\u5BE9\u5224/\u88DC\u52A9"
+                  })]
+                })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tbody", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "1"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: A1[0] && A1[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA1(countA1 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA1(countA1 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA1(countA1 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA1(countA1 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA1
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA2
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA2(countA2 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA2(countA2 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA2(countA2 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA2(countA2 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA3(countA3 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA3(countA3 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA3(countA3 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA3(countA3 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA3
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA4
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA4(countA4 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA4(countA4 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA4(countA4 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA4(countA4 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: A2[0] && A2[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: A4[0] && A4[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: A3[0] && A3[0].name
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "2"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: A3[0] && A3[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA5(countA5 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA5(countA5 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA5(countA5 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA5(countA5 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA5
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA6
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA6(countA6 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA6(countA6 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA6(countA6 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA6(countA6 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA7(countA7 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA7(countA7 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA7(countA7 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA7(countA7 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA7
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA8
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA8(countA8 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA8(countA8 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA8(countA8 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA8(countA8 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: A4[0] && A4[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: A1[0] && A1[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: A2[0] && A2[0].name
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "3"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: A1[0] && A1[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA9(countA9 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA9(countA9 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA9(countA9 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA9(countA9 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA9
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA10
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA10(countA10 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA10(countA10 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA10(countA10 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA10(countA10 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA11(countA11 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA11(countA11 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA11(countA11 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA11(countA11 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA11
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA12
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA12(countA12 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA12(countA12 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA12(countA12 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA12(countA12 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: A3[0] && A3[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: A2[0] && A2[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: A4[0] && A4[0].name
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "4"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: A2[0] && A2[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA13(countA13 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA13(countA13 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA13(countA13 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA13(countA13 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA13
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA14
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA14(countA14 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA14(countA14 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA14(countA14 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA14(countA14 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA15(countA15 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA15(countA15 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA15(countA15 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA15(countA15 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA15
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countA16
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA16(countA16 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA16(countA16 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA16(countA16 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountA16(countA16 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: A4[0] && A4[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: A3[0] && A3[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: A1[0] && A1[0].name
+                    })]
+                  })]
+                })]
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("section", {
+              id: "courtB",
+              className: "JumpPoint"
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "PreMain",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
+            children: "\u4E88\u9078\u30EA\u30FC\u30B0B\u30B3\u30FC\u30C8"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            className: "Table",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+              border: "1",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableTitle",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__number",
+                    children: "\u8A66\u5408"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__team",
+                    children: "\u30C1\u30FC\u30E0A"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__point",
+                    children: "\u8A66\u5408\u7D50\u679C"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__team",
+                    children: "\u30C1\u30FC\u30E0B"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__referee",
+                    children: "\u5BE9\u5224/\u88DC\u52A9"
+                  })]
+                })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tbody", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "1"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: B1[0] && B1[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB1(countB1 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB1(countB1 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB1(countB1 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB1(countB1 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB1
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB2
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB2(countB2 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB2(countB2 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB2(countB2 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB2(countB2 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB3(countB3 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB3(countB3 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB3(countB3 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB3(countB3 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB3
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB4
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB4(countB4 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB4(countB4 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB4(countB4 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB4(countB4 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: B2[0] && B2[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: B4[0] && B4[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: B3[0] && B3[0].name
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "2"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: B3[0] && B3[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB5(countB5 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB5(countB5 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB5(countB5 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB5(countB5 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB5
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB6
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB6(countB6 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB6(countB6 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB6(countB6 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB6(countB6 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB7(countB7 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB7(countB7 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB7(countB7 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB7(countB7 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB7
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB8
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB8(countB8 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB8(countB8 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB8(countB8 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB8(countB8 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: B4[0] && B4[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: B1[0] && B1[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: B2[0] && B2[0].name
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "3"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: B1[0] && B1[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB9(countB9 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB9(countB9 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB9(countB9 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB9(countB9 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB9
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB10
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB10(countB10 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB10(countB10 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB10(countB10 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB10(countB10 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB11(countB11 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB11(countB11 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB11(countB11 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB11(countB11 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB11
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB12
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB12(countB12 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB12(countB12 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB12(countB12 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB12(countB12 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: B3[0] && B3[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: B2[0] && B2[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: B4[0] && B4[0].name
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "4"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: B2[0] && B2[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB13(countB13 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB13(countB13 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB13(countB13 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB13(countB13 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB13
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB14
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB14(countB14 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB14(countB14 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB14(countB14 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB14(countB14 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB15(countB15 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB15(countB15 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB15(countB15 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB15(countB15 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB15
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countB16
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB16(countB16 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB16(countB16 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB16(countB16 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountButton",
+                          onClick: function onClick() {
+                            setCountB16(countB16 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: B4[0] && B4[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: B3[0] && B3[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: B1[0] && B1[0].name
+                    })]
+                  })]
+                })]
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("section", {
+              id: "courtC",
+              className: "JumpPoint"
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "PreMain",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
+            children: "\u4E88\u9078\u30EA\u30FC\u30B0C\u30B3\u30FC\u30C8"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+            className: "Table",
+            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+              border: "1",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableTitle",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__number",
+                    children: "\u8A66\u5408"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__team",
+                    children: "\u30C1\u30FC\u30E0A"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__point",
+                    children: "\u8A66\u5408\u7D50\u679C"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__team",
+                    children: "\u30C1\u30FC\u30E0B"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__referee",
+                    children: "\u5BE9\u5224/\u88DC\u52A9"
+                  })]
+                })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tbody", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "1"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: C1[0] && C1[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC1(countC1 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC1(countC1 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC1(countC1 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC1(countC1 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC1
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC2
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC2(countC2 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC2(countC2 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC2(countC2 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC2(countC2 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC3(countC3 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC3(countC3 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC3(countC3 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC3(countC3 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC3
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC4
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC4(countC4 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC4(countC4 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC4(countC4 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC4(countC4 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: C2[0] && C2[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: C4[0] && C4[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: C3[0] && C3[0].name
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "2"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: C3[0] && C3[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC5(countC5 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC5(countC5 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC5(countC5 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC5(countC5 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC5
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC6
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC6(countC6 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC6(countC6 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC6(countC6 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC6(countC6 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC7(countC7 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC7(countC7 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC7(countC7 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC7(countC7 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC7
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC8
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC8(countC8 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC8(countC8 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC8(countC8 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC8(countC8 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: C4[0] && C4[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: C1[0] && C1[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: C2[0] && C2[0].name
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "3"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: C1[0] && C1[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC9(countC9 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC9(countC9 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC9(countC9 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC9(countC9 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC9
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC10
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC10(countC10 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC10(countC10 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC10(countC10 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC10(countC10 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC11(countC11 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC11(countC11 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC11(countC11 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC11(countC11 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC11
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC12
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC12(countC12 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC12(countC12 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC12(countC12 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC12(countC12 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: C3[0] && C3[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: C2[0] && C2[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: C4[0] && C4[0].name
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "4"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: C2[0] && C2[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC13(countC13 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC13(countC13 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC13(countC13 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC13(countC13 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC13
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC14
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC14(countC14 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC14(countC14 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC14(countC14 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC14(countC14 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC15(countC15 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC15(countC15 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC15(countC15 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC15(countC15 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC15
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countC16
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC16(countC16 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC16(countC16 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC16(countC16 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountCutton",
+                          onClick: function onClick() {
+                            setCountC16(countC16 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: C4[0] && C4[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: C3[0] && C3[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: C1[0] && C1[0].name
+                    })]
+                  })]
+                })]
+              })]
+            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("section", {
+              id: "courtD",
+              className: "JumpPoint"
+            })]
+          })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+          className: "PreMain",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h2", {
+            children: "\u4E88\u9078\u30EA\u30FC\u30B0D\u30B3\u30FC\u30C8"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+            className: "Table",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("table", {
+              border: "1",
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("thead", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableTitle",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__number",
+                    children: "\u8A66\u5408"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__team",
+                    children: "\u30C1\u30FC\u30E0A"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__point",
+                    children: "\u8A66\u5408\u7D50\u679C"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__team",
+                    children: "\u30C1\u30FC\u30E0B"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableTitle__referee",
+                    children: "\u5BE9\u5224/\u88DC\u52A9"
+                  })]
+                })
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tbody", {
+                children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "1"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: D1[0] && D1[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD1(countD1 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD1(countD1 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD1(countD1 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD1(countD1 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD1
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD2
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD2(countD2 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD2(countD2 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD2(countD2 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD2(countD2 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD3(countD3 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD3(countD3 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD3(countD3 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD3(countD3 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD3
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD4
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD4(countD4 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD4(countD4 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD4(countD4 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD4(countD4 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: D2[0] && D2[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: D4[0] && D4[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: D3[0] && D3[0].name
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "2"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: D3[0] && D3[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD5(countD5 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD5(countD5 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD5(countD5 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD5(countD5 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD5
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD6
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD6(countD6 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD6(countD6 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD6(countD6 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD6(countD6 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD7(countD7 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD7(countD7 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD7(countD7 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD7(countD7 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD7
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD8
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD8(countD8 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD8(countD8 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD8(countD8 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD8(countD8 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: D4[0] && D4[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: D1[0] && D1[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: D2[0] && D2[0].name
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "3"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: D1[0] && D1[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD9(countD9 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD9(countD9 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD9(countD9 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD9(countD9 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD9
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD10
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD10(countD10 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD10(countD10 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD10(countD10 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD10(countD10 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD11(countD11 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD11(countD11 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD11(countD11 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD11(countD11 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD11
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD12
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD12(countD12 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD12(countD12 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD12(countD12 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD12(countD12 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: D3[0] && D3[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: D2[0] && D2[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: D4[0] && D4[0].name
+                    })]
+                  })]
+                }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("tr", {
+                  className: "TableContent",
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("th", {
+                    className: "TableContent__number",
+                    children: "4"
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamA",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: D2[0] && D2[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__point",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                      className: "TableContent__flex",
+                      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD13(countD13 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD13(countD13 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD13(countD13 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD13(countD13 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD13
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD14
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD14(countD14 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD14(countD14 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD14(countD14 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD14(countD14 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
+                        className: "TableContent__count",
+                        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD15(countD15 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD15(countD15 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD15(countD15 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD15(countD15 + 5);
+                          },
+                          children: "+5"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD15
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "UnderLine",
+                          children: "-"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                          className: "CountPoint",
+                          children: countD16
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD16(countD16 * 0);
+                          },
+                          children: "0"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD16(countD16 - 1);
+                          },
+                          children: "-1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD16(countD16 + 1);
+                          },
+                          children: "+1"
+                        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
+                          className: "CountDutton",
+                          onClick: function onClick() {
+                            setCountD16(countD16 + 5);
+                          },
+                          children: "+5"
+                        })]
+                      })]
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("td", {
+                    className: "TableContent__teamB",
+                    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("p", {
+                      children: D4[0] && D4[0].name
+                    })
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("td", {
+                    className: "TableContent__referee",
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: D3[0] && D3[0].name
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+                      children: D1[0] && D1[0].name
+                    })]
+                  })]
+                })]
+              })]
+            })
+          })]
+        })]
       })
     })]
   });
-}
+};
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Pre);
 
@@ -2373,9 +5967,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _Form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Form */ "./resources/js/components/Form.js");
-/* harmony import */ var react_anchor_link_smooth_scroll___WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-anchor-link-smooth-scroll/ */ "./node_modules/react-anchor-link-smooth-scroll/lib/anchor-link.js");
-/* harmony import */ var react_anchor_link_smooth_scroll___WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_anchor_link_smooth_scroll___WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -2393,7 +5985,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
 
 
 
@@ -2424,9 +6015,73 @@ var Top = function Top() {
       id = _useState8[0],
       setId = _useState8[1];
 
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]),
+      _useState10 = _slicedToArray(_useState9, 2),
+      teamList = _useState10[0],
+      setTeamList = _useState10[1];
+
+  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState12 = _slicedToArray(_useState11, 2),
+      changeCourt = _useState12[0],
+      setChangeCourt = _useState12[1];
+
+  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState14 = _slicedToArray(_useState13, 2),
+      changeNumber = _useState14[0],
+      setChangeNumber = _useState14[1];
+
+  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState16 = _slicedToArray(_useState15, 2),
+      midchangeCourt = _useState16[0],
+      setMidChangeCourt = _useState16[1];
+
+  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(""),
+      _useState18 = _slicedToArray(_useState17, 2),
+      midchangeNumber = _useState18[0],
+      setMidChangeNumber = _useState18[1];
+
+  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(),
+      _useState20 = _slicedToArray(_useState19, 2),
+      teamId = _useState20[0],
+      setTeamId = _useState20[1];
+
+  console.log(team);
+
   var handleDelete = function handleDelete() {
     axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/del', {
       id: id
+    });
+  }; // 予選リーグ用
+
+
+  var handleChangeCourt = function handleChangeCourt() {
+    axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/changecourt', {
+      id: teamId,
+      court: changeCourt
+    });
+  };
+
+  var handleChangeNumber = function handleChangeNumber() {
+    axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/changenumber', {
+      id: teamId,
+      number: changeNumber
+    });
+  }; // 中間リーグ用
+
+
+  var handleMidChangeCourt = function handleMidChangeCourt() {
+    axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/changemidcourt', {
+      id: teamId,
+      midcourt: midchangeCourt
+    });
+    console.log(teamId);
+    console.log(midchangeCourt);
+  };
+
+  var handleMidChangeNumber = function handleMidChangeNumber() {
+    axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/changemidnumber', {
+      id: teamId,
+      midnumber: midchangeNumber
     });
   };
 
@@ -2523,176 +6178,204 @@ var Top = function Top() {
     };
   }();
 
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.Fragment, {
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.Fragment, {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
       className: "Index",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
         className: "IndexContainer",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
           className: "IndexContent__header",
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h1", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("h1", {
             children: "ResultSheet"
           })
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
           className: "IndexTable",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
             className: "IndexTable__container",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
               className: "IndexTable__head",
-              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+              children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "id",
                 children: "No."
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "name",
                 children: "\u30C1\u30FC\u30E0\u540D"
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 className: "point",
-                children: ["\u4E88\u9078", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), "\u52DD\u3061\u70B9"]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                children: ["\u4E88\u9078", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), "\u52DD\u3061\u70B9"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 className: "score",
-                children: ["\u4E88\u9078", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), "\u5F97\u5931\u70B9"]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                children: ["\u4E88\u9078", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), "\u5F97\u5931\u70B9"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 className: "court",
-                children: ["\u4E88\u9078", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), "\u30B3\u30FC\u30C8"]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                children: ["\u4E88\u9078", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), "\u30B3\u30FC\u30C8"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 className: "point",
-                children: ["\u4E2D\u9593", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), "\u52DD\u3061\u70B9"]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                children: ["\u4E2D\u9593", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), "\u52DD\u3061\u70B9"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 className: "score",
-                children: ["\u4E2D\u9593", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), "\u5F97\u5931\u70B9"]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                children: ["\u4E2D\u9593", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), "\u5F97\u5931\u70B9"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 className: "court",
-                children: ["\u4E2D\u9593", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), "\u30B3\u30FC\u30C8"]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                children: ["\u4E2D\u9593", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), "\u30B3\u30FC\u30C8"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 className: "sum",
-                children: ["\u7DCF\u5408", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), "\u52DD\u3061\u70B9"]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                children: ["\u7DCF\u5408", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), "\u52DD\u3061\u70B9"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                 className: "sum",
-                children: ["\u7DCF\u5408", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("br", {}), "\u5F97\u5931\u70B9"]
-              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                children: ["\u7DCF\u5408", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("br", {}), "\u5F97\u5931\u70B9"]
+              }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                 className: "rank"
               })]
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("ul", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("ul", {
             className: "IndexTable__body",
             children: team.map(function (team) {
-              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("li", {
-                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+              return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("li", {
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                   className: "ItemData",
-                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                  children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                     className: "FlexLeft",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                       className: "id",
                       children: team.id
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                       className: "name",
                       children: team.name
                     })]
-                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
+                  }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
                     className: "FlexRight",
-                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                       className: "point",
                       children: team.pre_point
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                       className: "score",
                       children: team.pre_score
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                       className: "change",
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("form", {
-                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("form", {
+                        onClick: handleChangeCourt,
+                        method: "post",
+                        action: "/api/changecourt",
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
                           className: "court",
                           defaultValue: team.court,
                           name: "itemCourt",
+                          onChange: function onChange(e) {
+                            setTeamId(team.id);
+                            setChangeCourt(e.target.value);
+                          },
                           children: [court.map(function (court) {
-                            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                               menuitem: court.court,
                               name: court.id,
                               value: court.court,
                               children: court.court
                             }, court.id);
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                             hidden: team.court,
                             children: team.court
                           })]
                         })
                       })
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                       className: "change",
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("form", {
-                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("form", {
+                        onClick: handleChangeNumber,
+                        method: "post",
+                        action: "/api/changenumber",
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
                           className: "number",
                           defaultValue: team.number,
                           name: "itemNumber",
+                          onChange: function onChange(e) {
+                            setTeamId(team.id);
+                            setChangeNumber(e.target.value);
+                          },
                           children: [number.map(function (number) {
-                            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                               menuitem: number.number,
                               name: number.id,
                               value: number.number,
                               children: number.number
                             }, number.id);
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                             hidden: team.number,
                             children: team.number
                           })]
                         })
                       })
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                       className: "point",
                       children: team.mid_point
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                       className: "score",
                       children: team.mid_score
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                       className: "change",
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("form", {
-                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("form", {
+                        onClick: handleMidChangeCourt,
+                        method: "post",
+                        action: "/api/midchangecourt",
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
                           className: "court",
                           defaultValue: team.mid_court,
                           name: "itemCourt",
+                          onChange: function onChange(e) {
+                            setTeamId(team.id);
+                            setMidChangeCourt(e.target.value);
+                          },
                           children: [court.map(function (court) {
-                            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                               menuitem: court.court,
                               name: court.id,
                               value: court.court,
                               children: court.court
                             }, court.id);
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                             hidden: team.mid_court,
                             children: team.mid_court
                           })]
                         })
                       })
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                       className: "change",
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("form", {
-                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("select", {
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("form", {
+                        onClick: handleMidChangeNumber,
+                        method: "post",
+                        action: "/api/midchangenumber",
+                        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("select", {
                           className: "number",
                           defaultValue: team.mid_number,
                           name: "itemNumber",
+                          onChange: function onChange(e) {
+                            setTeamId(team.id);
+                            setMidChangeNumber(e.target.value);
+                          },
                           children: [number.map(function (number) {
-                            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                            return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                               menuitem: number.number,
                               name: number.id,
                               value: number.number,
                               children: number.number
                             }, number.id);
-                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("option", {
+                          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("option", {
                             hidden: team.mid_number,
                             children: team.mid_number
                           })]
                         })
                       })
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                       className: "point",
                       children: team.sum_point
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                       className: "score",
                       children: team.sum_score
-                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("form", {
+                    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("form", {
                       action: "/api/del",
                       method: "POST",
                       onSubmit: handleDelete,
-                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("input", {
+                      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("input", {
                         type: "submit",
                         className: "edit",
                         value: "\u524A\u9664",
@@ -2706,7 +6389,7 @@ var Top = function Top() {
                 })
               }, team.id);
             })
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Form__WEBPACK_IMPORTED_MODULE_3__["default"], {})]
         })]
       })
     })
@@ -40684,7 +44367,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	var installedModules = {};
 /******/
 /******/ 	// The require function
-/******/ 	function __nested_webpack_require_663__(moduleId) {
+/******/ 	function __nested_webpack_require_678__(moduleId) {
 /******/
 /******/ 		// Check if module is in cache
 /******/ 		if(installedModules[moduleId]) {
@@ -40698,7 +44381,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 		};
 /******/
 /******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __nested_webpack_require_663__);
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __nested_webpack_require_678__);
 /******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.l = true;
@@ -40709,14 +44392,14 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__nested_webpack_require_663__.m = modules;
+/******/ 	__nested_webpack_require_678__.m = modules;
 /******/
 /******/ 	// expose the module cache
-/******/ 	__nested_webpack_require_663__.c = installedModules;
+/******/ 	__nested_webpack_require_678__.c = installedModules;
 /******/
 /******/ 	// define getter function for harmony exports
-/******/ 	__nested_webpack_require_663__.d = function(exports, name, getter) {
-/******/ 		if(!__nested_webpack_require_663__.o(exports, name)) {
+/******/ 	__nested_webpack_require_678__.d = function(exports, name, getter) {
+/******/ 		if(!__nested_webpack_require_678__.o(exports, name)) {
 /******/ 			Object.defineProperty(exports, name, {
 /******/ 				configurable: false,
 /******/ 				enumerable: true,
@@ -40726,27 +44409,27 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	};
 /******/
 /******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__nested_webpack_require_663__.n = function(module) {
+/******/ 	__nested_webpack_require_678__.n = function(module) {
 /******/ 		var getter = module && module.__esModule ?
 /******/ 			function getDefault() { return module['default']; } :
 /******/ 			function getModuleExports() { return module; };
-/******/ 		__nested_webpack_require_663__.d(getter, 'a', getter);
+/******/ 		__nested_webpack_require_678__.d(getter, 'a', getter);
 /******/ 		return getter;
 /******/ 	};
 /******/
 /******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__nested_webpack_require_663__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/ 	__nested_webpack_require_678__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__nested_webpack_require_663__.p = "";
+/******/ 	__nested_webpack_require_678__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __nested_webpack_require_663__(__nested_webpack_require_663__.s = 0);
+/******/ 	return __nested_webpack_require_678__(__nested_webpack_require_678__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __nested_webpack_require_2940__) {
+/***/ (function(module, exports, __nested_webpack_require_3017__) {
 
 "use strict";
 
@@ -40755,7 +44438,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _anchorLink = __nested_webpack_require_2940__(1);
+var _anchorLink = __nested_webpack_require_3017__(1);
 
 var _anchorLink2 = _interopRequireDefault(_anchorLink);
 
@@ -40765,7 +44448,7 @@ exports.default = _anchorLink2.default;
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __nested_webpack_require_3335__) {
+/***/ (function(module, exports, __nested_webpack_require_3431__) {
 
 "use strict";
 
@@ -40778,7 +44461,7 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __nested_webpack_require_3335__(2);
+var _react = __nested_webpack_require_3431__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -40807,7 +44490,7 @@ var AnchorLink = function (_Component) {
   _createClass(AnchorLink, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      __nested_webpack_require_3335__(3).polyfill();
+      __nested_webpack_require_3431__(3).polyfill();
     }
   }, {
     key: 'smoothScroll',

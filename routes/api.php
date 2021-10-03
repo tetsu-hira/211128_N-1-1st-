@@ -22,8 +22,14 @@ use Illuminate\Support\Facades\Route;
 Route::group(['middleware' => 'api'], function(){
   Route::get('get', 'PostController@addTeam');
   Route::post('add', 'PostController@addTeam');
-  Route::get('get', 'PostController@delTeam');
+  Route::get('del', 'PostController@delTeam');
   Route::post('del', 'PostController@delTeam');
+  // Route::get('changecourt', 'PostController@changecourt');
+  Route::post('changecourt', 'PostController@changecourt');
+  Route::post('changenumber', 'PostController@changenumber');
+  Route::post('changemidcourt', 'PostController@changemidcourt');
+  Route::post('changemidnumber', 'PostController@changemidnumber');
+  Route::post('count', 'PostController@count');
 });
 
 Route::get('/post',function (Request $request) {
@@ -37,5 +43,9 @@ Route::get('/court',function (Request $request) {
 Route::get('/number',function (Request $request) {
   $numbers = App\Models\number::all();
   return response()->json(['numbers'=> $numbers]);
+});
+Route::get('/game',function (Request $request) {
+  $games = App\Models\game::all();
+  return response()->json(['games'=> $games]);
 });
 

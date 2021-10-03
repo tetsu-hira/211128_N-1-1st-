@@ -4,7 +4,7 @@
   // border-bottom: 1px solid #f0f4f9;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   position: fixed;
   box-shadow: inset 0px 0px 0 rgba(255,255,255,0.3), 2px 2px 4px rgba(0, 0, 0, 0.3);
   z-index: 100;
@@ -32,6 +32,7 @@
   .JumpList {
     display: flex;
     line-height: 56px;
+    margin-left: 240px;
     &__item {
       height: 56px;
       width: 96px;
@@ -55,6 +56,7 @@
           // border-bottom: 1px solid #d0e0ee;
           border-left: 1px solid #87a2ba;
           transition: 0.1s;
+          text-decoration: none;
         }
       }
     }

@@ -10058,7 +10058,6 @@ input {
   background-color: #b7cadc;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   position: fixed;
   box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.3);
   z-index: 100;
@@ -10085,6 +10084,7 @@ input {
 .Header .JumpList {
   display: flex;
   line-height: 56px;
+  margin-left: 240px;
 }
 .Header .JumpList__item {
   height: 56px;
@@ -10110,6 +10110,7 @@ input {
   border-right: 2px solid #d0e0ee;
   border-left: 1px solid #87a2ba;
   transition: 0.1s;
+  text-decoration: none;
 }
 
 .header-button {
@@ -10487,7 +10488,7 @@ input {
 }
 .PreContainer {
   width: 90%;
-  width: 1040px;
+  width: 1280px;
   margin: 0 auto 120px 80px;
 }
 .PreContainer section {
@@ -10500,43 +10501,45 @@ input {
   border: 1px solid #b7cadc;
 }
 .PreContainer .PreMain .Table tbody td {
-  border: 1px solid #fff;
+  border: 1px solid #b7cadc;
 }
 .PreContainer .PreMain .Table tbody th {
-  border: 1px solid #fff;
+  border: 1px solid #b7cadc;
 }
 .PreContainer .PreMain .TableTitle {
   background-color: #b7cadc;
   color: #6c7686;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.65);
   font-size: 14px;
+  text-align: center;
 }
 .PreContainer .PreMain .TableTitle__point {
-  box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
 }
 .PreContainer .PreMain .TableTitle__number {
-  width: 80px;
-  box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.3);
+  width: 120px;
+  box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
 }
 .PreContainer .PreMain .TableTitle__team {
-  width: 320px;
-  box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
 }
 .PreContainer .PreMain .TableTitle__referee {
   width: 240px;
-  box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
 }
 .PreContainer .PreMain .TableContent {
   color: #6c7686;
-  background-color: #fff;
+  background-color: #f5f5f5;
   font-size: 16px;
 }
 .PreContainer .PreMain .TableContent__number {
   width: 80px;
   box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
+  text-align: center;
 }
 .PreContainer .PreMain .TableContent__teamA {
-  width: 320px;
+  width: 400px;
   font-size: 24px;
   text-align: center;
   font-weight: bold;
@@ -10544,6 +10547,7 @@ input {
 }
 .PreContainer .PreMain .TableContent__point {
   box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
+  width: 120px;
 }
 .PreContainer .PreMain .TableContent__flex {
   width: 400px;
@@ -10585,7 +10589,7 @@ input {
   margin: auto;
 }
 .PreContainer .PreMain .TableContent__teamB {
-  width: 320px;
+  width: 400px;
   font-size: 24px;
   text-align: center;
   font-weight: bold;
