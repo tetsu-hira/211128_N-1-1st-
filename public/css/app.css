@@ -10053,6 +10053,21 @@ input {
   display: block;
 }
 
+.updateButton {
+  float: right;
+  position: relative;
+  top: -2.2em;
+  right: 67em;
+  color: #6c7686;
+  border: 1px solid #6c7686;
+  box-shadow: 1px 2px 7px 0 rgba(0, 0, 0, 0.2);
+}
+.updateButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+  border-bottom: none;
+}
+
 .Header {
   height: 56px;
   background-color: #b7cadc;

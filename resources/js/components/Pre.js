@@ -88,7 +88,75 @@ const Pre = () => {
   const [D3, setD3] = useState([]);
   const [D4, setD4] = useState([]);
 
-  
+  const handleChangeCount = () => {
+    axios.post('/api/changecount', {
+      countA1: countA1,
+      countA2: countA2,
+      countA3: countA3,
+      countA4: countA4,
+      countA5: countA5,
+      countA6: countA6,
+      countA7: countA7,
+      countA8: countA8,
+      countA9: countA9,
+      countA10: countA10,
+      countA11: countA11,
+      countA12: countA12,
+      countA13: countA13,
+      countA14: countA14,
+      countA15: countA15,
+      countA16: countA16,
+      countB1: countB1,
+      countB2: countB2,
+      countB3: countB3,
+      countB4: countB4,
+      countB5: countB5,
+      countB6: countB6,
+      countB7: countB7,
+      countB8: countB8,
+      countB9: countB9,
+      countB10: countB10,
+      countB11: countB11,
+      countB12: countB12,
+      countB13: countB13,
+      countB14: countB14,
+      countB15: countB15,
+      countB16: countB16,
+      countC1: countC1,
+      countC2: countC2,
+      countC3: countC3,
+      countC4: countC4,
+      countC5: countC5,
+      countC6: countC6,
+      countC7: countC7,
+      countC8: countC8,
+      countC9: countC9,
+      countC10: countC10,
+      countC11: countC11,
+      countC12: countC12,
+      countC13: countC13,
+      countC14: countC14,
+      countC15: countC15,
+      countC16: countC16,
+      countD1: countD1,
+      countD2: countD2,
+      countD3: countD3,
+      countD4: countD4,
+      countD5: countD5,
+      countD6: countD6,
+      countD7: countD7,
+      countD8: countD8,
+      countD9: countD9,
+      countD10: countD10,
+      countD11: countD11,
+      countD12: countD12,
+      countD13: countD13,
+      countD14: countD14,
+      countD15: countD15,
+      countD16: countD16
+    });
+    console.log(countA1);
+  };
 
   useEffect(() => {
     getUsers()
@@ -226,8 +294,6 @@ const Pre = () => {
     setCourt(response.data.courts)
   }
 
-  
-
   return (
     <>
       <section id="courtA" className="JumpPoint"></section>
@@ -235,6 +301,7 @@ const Pre = () => {
         <div className="PreContainer">
           <div className="PreMain">
             <h2>予選リーグAコート</h2>
+            <button className="updateButton" onClick={handleChangeCount}>更新</button>
             <div className="Table">
               <table border="1">
                 <thead>
@@ -426,6 +493,7 @@ const Pre = () => {
           </div>
           <div className="PreMain">
             <h2>予選リーグBコート</h2>
+            <button className="updateButton" onClick={handleChangeCount}>更新</button>
             <div className="Table">
               <table border="1">
                 <thead>
@@ -617,6 +685,7 @@ const Pre = () => {
           </div>
           <div className="PreMain">
             <h2>予選リーグCコート</h2>
+            <button className="updateButton" onClick={handleChangeCount}>更新</button>
             <div className="Table">
               <table border="1">
                 <thead>
@@ -808,6 +877,7 @@ const Pre = () => {
           </div>
           <div className="PreMain">
             <h2>予選リーグDコート</h2>
+            <button className="updateButton" onClick={handleChangeCount}>更新</button>
             <div className="Table">
               <table border="1">
                 <thead>
