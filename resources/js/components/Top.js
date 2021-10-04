@@ -1,7 +1,8 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import Form from "./Form";
+import Sort from "./Sort";
 
 
 const Top = () => {
@@ -15,6 +16,8 @@ const Top = () => {
   const [midchangeCourt, setMidChangeCourt] = useState("");
   const [midchangeNumber, setMidChangeNumber] = useState("");
   const [teamId, setTeamId] = useState();
+  const [keys, setKeys] = useState([]);
+  const [sort, setSort] =useState({});
   
   console.log(team);
   const handleDelete = () => {
@@ -50,13 +53,56 @@ const Top = () => {
       midnumber: midchangeNumber
     });
   };
+  // ソート機能
+  const handleSort = (key) => {
+    if (sort.key === key) {
+      setSort({ ...sort, order: -sort.order });
+    } else {
+      setSort({
+        key: key,
+        order: 1
+      })
+    }
+  };
+  let sortedTeams = useMemo(() => {
+    let _sortedTeams = team;
+    if (sort.key) {
+      _sortedTeams = _sortedTeams.sort((a, b) => {
+        a = a[sort.key];
+        b = b[sort.key];
+
+        if(a === b) {
+          return 0;
+        }
+        if(a > b) {
+          return 1 * sort.order;
+        }
+        if(a < b) {
+          return -1 * sort.order;
+        }
+      });
+    }
+    return _sortedTeams;
+  }, [sort]);
+
+  // useState(() => {
+  //   console.log("ソート");
+
+  //   axios.get('/api/post')
+  //     .then((res) => {
+  //       setKeys(Object.keys(res.data[0]));
+  //       console.log(Object.keys(res.data[0]));
+  //     });
+  // },[]);
+
 
   useEffect(() => {
     getUsers()
   },[])
   const getUsers = async () => {
     const response = await axios.get('/api/post');
-    setTeam(response.data.posts)
+    setTeam(response.data.posts);
+    setKeys(Object.keys(response.data.posts[0]));
   }
 
   useEffect(() => {
@@ -96,6 +142,80 @@ const Top = () => {
                 <div className="sum">総合<br />勝ち点</div>
                 <div className="sum">総合<br />得失点</div>
                 <div className="rank"></div>
+              </div>
+              <div className="IndexButton>">
+                <Sort
+                  key={keys[0]}
+                  button={keys[0]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[1]}
+                  button={keys[1]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[4]}
+                  button={keys[4]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[5]}
+                  button={keys[5]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[2]}
+                  button={keys[2]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[3]}
+                  button={keys[3]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[6]}
+                  button={keys[6]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[7]}
+                  button={keys[7]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[10]}
+                  button={keys[10]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[11]}
+                  button={keys[11]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[8]}
+                  button={keys[8]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[9]}
+                  button={keys[9]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
               </div>
             </div>
             <ul className="IndexTable__body">

@@ -99,10 +99,9 @@ class PostController extends Controller
     // チーム削除機能
     public function delTeam(Request $request)
     {
-      $del = Post::findOrFail($request->id);
-      $del->delete();
-      $del->timestamps = false;
-      // $add->save();
+      $id = $request->input('id');
+      $del = new Post;
+      $del->where('id', $id)->delete();
       return redirect('/');
     }
     // 予選リーグ用
