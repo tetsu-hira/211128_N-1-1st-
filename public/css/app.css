@@ -10077,8 +10077,10 @@ input {
   box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
+.Header .nav {
+  margin-left: 80px;
+}
 .HeaderButton {
-  margin-left: 16px;
   font-weight: 600;
   font-size: 16px;
   line-height: 56px;
@@ -10099,7 +10101,7 @@ input {
 .Header .JumpList {
   display: flex;
   line-height: 56px;
-  margin-left: 240px;
+  margin-left: 295px;
 }
 .Header .JumpList__item {
   height: 56px;
@@ -10136,7 +10138,7 @@ input {
   color: #6c7686;
   display: inline-block;
   border: 1px solid #b7cadc;
-  background-color: #FFF;
+  background-color: #fff;
   padding: 0 8px;
 }
 .header-button:hover {
