@@ -10072,9 +10072,10 @@ input {
   height: 56px;
   background-color: #b7cadc;
   width: 100%;
+  min-width: 1280px;
   display: flex;
   position: fixed;
-  box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 3px 4px -1px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
 .Header .nav {
@@ -10120,7 +10121,7 @@ input {
   width: 100%;
   height: 100%;
   color: #6c7686;
-  font-weight: 600;
+  font-weight: 700;
 }
 .Header .JumpList__item a:hover {
   border-top: 2px solid #9cb4ca;
@@ -10225,6 +10226,7 @@ input {
   margin: auto 8px;
   margin-left: 0;
   width: 222px;
+  box-shadow: 1px 1px 3px -1px rgba(0, 0, 0, 0.3);
 }
 .Form button {
   background: #dcc9b7;
@@ -10307,16 +10309,16 @@ input {
 }
 .IndexContainer .IndexTable__container {
   background-color: #b7cadc;
-  border-bottom: 6px solid #dfe7f1;
+  margin-bottom: 11px;
   border-radius: 10px 10px 0 0;
+  box-shadow: 1px 1px 3px -1px rgba(0, 0, 0, 0.3);
 }
 .IndexContainer .IndexTable__head {
   display: flex;
   background-color: #b7cadc;
   height: 42px;
-  font-size: 16px;
   line-height: 17px;
-  color: #ffffff;
+  color: #fff;
   font-size: 14px;
   margin-bottom: 2px;
 }
@@ -10356,11 +10358,11 @@ input {
   margin: auto 0 0 0;
 }
 .IndexContainer .IndexTable__body {
-  background-color: #ffffff;
+  background-color: #dfe7f1;
 }
 .IndexContainer .IndexTable__body li {
   height: 40px;
-  border-bottom: 4px solid #dfe7f1;
+  margin: 4px 0;
   border-top: none;
   display: flex;
   align-items: center;
@@ -10368,6 +10370,8 @@ input {
 .IndexContainer .IndexTable__body li .ItemData {
   display: flex;
   width: 100%;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px -1px rgba(0, 0, 0, 0.3);
 }
 .IndexContainer .IndexTable__body li .ItemData .FlexLeft {
   display: flex;
@@ -10534,7 +10538,7 @@ input {
   box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
 }
 .PreContainer .PreMain .TableTitle__number {
-  width: 120px;
+  width: 80px;
   box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
 }
 .PreContainer .PreMain .TableTitle__team {
@@ -10547,7 +10551,7 @@ input {
 }
 .PreContainer .PreMain .TableContent {
   color: #6c7686;
-  background-color: #f5f5f5;
+  background-color: #fff;
   font-size: 16px;
 }
 .PreContainer .PreMain .TableContent__number {
@@ -10580,10 +10584,10 @@ input {
   width: 28px;
   height: 20px;
   text-align: center;
-  color: #909da8;
+  color: #6c7686;
   border: none;
   margin: auto 2px;
-  box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 1px 5px 0 rgba(0, 0, 0, 0.3);
   font-weight: bold;
   transition: 0.4s;
   cursor: pointer;
