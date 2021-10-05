@@ -291,7 +291,8 @@ class PostController extends Controller
           $a1point_B = 2;
         }
       } else {
-        echo "エラー";
+        $a1point_A = 0;
+        $a1point_B = 0;
       }
       $a2point_A = 0;
       $a2point_B = 0;
@@ -313,7 +314,8 @@ class PostController extends Controller
           $a2point_B = 2;
         }
       } else {
-        echo "エラー";
+        $a2point_A = 0;
+        $a2point_B = 0;
       }
       $a3point_A = 0;
       $a3point_B = 0;
@@ -335,7 +337,8 @@ class PostController extends Controller
           $a3point_B = 2;
         }
       } else {
-        echo "エラー";
+        $a3point_A = 0;
+        $a3point_B = 0;
       }
       $a4point_A = 0;
       $a4point_B = 0;
@@ -357,7 +360,8 @@ class PostController extends Controller
           $a4point_B = 2;
         }
       } else {
-        echo "エラー";
+        $a4point_A = 0;
+        $a4point_B = 0;
       }
       $totalpoint = new Post;
       $totalpoint->timestamps =false;
@@ -385,7 +389,8 @@ class PostController extends Controller
           $b1point_B = 2;
         }
       } else {
-        echo "エラー";
+        $b1point_A = 0;
+        $b1point_B = 0;
       }
       $b2point_A = 0;
       $b2point_B = 0;
@@ -407,7 +412,8 @@ class PostController extends Controller
           $b2point_B = 2;
         }
       } else {
-        echo "エラー";
+        $b2point_A = 0;
+        $b2point_B = 0;
       }
       $b3point_A = 0;
       $b3point_B = 0;
@@ -429,7 +435,8 @@ class PostController extends Controller
           $b3point_B = 2;
         }
       } else {
-        echo "エラー";
+        $b3point_A = 0;
+        $b3point_B = 0;
       }
       $b4point_A = 0;
       $b4point_B = 0;
@@ -451,7 +458,8 @@ class PostController extends Controller
           $b4point_B = 2;
         }
       } else {
-        echo "エラー";
+        $b4point_A = 0;
+        $b4point_B = 0;
       }
       $totalpoint = new Post;
       $totalpoint->timestamps =false;
@@ -479,7 +487,8 @@ class PostController extends Controller
           $c1point_B = 2;
         }
       } else {
-        echo "エラー";
+        $c1point_A = 0;
+        $c1point_B = 0;
       }
       $c2point_A = 0;
       $c2point_B = 0;
@@ -501,7 +510,8 @@ class PostController extends Controller
           $c2point_B = 2;
         }
       } else {
-        echo "エラー";
+        $c2point_A = 0;
+        $c2point_B = 0;
       }
       $c3point_A = 0;
       $c3point_B = 0;
@@ -523,7 +533,8 @@ class PostController extends Controller
           $c3point_B = 2;
         }
       } else {
-        echo "エラー";
+        $c3point_A = 0;
+        $c3point_B = 0;
       }
       $c4point_A = 0;
       $c4point_B = 0;
@@ -545,7 +556,8 @@ class PostController extends Controller
           $c4point_B = 2;
         }
       } else {
-        echo "エラー";
+        $c4point_A = 0;
+        $c4point_B = 0;
       }
       $totalpoint = new Post;
       $totalpoint->timestamps =false;
@@ -573,7 +585,8 @@ class PostController extends Controller
           $d1point_B = 2;
         }
       } else {
-        echo "エラー";
+        $d1point_A = 0;
+        $d1point_B = 0;
       }
       $d2point_A = 0;
       $d2point_B = 0;
@@ -595,7 +608,8 @@ class PostController extends Controller
           $d2point_B = 2;
         }
       } else {
-        echo "エラー";
+        $d2point_A = 0;
+        $d2point_B = 0;
       }
       $d3point_A = 0;
       $d3point_B = 0;
@@ -617,7 +631,8 @@ class PostController extends Controller
           $d3point_B = 2;
         }
       } else {
-        echo "エラー";
+        $d3point_A = 0;
+        $d3point_B = 0;
       }
       $d4point_A = 0;
       $d4point_B = 0;
@@ -639,7 +654,8 @@ class PostController extends Controller
           $d4point_B = 2;
         }
       } else {
-        echo "エラー";
+        $d4point_A = 0;
+        $d4point_B = 0;
       }
       $totalpoint = new Post;
       $totalpoint->timestamps =false;
@@ -898,7 +914,8 @@ class PostController extends Controller
           $a1point_B = 2;
         }
       } else {
-        echo "エラー";
+        $a1point_A = 0;
+        $a1point_B = 0;
       }
       $a2point_A = 0;
       $a2point_B = 0;
@@ -920,7 +937,8 @@ class PostController extends Controller
           $a2point_B = 2;
         }
       } else {
-        echo "エラー";
+        $a2point_A = 0;
+        $a2point_B = 0;
       }
       $a3point_A = 0;
       $a3point_B = 0;
@@ -942,7 +960,8 @@ class PostController extends Controller
           $a3point_B = 2;
         }
       } else {
-        echo "エラー";
+        $a3point_A = 0;
+        $a3point_B = 0;
       }
       $a4point_A = 0;
       $a4point_B = 0;
@@ -964,7 +983,8 @@ class PostController extends Controller
           $a4point_B = 2;
         }
       } else {
-        echo "エラー";
+        $a4point_A = 0;
+        $a4point_B = 0;
       }
       $totalpoint = new Post;
       $totalpoint->timestamps =false;
@@ -992,7 +1012,8 @@ class PostController extends Controller
           $b1point_B = 2;
         }
       } else {
-        echo "エラー";
+        $b1point_A = 0;
+        $b1point_B = 0;
       }
       $b2point_A = 0;
       $b2point_B = 0;
@@ -1014,7 +1035,8 @@ class PostController extends Controller
           $b2point_B = 2;
         }
       } else {
-        echo "エラー";
+        $b2point_A = 0;
+        $b2point_B = 0;
       }
       $b3point_A = 0;
       $b3point_B = 0;
@@ -1036,7 +1058,8 @@ class PostController extends Controller
           $b3point_B = 2;
         }
       } else {
-        echo "エラー";
+        $b3point_A = 0;
+        $b3point_B = 0;
       }
       $b4point_A = 0;
       $b4point_B = 0;
@@ -1058,7 +1081,8 @@ class PostController extends Controller
           $b4point_B = 2;
         }
       } else {
-        echo "エラー";
+        $b4point_A = 0;
+        $b4point_B = 0;
       }
       $totalpoint = new Post;
       $totalpoint->timestamps =false;
@@ -1086,7 +1110,8 @@ class PostController extends Controller
           $c1point_B = 2;
         }
       } else {
-        echo "エラー";
+        $c1point_A = 0;
+        $c1point_B = 0;
       }
       $c2point_A = 0;
       $c2point_B = 0;
@@ -1108,7 +1133,8 @@ class PostController extends Controller
           $c2point_B = 2;
         }
       } else {
-        echo "エラー";
+        $c2point_A = 0;
+        $c2point_B = 0;
       }
       $c3point_A = 0;
       $c3point_B = 0;
@@ -1130,7 +1156,8 @@ class PostController extends Controller
           $c3point_B = 2;
         }
       } else {
-        echo "エラー";
+        $c3point_A = 0;
+        $c3point_B = 0;
       }
       $c4point_A = 0;
       $c4point_B = 0;
@@ -1152,7 +1179,8 @@ class PostController extends Controller
           $c4point_B = 2;
         }
       } else {
-        echo "エラー";
+        $c4point_A = 0;
+        $c4point_B = 0;
       }
       $totalpoint = new Post;
       $totalpoint->timestamps =false;
@@ -1180,7 +1208,8 @@ class PostController extends Controller
           $d1point_B = 2;
         }
       } else {
-        echo "エラー";
+        $d1point_A = 0;
+        $d1point_B = 0;
       }
       $d2point_A = 0;
       $d2point_B = 0;
@@ -1202,7 +1231,8 @@ class PostController extends Controller
           $d2point_B = 2;
         }
       } else {
-        echo "エラー";
+        $d2point_A = 0;
+        $d2point_B = 0;
       }
       $d3point_A = 0;
       $d3point_B = 0;
@@ -1224,7 +1254,8 @@ class PostController extends Controller
           $d3point_B = 2;
         }
       } else {
-        echo "エラー";
+        $d3point_A = 0;
+        $d3point_B = 0;
       }
       $d4point_A = 0;
       $d4point_B = 0;
@@ -1246,7 +1277,8 @@ class PostController extends Controller
           $d4point_B = 2;
         }
       } else {
-        echo "エラー";
+        $d4point_A = 0;
+        $d4point_B = 0;
       }
       $totalpoint = new Post;
       $totalpoint->timestamps =false;
