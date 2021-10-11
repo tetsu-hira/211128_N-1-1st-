@@ -34,6 +34,12 @@ const NavBar = () => {
           <li className="JumpList__item">
             <AnchorLink href="#courtD">Dコート</AnchorLink>
           </li>
+          <li className="JumpList__item">
+            <AnchorLink href="#courtE">Eコート</AnchorLink>
+          </li>
+          <li className="JumpList__item">
+            <AnchorLink href="#courtF">Fコート</AnchorLink>
+          </li>
         </ul>
       </div>
     </>

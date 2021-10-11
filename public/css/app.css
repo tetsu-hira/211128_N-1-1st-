@@ -10072,7 +10072,7 @@ input {
   height: 56px;
   background-color: #b7cadc;
   width: 100%;
-  min-width: 1280px;
+  min-width: 1600px;
   display: flex;
   position: fixed;
   box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 3px 4px -1px rgba(0, 0, 0, 0.3);

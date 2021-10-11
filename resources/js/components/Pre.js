@@ -71,6 +71,38 @@ const Pre = () => {
   const [countD14, setCountD14] = useState();
   const [countD15, setCountD15] = useState();
   const [countD16, setCountD16] = useState();
+  const [countE1, setCountE1] = useState();
+  const [countE2, setCountE2] = useState();
+  const [countE3, setCountE3] = useState();
+  const [countE4, setCountE4] = useState();
+  const [countE5, setCountE5] = useState();
+  const [countE6, setCountE6] = useState();
+  const [countE7, setCountE7] = useState();
+  const [countE8, setCountE8] = useState();
+  const [countE9, setCountE9] = useState();
+  const [countE10, setCountE10] = useState();
+  const [countE11, setCountE11] = useState();
+  const [countE12, setCountE12] = useState();
+  const [countE13, setCountE13] = useState();
+  const [countE14, setCountE14] = useState();
+  const [countE15, setCountE15] = useState();
+  const [countE16, setCountE16] = useState();
+  const [countF1, setCountF1] = useState();
+  const [countF2, setCountF2] = useState();
+  const [countF3, setCountF3] = useState();
+  const [countF4, setCountF4] = useState();
+  const [countF5, setCountF5] = useState();
+  const [countF6, setCountF6] = useState();
+  const [countF7, setCountF7] = useState();
+  const [countF8, setCountF8] = useState();
+  const [countF9, setCountF9] = useState();
+  const [countF10, setCountF10] = useState();
+  const [countF11, setCountF11] = useState();
+  const [countF12, setCountF12] = useState();
+  const [countF13, setCountF13] = useState();
+  const [countF14, setCountF14] = useState();
+  const [countF15, setCountF15] = useState();
+  const [countF16, setCountF16] = useState();
   const [A1, setA1] = useState([]);
   const [A2, setA2] = useState([]);
   const [A3, setA3] = useState([]);
@@ -87,6 +119,14 @@ const Pre = () => {
   const [D2, setD2] = useState([]);
   const [D3, setD3] = useState([]);
   const [D4, setD4] = useState([]);
+  const [E1, setE1] = useState([]);
+  const [E2, setE2] = useState([]);
+  const [E3, setE3] = useState([]);
+  const [E4, setE4] = useState([]);
+  const [F1, setF1] = useState([]);
+  const [F2, setF2] = useState([]);
+  const [F3, setF3] = useState([]);
+  const [F4, setF4] = useState([]);
 
   const handleChangeCount = () => {
     axios.post('/api/changecount', {
@@ -153,7 +193,39 @@ const Pre = () => {
       countD13: countD13,
       countD14: countD14,
       countD15: countD15,
-      countD16: countD16
+      countD16: countD16,
+      countE1: countE1,
+      countE2: countE2,
+      countE3: countE3,
+      countE4: countE4,
+      countE5: countE5,
+      countE6: countE6,
+      countE7: countE7,
+      countE8: countE8,
+      countE9: countE9,
+      countE10: countE10,
+      countE11: countE11,
+      countE12: countE12,
+      countE13: countE13,
+      countE14: countE14,
+      countE15: countE15,
+      countE16: countE16,
+      countF1: countF1,
+      countF2: countF2,
+      countF3: countF3,
+      countF4: countF4,
+      countF5: countF5,
+      countF6: countF6,
+      countF7: countF7,
+      countF8: countF8,
+      countF9: countF9,
+      countF10: countF10,
+      countF11: countF11,
+      countF12: countF12,
+      countF13: countF13,
+      countF14: countF14,
+      countF15: countF15,
+      countF16: countF16
     });
     console.log(countA1);
   };
@@ -211,6 +283,30 @@ const Pre = () => {
     }));
     setD4(response.data.posts.filter((item, index) => {
       return item.court === "D" && item.number === 4;
+    }));
+    setE1(response.data.posts.filter((item, index) => {
+      return item.court === "E" && item.number === 1;
+    }));
+    setE2(response.data.posts.filter((item, index) => {
+      return item.court === "E" && item.number === 2;
+    }));
+    setE3(response.data.posts.filter((item, index) => {
+      return item.court === "E" && item.number === 3;
+    }));
+    setE4(response.data.posts.filter((item, index) => {
+      return item.court === "E" && item.number === 4;
+    }));
+    setF1(response.data.posts.filter((item, index) => {
+      return item.court === "F" && item.number === 1;
+    }));
+    setF2(response.data.posts.filter((item, index) => {
+      return item.court === "F" && item.number === 2;
+    }));
+    setF3(response.data.posts.filter((item, index) => {
+      return item.court === "F" && item.number === 3;
+    }));
+    setF4(response.data.posts.filter((item, index) => {
+      return item.court === "F" && item.number === 4;
     }));
   }
 
@@ -284,6 +380,38 @@ const Pre = () => {
     setCountD14(response.data.games[15].result2);
     setCountD15(response.data.games[15].result3);
     setCountD16(response.data.games[15].result4);
+    setCountE1(response.data.games[16].result1);
+    setCountE2(response.data.games[16].result2);
+    setCountE3(response.data.games[16].result3);
+    setCountE4(response.data.games[16].result4);
+    setCountE5(response.data.games[17].result1);
+    setCountE6(response.data.games[17].result2);
+    setCountE7(response.data.games[17].result3);
+    setCountE8(response.data.games[17].result4);
+    setCountE9(response.data.games[18].result1);
+    setCountE10(response.data.games[18].result2);
+    setCountE11(response.data.games[18].result3);
+    setCountE12(response.data.games[18].result4);
+    setCountE13(response.data.games[19].result1);
+    setCountE14(response.data.games[19].result2);
+    setCountE15(response.data.games[19].result3);
+    setCountE16(response.data.games[19].result4);
+    setCountF1(response.data.games[20].result1);
+    setCountF2(response.data.games[20].result2);
+    setCountF3(response.data.games[20].result3);
+    setCountF4(response.data.games[20].result4);
+    setCountF5(response.data.games[21].result1);
+    setCountF6(response.data.games[21].result2);
+    setCountF7(response.data.games[21].result3);
+    setCountF8(response.data.games[21].result4);
+    setCountF9(response.data.games[22].result1);
+    setCountF10(response.data.games[22].result2);
+    setCountF11(response.data.games[22].result3);
+    setCountF12(response.data.games[22].result4);
+    setCountF13(response.data.games[23].result1);
+    setCountF14(response.data.games[23].result2);
+    setCountF15(response.data.games[23].result3);
+    setCountF16(response.data.games[23].result4);
   }
 
   useEffect(() => {
@@ -1060,6 +1188,390 @@ const Pre = () => {
                     <td className="TableContent__referee">
                       <div>{D3[0] && D3[0].name}</div>
                       <div>{D1[0] && D1[0].name}</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <section id="courtE" className="JumpPoint"></section>
+            </div>
+          </div>
+          <div className="PreMain">
+            <h2>予選リーグEコート</h2>
+            <button className="updateButton" onClick={handleChangeCount}>更新</button>
+            <div className="Table">
+              <table border="1">
+                <thead>
+                  <tr className="TableTitle">
+                    <th className="TableTitle__number">試合</th>
+                    <th className="TableTitle__team">チームA</th>
+                    <th className="TableTitle__point">試合結果</th>
+                    <th className="TableTitle__team">チームB</th>
+                    <th className="TableTitle__referee">審判/補助</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="TableContent">
+                    <th className="TableContent__number">1</th>
+                    <td className="TableContent__teamA">
+                      <p>{E1[0] && E1[0].name}</p>
+                    </td>
+                    <td className="TableContent__point">
+                      <div className="TableContent__flex">
+                        <div className="TableContent__count">
+                          <button className="CountEutton" onClick = {() => {setCountE1(countE1 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE1(countE1 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE1(countE1 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE1(countE1 + 5)}}>+5</button>
+                          <div className="CountPoint">{countE1}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countE2}</div>
+                          <button className="CountEutton" onClick = {() => {setCountE2(countE2 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE2(countE2 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE2(countE2 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE2(countE2 + 5)}}>+5</button>
+                        </div>
+                        <div className="TableContent__count">
+                          <button className="CountEutton" onClick = {() => {setCountE3(countE3 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE3(countE3 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE3(countE3 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE3(countE3 + 5)}}>+5</button>
+                          <div className="CountPoint">{countE3}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countE4}</div>
+                          <button className="CountEutton" onClick = {() => {setCountE4(countE4 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE4(countE4 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE4(countE4 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE4(countE4 + 5)}}>+5</button>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="TableContent__teamB">
+                      <p>{E2[0] && E2[0].name}</p>
+                    </td>
+                    <td className="TableContent__referee">
+                      <div>{E4[0] && E4[0].name}</div>
+                      <div>{E3[0] && E3[0].name}</div>
+                    </td>
+                  </tr>
+                  <tr className="TableContent">
+                    <th className="TableContent__number">2</th>
+                    <td className="TableContent__teamA">
+                      <p>{E3[0] && E3[0].name}</p>
+                    </td>
+                    <td className="TableContent__point">
+                      <div className="TableContent__flex">
+                        <div className="TableContent__count">
+                          <button className="CountEutton" onClick = {() => {setCountE5(countE5 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE5(countE5 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE5(countE5 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE5(countE5 + 5)}}>+5</button>
+                          <div className="CountPoint">{countE5}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countE6}</div>
+                          <button className="CountEutton" onClick = {() => {setCountE6(countE6 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE6(countE6 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE6(countE6 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE6(countE6 + 5)}}>+5</button>
+                        </div>
+                        <div className="TableContent__count">
+                          <button className="CountEutton" onClick = {() => {setCountE7(countE7 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE7(countE7 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE7(countE7 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE7(countE7 + 5)}}>+5</button>
+                          <div className="CountPoint">{countE7}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countE8}</div>
+                          <button className="CountEutton" onClick = {() => {setCountE8(countE8 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE8(countE8 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE8(countE8 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE8(countE8 + 5)}}>+5</button>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="TableContent__teamB">
+                      <p>{E4[0] && E4[0].name}</p>
+                    </td>
+                    <td className="TableContent__referee">
+                      <div>{E1[0] && E1[0].name}</div>
+                      <div>{E2[0] && E2[0].name}</div>
+                    </td>
+                  </tr>
+                  <tr className="TableContent">
+                    <th className="TableContent__number">3</th>
+                    <td className="TableContent__teamA">
+                      <p>{E1[0] && E1[0].name}</p>
+                    </td>
+                    <td className="TableContent__point">
+                      <div className="TableContent__flex">
+                        <div className="TableContent__count">
+                          <button className="CountEutton" onClick = {() => {setCountE9(countE9 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE9(countE9 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE9(countE9 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE9(countE9 + 5)}}>+5</button>
+                          <div className="CountPoint">{countE9}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countE10}</div>
+                          <button className="CountEutton" onClick = {() => {setCountE10(countE10 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE10(countE10 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE10(countE10 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE10(countE10 + 5)}}>+5</button>
+                        </div>
+                        <div className="TableContent__count">
+                          <button className="CountEutton" onClick = {() => {setCountE11(countE11 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE11(countE11 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE11(countE11 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE11(countE11 + 5)}}>+5</button>
+                          <div className="CountPoint">{countE11}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countE12}</div>
+                          <button className="CountEutton" onClick = {() => {setCountE12(countE12 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE12(countE12 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE12(countE12 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE12(countE12 + 5)}}>+5</button>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="TableContent__teamB">
+                      <p>{E3[0] && E3[0].name}</p>
+                    </td>
+                    <td className="TableContent__referee">
+                      <div>{E2[0] && E2[0].name}</div>
+                      <div>{E4[0] && E4[0].name}</div>
+                    </td>
+                  </tr>
+                  <tr className="TableContent">
+                    <th className="TableContent__number">4</th>
+                    <td className="TableContent__teamA">
+                      <p>{E2[0] && E2[0].name}</p>
+                    </td>
+                    <td className="TableContent__point">
+                      <div className="TableContent__flex">
+                        <div className="TableContent__count">
+                          <button className="CountEutton" onClick = {() => {setCountE13(countE13 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE13(countE13 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE13(countE13 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE13(countE13 + 5)}}>+5</button>
+                          <div className="CountPoint">{countE13}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countE14}</div>
+                          <button className="CountEutton" onClick = {() => {setCountE14(countE14 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE14(countE14 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE14(countE14 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE14(countE14 + 5)}}>+5</button>
+                        </div>
+                        <div className="TableContent__count">
+                          <button className="CountEutton" onClick = {() => {setCountE15(countE15 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE15(countE15 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE15(countE15 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE15(countE15 + 5)}}>+5</button>
+                          <div className="CountPoint">{countE15}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countE16}</div>
+                          <button className="CountEutton" onClick = {() => {setCountE16(countE16 * 0)}}>0</button>
+                          <button className="CountEutton" onClick = {() => {setCountE16(countE16 - 1)}}>-1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE16(countE16 + 1)}}>+1</button>
+                          <button className="CountEutton" onClick = {() => {setCountE16(countE16 + 5)}}>+5</button>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="TableContent__teamB">
+                      <p>{E4[0] && E4[0].name}</p>
+                    </td>
+                    <td className="TableContent__referee">
+                      <div>{E3[0] && E3[0].name}</div>
+                      <div>{E1[0] && E1[0].name}</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <section id="courtF" className="JumpPoint"></section>
+            </div>
+          </div>
+          <div className="PreMain">
+            <h2>予選リーグFコート</h2>
+            <button className="updateButton" onClick={handleChangeCount}>更新</button>
+            <div className="Table">
+              <table border="1">
+                <thead>
+                  <tr className="TableTitle">
+                    <th className="TableTitle__number">試合</th>
+                    <th className="TableTitle__team">チームA</th>
+                    <th className="TableTitle__point">試合結果</th>
+                    <th className="TableTitle__team">チームB</th>
+                    <th className="TableTitle__referee">審判/補助</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="TableContent">
+                    <th className="TableContent__number">1</th>
+                    <td className="TableContent__teamA">
+                      <p>{F1[0] && F1[0].name}</p>
+                    </td>
+                    <td className="TableContent__point">
+                      <div className="TableContent__flex">
+                        <div className="TableContent__count">
+                          <button className="CountFutton" onClick = {() => {setCountF1(countF1 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF1(countF1 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF1(countF1 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF1(countF1 + 5)}}>+5</button>
+                          <div className="CountPoint">{countF1}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countF2}</div>
+                          <button className="CountFutton" onClick = {() => {setCountF2(countF2 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF2(countF2 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF2(countF2 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF2(countF2 + 5)}}>+5</button>
+                        </div>
+                        <div className="TableContent__count">
+                          <button className="CountFutton" onClick = {() => {setCountF3(countF3 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF3(countF3 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF3(countF3 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF3(countF3 + 5)}}>+5</button>
+                          <div className="CountPoint">{countF3}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countF4}</div>
+                          <button className="CountFutton" onClick = {() => {setCountF4(countF4 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF4(countF4 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF4(countF4 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF4(countF4 + 5)}}>+5</button>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="TableContent__teamB">
+                      <p>{F2[0] && F2[0].name}</p>
+                    </td>
+                    <td className="TableContent__referee">
+                      <div>{F4[0] && F4[0].name}</div>
+                      <div>{F3[0] && F3[0].name}</div>
+                    </td>
+                  </tr>
+                  <tr className="TableContent">
+                    <th className="TableContent__number">2</th>
+                    <td className="TableContent__teamA">
+                      <p>{F3[0] && F3[0].name}</p>
+                    </td>
+                    <td className="TableContent__point">
+                      <div className="TableContent__flex">
+                        <div className="TableContent__count">
+                          <button className="CountFutton" onClick = {() => {setCountF5(countF5 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF5(countF5 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF5(countF5 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF5(countF5 + 5)}}>+5</button>
+                          <div className="CountPoint">{countF5}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countF6}</div>
+                          <button className="CountFutton" onClick = {() => {setCountF6(countF6 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF6(countF6 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF6(countF6 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF6(countF6 + 5)}}>+5</button>
+                        </div>
+                        <div className="TableContent__count">
+                          <button className="CountFutton" onClick = {() => {setCountF7(countF7 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF7(countF7 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF7(countF7 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF7(countF7 + 5)}}>+5</button>
+                          <div className="CountPoint">{countF7}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countF8}</div>
+                          <button className="CountFutton" onClick = {() => {setCountF8(countF8 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF8(countF8 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF8(countF8 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF8(countF8 + 5)}}>+5</button>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="TableContent__teamB">
+                      <p>{F4[0] && F4[0].name}</p>
+                    </td>
+                    <td className="TableContent__referee">
+                      <div>{F1[0] && F1[0].name}</div>
+                      <div>{F2[0] && F2[0].name}</div>
+                    </td>
+                  </tr>
+                  <tr className="TableContent">
+                    <th className="TableContent__number">3</th>
+                    <td className="TableContent__teamA">
+                      <p>{F1[0] && F1[0].name}</p>
+                    </td>
+                    <td className="TableContent__point">
+                      <div className="TableContent__flex">
+                        <div className="TableContent__count">
+                          <button className="CountFutton" onClick = {() => {setCountF9(countF9 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF9(countF9 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF9(countF9 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF9(countF9 + 5)}}>+5</button>
+                          <div className="CountPoint">{countF9}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countF10}</div>
+                          <button className="CountFutton" onClick = {() => {setCountF10(countF10 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF10(countF10 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF10(countF10 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF10(countF10 + 5)}}>+5</button>
+                        </div>
+                        <div className="TableContent__count">
+                          <button className="CountFutton" onClick = {() => {setCountF11(countF11 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF11(countF11 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF11(countF11 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF11(countF11 + 5)}}>+5</button>
+                          <div className="CountPoint">{countF11}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countF12}</div>
+                          <button className="CountFutton" onClick = {() => {setCountF12(countF12 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF12(countF12 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF12(countF12 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF12(countF12 + 5)}}>+5</button>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="TableContent__teamB">
+                      <p>{F3[0] && F3[0].name}</p>
+                    </td>
+                    <td className="TableContent__referee">
+                      <div>{F2[0] && F2[0].name}</div>
+                      <div>{F4[0] && F4[0].name}</div>
+                    </td>
+                  </tr>
+                  <tr className="TableContent">
+                    <th className="TableContent__number">4</th>
+                    <td className="TableContent__teamA">
+                      <p>{F2[0] && F2[0].name}</p>
+                    </td>
+                    <td className="TableContent__point">
+                      <div className="TableContent__flex">
+                        <div className="TableContent__count">
+                          <button className="CountFutton" onClick = {() => {setCountF13(countF13 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF13(countF13 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF13(countF13 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF13(countF13 + 5)}}>+5</button>
+                          <div className="CountPoint">{countF13}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countF14}</div>
+                          <button className="CountFutton" onClick = {() => {setCountF14(countF14 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF14(countF14 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF14(countF14 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF14(countF14 + 5)}}>+5</button>
+                        </div>
+                        <div className="TableContent__count">
+                          <button className="CountFutton" onClick = {() => {setCountF15(countF15 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF15(countF15 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF15(countF15 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF15(countF15 + 5)}}>+5</button>
+                          <div className="CountPoint">{countF15}</div>
+                          <div className="UnderLine">-</div>
+                          <div className="CountPoint">{countF16}</div>
+                          <button className="CountFutton" onClick = {() => {setCountF16(countF16 * 0)}}>0</button>
+                          <button className="CountFutton" onClick = {() => {setCountF16(countF16 - 1)}}>-1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF16(countF16 + 1)}}>+1</button>
+                          <button className="CountFutton" onClick = {() => {setCountF16(countF16 + 5)}}>+5</button>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="TableContent__teamB">
+                      <p>{F4[0] && F4[0].name}</p>
+                    </td>
+                    <td className="TableContent__referee">
+                      <div>{F3[0] && F3[0].name}</div>
+                      <div>{F1[0] && F1[0].name}</div>
                     </td>
                   </tr>
                 </tbody>
