@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;    // 追記
+use Illuminate\Support\Facades\Hash;  // Hash使うなら追記
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,51 +15,12 @@ class DatabaseSeeder extends Seeder
    */
   public function run()
   {
-    AppPost::create([
-      "name" => "無鉄砲",
-      "pre_point" => 0,
-      "pre_score" => 0,
-      "mid_point" => 0,
-      "mid_score" => 0,
-      "sum_point" => 0,
-      "sum_score" => 0
+    $this->call([
+      CourtTableSeeder::class,
+      FirstTableSeeder::class,
+      NumberTableSeeder::class,
+      SecondTableSeeder::class,
+      ThirdTableSeeder::class,
     ]);
-    AppPost::create([
-      "name" => "HSVC",
-      "pre_point" => 0,
-      "pre_score" => 0,
-      "mid_point" => 0,
-      "mid_score" => 0,
-      "sum_point" => 0,
-      "sum_score" => 0
-    ]);
-    AppPost::create([
-      "name" => "もしピ",
-      "pre_point" => 0,
-      "pre_score" => 0,
-      "mid_point" => 0,
-      "mid_score" => 0,
-      "sum_point" => 0,
-      "sum_score" => 0
-    ]);
-    AppPost::create([
-      "name" => "MAD",
-      "pre_point" => 0,
-      "pre_score" => 0,
-      "mid_point" => 0,
-      "mid_score" => 0,
-      "sum_point" => 0,
-      "sum_score" => 0
-    ]);
-    AppPost::create([
-      "name" => "鬼気",
-      "pre_point" => 0,
-      "pre_score" => 0,
-      "mid_point" => 0,
-      "mid_score" => 0,
-      "sum_point" => 0,
-      "sum_score" => 0
-    ]);
-    $this->call(UsersTableSeeder::class);
   }
 }

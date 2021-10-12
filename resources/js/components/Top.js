@@ -10,11 +10,12 @@ const Top = () => {
   const [court, setCourt] = useState([]);
   const [number, setNumber] = useState([]);
   const [id, setId] = useState();
-  const [teamList, setTeamList] = useState([]);
   const [changeCourt, setChangeCourt] = useState("");
   const [changeNumber, setChangeNumber] = useState("");
   const [midchangeCourt, setMidChangeCourt] = useState("");
   const [midchangeNumber, setMidChangeNumber] = useState("");
+  const [laschangeCourt, setLasChangeCourt] = useState("");
+  const [laschangeNumber, setLasChangeNumber] = useState("");
   const [teamId, setTeamId] = useState();
   const [keys, setKeys] = useState([]);
   const [sort, setSort] =useState({});
@@ -51,6 +52,21 @@ const Top = () => {
     axios.post('/api/changemidnumber', {
       id: teamId,
       midnumber: midchangeNumber
+    });
+  };
+  // 最終リーグ用
+  const handleLasChangeCourt = () => {
+    axios.post('/api/changelascourt', {
+      id: teamId,
+      lascourt: laschangeCourt
+    });
+    console.log(teamId);
+    console.log(laschangeCourt);
+  };
+  const handleLasChangeNumber = () => {
+    axios.post('/api/changelasnumber', {
+      id: teamId,
+      lasnumber: laschangeNumber
     });
   };
   // ソート機能
@@ -139,6 +155,9 @@ const Top = () => {
                 <div className="point">中間<br />勝ち点</div>
                 <div className="score">中間<br />得失点</div>
                 <div className="court">中間<br />コート</div>
+                <div className="point">最終<br />勝ち点</div>
+                <div className="score">最終<br />得失点</div>
+                <div className="court">最終<br />コート</div>
                 <div className="sum">総合<br />勝ち点</div>
                 <div className="sum">総合<br />得失点</div>
                 <div className="rank"></div>
@@ -157,18 +176,6 @@ const Top = () => {
                   name="▼"
                 />
                 <Sort
-                  key={keys[4]}
-                  button={keys[4]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[5]}
-                  button={keys[5]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
                   key={keys[2]}
                   button={keys[2]}
                   handleSort={handleSort}
@@ -177,6 +184,18 @@ const Top = () => {
                 <Sort
                   key={keys[3]}
                   button={keys[3]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[4]}
+                  button={keys[4]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[5]}
+                  button={keys[5]}
                   handleSort={handleSort}
                   name="▼"
                 />
@@ -193,6 +212,18 @@ const Top = () => {
                   name="▼"
                 />
                 <Sort
+                  key={keys[8]}
+                  button={keys[8]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[9]}
+                  button={keys[9]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
                   key={keys[10]}
                   button={keys[10]}
                   handleSort={handleSort}
@@ -205,14 +236,26 @@ const Top = () => {
                   name="▼"
                 />
                 <Sort
-                  key={keys[8]}
-                  button={keys[8]}
+                  key={keys[12]}
+                  button={keys[12]}
                   handleSort={handleSort}
                   name="▼"
                 />
                 <Sort
-                  key={keys[9]}
-                  button={keys[9]}
+                  key={keys[13]}
+                  button={keys[13]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[14]}
+                  button={keys[14]}
+                  handleSort={handleSort}
+                  name="▼"
+                />
+                <Sort
+                  key={keys[15]}
+                  button={keys[15]}
                   handleSort={handleSort}
                   name="▼"
                 />
@@ -268,6 +311,28 @@ const Top = () => {
                                 <option menuitem={number.number} key={number.id} name={number.id} value={number.number}>{number.number}</option>
                               ))}
                                 <option hidden={team.mid_number}>{team.mid_number}</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div className="point">{team.las_point}</div>
+                        <div className="score">{team.las_score}</div>
+                        <div className="change">
+                          <form onClick={handleLasChangeCourt} method="post" action="/api/laschangecourt">
+                            <select className="court" defaultValue={team.las_court} name="itemCourt" onChange={(e) => {setTeamId(team.id); setLasChangeCourt(e.target.value); }}>
+                              {court.map(court=>(
+                                <option menuitem={court.court} key={court.id} name={court.id} value={court.court}>{court.court}</option>
+                              ))}
+                                <option hidden={team.las_court}>{team.las_court}</option>
+                            </select>
+                          </form>
+                        </div>
+                        <div className="change">
+                          <form onClick={handleLasChangeNumber} method="post" action="/api/laschangenumber">
+                            <select className="number" defaultValue={team.las_number} name="itemNumber" onChange={(e) => {setTeamId(team.id); setLasChangeNumber(e.target.value); }}>
+                              {number.map(number=>(
+                                <option menuitem={number.number} key={number.id} name={number.id} value={number.number}>{number.number}</option>
+                              ))}
+                                <option hidden={team.las_number}>{team.las_number}</option>
                             </select>
                           </form>
                         </div>

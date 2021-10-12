@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
-use App\Models\Game;
-use App\Models\Game2;
+use App\Models\First;
+use App\Models\Second;
+use App\Models\Third;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -152,6 +153,31 @@ class PostController extends Controller
         $changemidnumber = new Post;
         $changemidnumber->timestamps =false;
         $changemidnumber->where('id', $id)->update(['mid_number'=>$midnumber]);
+        // $changemidnumber->save();
+    }
+    // 最終リーグ用
+    // コート変更機能
+    public function changelascourt(Request $request)
+    {
+        // header("Access-Control-Allow-Origin: *");  //CORS
+        // header("Access-Control-Allow-Headers: Origin, X-Requested-With");
+        $id = $request->input('id');
+        $lascourt = $request->input('lascourt');
+        $changelascourt = new Post;
+        $changelascourt->timestamps =false;
+        $changelascourt->where('id', $id)->update(['las_court'=>$lascourt]);
+        // $changemidcourt->save();
+    }
+    // 番号変更機能
+    public function changelasnumber(Request $request)
+    {
+        // header("Access-Control-Allow-Origin: *");  //CORS
+        // header("Access-Control-Allow-Headers: Origin, X-Requested-With");
+        $id = $request->input('id');
+        $lasnumber = $request->input('lasnumber');
+        $changelasnumber = new Post;
+        $changelasnumber->timestamps =false;
+        $changelasnumber->where('id', $id)->update(['las_number'=>$lasnumber]);
         // $changemidnumber->save();
     }
     // 予選結果計算機能

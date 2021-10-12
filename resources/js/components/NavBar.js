@@ -20,6 +20,9 @@ const NavBar = () => {
           <Link to="mid">
             <li className="HeaderButton">中間リーグ</li>
           </Link>
+          <Link to="las">
+            <li className="HeaderButton">最終リーグ</li>
+          </Link>
         </ul>
         <ul className="JumpList">
           <li className="JumpList__item">

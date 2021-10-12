@@ -31,13 +31,17 @@ Route::get('/number',function (Request $request) {
   $numbers = App\Models\number::all();
   return response()->json(['numbers'=> $numbers]);
 });
-Route::get('/game',function (Request $request) {
-  $games = App\Models\game::all();
-  return response()->json(['games'=> $games]);
+Route::get('/first',function (Request $request) {
+  $firsts = App\Models\first::all();
+  return response()->json(['firsts'=> $firsts]);
 });
-Route::get('/game2',function (Request $request) {
-  $game2s = App\Models\game2::all();
-  return response()->json(['game2s'=> $game2s]);
+Route::get('/second',function (Request $request) {
+  $seconds = App\Models\second::all();
+  return response()->json(['seconds'=> $seconds]);
+});
+Route::get('/third',function (Request $request) {
+  $thirds = App\Models\third::all();
+  return response()->json(['thirds'=> $thirds]);
 });
 
 
@@ -52,6 +56,9 @@ Route::group(['middleware' => 'api'], function(){
   Route::post('changenumber', 'PostController@changenumber');
   Route::post('changemidcourt', 'PostController@changemidcourt');
   Route::post('changemidnumber', 'PostController@changemidnumber');
+  Route::post('changelascourt', 'PostController@changelascourt');
+  Route::post('changelasnumber', 'PostController@changelasnumber');
   Route::post('changecount', 'PostController@changecount');
   Route::post('changecount2', 'PostController@changecount2');
+  Route::post('changecount3', 'PostController@changecount3');
 });

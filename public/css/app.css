@@ -10102,7 +10102,7 @@ input {
 .Header .JumpList {
   display: flex;
   line-height: 56px;
-  margin-left: 295px;
+  margin-left: 144px;
 }
 .Header .JumpList__item {
   height: 56px;
@@ -10171,7 +10171,7 @@ input {
   width: 66px;
 }
 .SortButton .name {
-  width: 270px;
+  width: 190px;
 }
 .SortButton .pre_point {
   width: 76px;
@@ -10195,6 +10195,18 @@ input {
   width: 37px;
 }
 .SortButton .mid_number {
+  width: 35px;
+}
+.SortButton .las_point {
+  width: 76px;
+}
+.SortButton .las_score {
+  width: 76px;
+}
+.SortButton .las_court {
+  width: 37px;
+}
+.SortButton .las_number {
   width: 35px;
 }
 .SortButton .sum_point {
@@ -10251,7 +10263,7 @@ input {
 }
 .IndexContainer {
   width: 90%;
-  width: 1040px;
+  width: 1200px;
   margin: 0 auto 56px 80px;
   padding-top: 8px;
 }
@@ -10538,15 +10550,15 @@ input {
   box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
 }
 .PreContainer .PreMain .TableTitle__number {
-  width: 80px;
+  width: 60px;
   box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
 }
 .PreContainer .PreMain .TableTitle__team {
-  width: 400px;
+  width: 240px;
   box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
 }
 .PreContainer .PreMain .TableTitle__referee {
-  width: 240px;
+  width: 200px;
   box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
 }
 .PreContainer .PreMain .TableContent {
@@ -10555,12 +10567,12 @@ input {
   font-size: 16px;
 }
 .PreContainer .PreMain .TableContent__number {
-  width: 80px;
+  width: 60px;
   box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
   text-align: center;
 }
 .PreContainer .PreMain .TableContent__teamA {
-  width: 400px;
+  width: 240px;
   font-size: 24px;
   text-align: center;
   font-weight: bold;
@@ -10568,14 +10580,16 @@ input {
 }
 .PreContainer .PreMain .TableContent__point {
   box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
-  width: 120px;
+  width: auto;
 }
 .PreContainer .PreMain .TableContent__flex {
-  width: 400px;
-  padding: 0 5px;
+  width: auto;
+  padding: 0 7px;
+  margin: auto;
 }
 .PreContainer .PreMain .TableContent__flex .TableContent__count {
   display: flex;
+  justify-content: space-between;
 }
 .PreContainer .PreMain .TableContent__flex .TableContent__count button {
   background-color: #e2f1f1;
@@ -10595,14 +10609,14 @@ input {
   font-weight: bold;
   cursor: pointer;
 }
-.PreContainer .PreMain .TableContent__flex .TableContent__count button:active {
+.PreContainer .PreMain .TableContent__flex .TableContent__count button:hover {
   transform: translateY(2px);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
-  border-bottom: none;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
+  transition: 0.2s;
 }
 .PreContainer .PreMain .TableContent__flex .TableContent__count .CountPoint {
   font-size: 32px;
-  margin: auto 5px;
+  margin: auto;
   width: 48px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -10613,15 +10627,19 @@ input {
   margin: auto;
 }
 .PreContainer .PreMain .TableContent__teamB {
-  width: 400px;
+  width: 240px;
   font-size: 24px;
   text-align: center;
   font-weight: bold;
   box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
 }
 .PreContainer .PreMain .TableContent__referee {
-  width: 240px;
+  width: 200px;
   text-align: center;
   font-weight: bold;
   box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
+}
+
+table {
+  width: 1200px;
 }
