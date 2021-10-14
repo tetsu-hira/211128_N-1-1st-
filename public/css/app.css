@@ -10060,12 +10060,11 @@ input {
   right: 67em;
   color: #6c7686;
   border: 1px solid #6c7686;
-  box-shadow: 1px 2px 7px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
 .updateButton:active {
   transform: translateY(2px);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
-  border-bottom: none;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.35);
 }
 
 .Header {
@@ -10425,17 +10424,17 @@ input {
   appearance: none;
   padding: 0 9px;
   margin: 5px 0;
-  border: none;
+  border: 1px solid #a6afbf;
   -moz-text-align-last: right;
        text-align-last: right;
   outline: none;
   color: #6c7686;
-  height: 25px;
-  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.25);
+  height: 26px;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
 }
 .IndexContainer .IndexTable__body li .ItemData .FlexRight select:hover {
-  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.25);
-  transform: translateY(-0.1875em);
+  box-shadow: 0px 3px 8px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(-3px);
 }
 .IndexContainer .IndexTable__body li .ItemData .FlexRight select .court {
   font-size: 14px;
@@ -10593,26 +10592,25 @@ input {
 }
 .PreContainer .PreMain .TableContent__flex .TableContent__count button {
   background-color: #e2f1f1;
-  border-radius: 25px;
+  border-radius: 3px;
   font-size: 12px;
   width: 30px;
-  height: 23px;
+  height: 22px;
   text-align: center;
   color: #6c7686;
   border-top: 1px solid #d7d7d7;
   border-left: 1px solid #d7d7d7;
-  border-bottom: 1px solid #9dabb780;
-  border-right: 1px solid #9dabb780;
+  border-bottom: 2px solid #adb1b580;
+  border-right: 1px solid #d7d7d7;
   margin: auto 2px;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.65);
-  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.2);
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
 }
 .PreContainer .PreMain .TableContent__flex .TableContent__count button:hover {
-  transform: translateY(2px);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
-  transition: 0.2s;
+  transform: translateY(1px);
+  border-bottom: 1px solid #d7d7d7;
+  transition: 0.1s;
 }
 .PreContainer .PreMain .TableContent__flex .TableContent__count .CountPoint {
   font-size: 32px;

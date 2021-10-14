@@ -274,7 +274,7 @@ const Top = () => {
                         <div className="score">{team.pre_score}</div>
                         <div className="change">
                           <form onClick={handleChangeCourt} method="post" action="/api/changecourt">
-                            <select className="court" defaultValue={team.court} name="itemCourt" onChange={(e) => {setTeamId(team.id); setChangeCourt(e.target.value); }}>
+                            <select className="court" defaultValue={team.court} name="itemCourt" onInput={(e) => {setTeamId(team.id); setChangeCourt(e.target.value); }}>
                               {court.map(court=>(
                                 <option menuitem={court.court} key={court.id} name={court.id} value={court.court}>{court.court}</option>
                               ))}

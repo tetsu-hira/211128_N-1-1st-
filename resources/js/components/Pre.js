@@ -333,7 +333,7 @@ const Pre = () => {
         <div className="PreContainer">
           <div className="PreMain">
             <h2>予選リーグAコート</h2>
-            <button className="updateButton" onClick={handleChangeCount}>更新</button>
+            <button className="updateButton" onClick={handleChangeCount}>登録</button>
             <div className="Table">
               <table border="1">
                 <thead>
@@ -479,7 +479,7 @@ const Pre = () => {
           </div>
           <div className="PreMain">
             <h2>予選リーグBコート</h2>
-            <button className="updateButton" onClick={handleChangeCount}>更新</button>
+            <button className="updateButton" onClick={handleChangeCount}>登録</button>
             <div className="Table">
               <table border="1">
                 <thead>
@@ -625,7 +625,7 @@ const Pre = () => {
           </div>
           <div className="PreMain">
             <h2>予選リーグCコート</h2>
-            <button className="updateButton" onClick={handleChangeCount}>更新</button>
+            <button className="updateButton" onClick={handleChangeCount}>登録</button>
             <div className="Table">
               <table border="1">
                 <thead>
@@ -771,7 +771,7 @@ const Pre = () => {
           </div>
           <div className="PreMain">
             <h2>予選リーグDコート</h2>
-            <button className="updateButton" onClick={handleChangeCount}>更新</button>
+            <button className="updateButton" onClick={handleChangeCount}>登録</button>
             <div className="Table">
               <table border="1">
                 <thead>
@@ -917,7 +917,7 @@ const Pre = () => {
           </div>
           <div className="PreMain">
             <h2>予選リーグEコート</h2>
-            <button className="updateButton" onClick={handleChangeCount}>更新</button>
+            <button className="updateButton" onClick={handleChangeCount}>登録</button>
             <div className="Table">
               <table border="1">
                 <thead>
@@ -1063,7 +1063,7 @@ const Pre = () => {
           </div>
           <div className="PreMain">
             <h2>予選リーグFコート</h2>
-            <button className="updateButton" onClick={handleChangeCount}>更新</button>
+            <button className="updateButton" onClick={handleChangeCount}>登録</button>
             <div className="Table">
               <table border="1">
                 <thead>

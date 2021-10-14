@@ -165,16 +165,16 @@
                 appearance: none;
                 padding: 0 9px;
                 margin: 5px 0;
-                border: none;
+                border: 1px solid #a6afbf;
                 text-align-last:right;
                 outline: none;
                 // appearance: none;
                 color: $FontColor;
-                height: 25px;
-                box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.25);
+                height: 26px;
+                box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.15);
                 &:hover {
-                  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.25);
-                  transform: translateY(-0.1875em);
+                  box-shadow: 0px 3px 8px 0 rgba(0, 0, 0, 0.19);
+                  transform: translateY(-3px);
                 }
                 .court {
                   font-size: 14px;

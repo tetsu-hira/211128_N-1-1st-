@@ -42,7 +42,6 @@
             width: 240px;
             box-shadow: inset 0px 0px 0 rgba(255,255,255,0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
           }
-         
           &__referee {
             width: 200px;
             box-shadow: inset 0px 0px 0 rgba(255,255,255,0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
@@ -52,7 +51,6 @@
           color: $FontColor;
           background-color: $WhiteColor;
           font-size: 16px;
-          
           &__number {
             width: 60px;
             box-shadow: inset 0px 0px 0 rgba(255,255,255,0.3), 1px 1px 2px rgba(50, 50, 50, 0.3);
@@ -79,33 +77,29 @@
               justify-content: space-between;
               button {
                 background-color: $SubColor;
-                border-radius: 25px;
+                border-radius: 3px;
                 font-size: 12px;
                 width: 30px;
-                height: 23px;
+                height: 22px;
                 // line-height: 1px;
                 text-align: center;
                 color: $FontColor;
-                border-top: 1px solid rgb(215, 215, 215);
-                border-left: 1px solid rgb(215, 215, 215);
-                border-bottom: 1px solid #9dabb780;
-                border-right: 1px solid #9dabb780;
+                border-top: 1px solid #d7d7d7;
+                border-left: 1px solid #d7d7d7;
+                border-bottom: 2px solid #adb1b580;
+                border-right: 1px solid #d7d7d7;
                 margin: auto 2px;
                 // overflow: hidden;
                 text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.65);
-                box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 20%);
-                font-weight: bold;
-                // border-bottom: solid 1px #7290ac;
-                // border-right: solid 1px #7290ac;
-                // text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.65);
-                // transition: .4s;
+                // box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 20%);
+                font-weight: 600;
                 cursor: pointer;
                 &:hover {
                   -webkit-transform: translateY(2px);
-                  transform: translateY(2px);
-                  box-shadow: 0 0 1px rgba(0, 0, 0, 0.35);
-                  // border-bottom: none;
-                  transition: 0.2s;
+                  transform: translateY(1px);
+                  // box-shadow: 0 0 0px rgba(0, 0, 0, 0.35);
+                  border-bottom: 1px solid #d7d7d7;
+                  transition: 0.1s;
                 }
               }
               .CountPoint {
