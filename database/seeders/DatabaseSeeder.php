@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
       NumberTableSeeder::class,
       SecondTableSeeder::class,
       ThirdTableSeeder::class,
+      TeamsTableSeeder::class,
     ]);
   }
 }
