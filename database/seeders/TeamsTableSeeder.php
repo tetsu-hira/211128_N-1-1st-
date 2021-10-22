@@ -20,55 +20,55 @@ class TeamsTableSeeder extends Seeder
         'name' => 'HSVC'
       ],
       [
-        'number' => 'MAD'
+        'name' => 'MAD'
       ],
       [
-        'number' => '鬼気'
+        'name' => '鬼気'
       ],
       [
-        'number' => 'なはっはー。'
+        'name' => 'なはっはー。'
       ],
       [
-        'number' => 'SAGA'
+        'name' => 'SAGA'
       ],
       [
-        'number' => '岩娘'
+        'name' => '岩娘'
       ],
       [
-        'number' => '碔鬼'
+        'name' => '碔鬼'
       ],
       [
-        'number' => 'ZetZ'
+        'name' => 'ZetZ'
       ],
       [
-        'number' => 'TARUTO'
+        'name' => 'TARUTO'
       ],
       [
-        'number' => 'スリンキー'
+        'name' => 'スリンキー'
       ],
       [
-        'number' => 'エンジョイ'
+        'name' => 'エンジョイ'
       ],
       [
-        'number' => 'Tiara'
+        'name' => 'Tiara'
       ],
       [
-        'number' => 'ELDORADO'
+        'name' => 'ELDORADO'
       ],
       [
-        'number' => 'SUGAR'
+        'name' => 'SUGAR'
       ],
       [
-        'number' => '翔舞'
+        'name' => '翔舞'
       ],
       [
-        'number' => 'ぴあーず。'
+        'name' => 'ぴあーず。'
       ],
       [
-        'number' => 'GOLDEN EGGS'
+        'name' => 'GOLDEN EGGS'
       ],
       [
-        'number' => '無鉄砲'
+        'name' => '無鉄砲'
       ],
     ]);
   }
