@@ -6,7 +6,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;    // 追記
 use Illuminate\Support\Facades\Hash;  // Hash使うなら追記
 
-class CourtTableSeeder extends Seeder
+class CoatTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,15 +15,15 @@ class CourtTableSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('courts')->insert([
+      DB::table('coats')->insert([
         [
-          'court' => 'A'
+          'court' => 'D'
         ],
         [
-          'court' => 'B'
+          'court' => 'E'
         ],
         [
-          'court' => 'C'
+          'court' => 'F'
         ]
       ]);
     }
