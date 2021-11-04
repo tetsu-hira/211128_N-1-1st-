@@ -91,8 +91,11 @@ class PostController extends Controller
   // チーム登録機能
   public function addTeam(Request $request)
   {
+    $id = $request->input('id');
+    $name = $request->input('name');
     $add = new Post;
-    $add->name = $request->name;
+    $add->id = $id;
+    $add->name = $name;
     $add->timestamps = false;
     $add->save();
     return redirect('/');

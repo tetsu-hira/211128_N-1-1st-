@@ -16,11 +16,11 @@ class DatabaseSeeder extends Seeder
   public function run()
   {
     $this->call([
-      CourtTableSeeder::class,
+      // CourtTableSeeder::class,
       FirstTableSeeder::class,
-      NumberTableSeeder::class,
       SecondTableSeeder::class,
-      ThirdTableSeeder::class,
+      NumberTableSeeder::class,
+      PostsTableSeeder::class,
       TeamsTableSeeder::class,
     ]);
   }

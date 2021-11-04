@@ -5,6 +5,8 @@ const Form = () => {
   return (
     <form className="Form" method="POST" action="/api/add">
       <div className="FormContent">
+        <label htmlFor="id"></label>
+        <input type="text" className="FormContent__id" name="id" id="id" />
         <label htmlFor="name"></label>
         <input type="text" className="FormContent__name" name="name" id="name" />
       </div>

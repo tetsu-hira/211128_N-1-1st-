@@ -6,7 +6,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;    // 追記
 use Illuminate\Support\Facades\Hash;  // Hash使うなら追記
 
-class NumberTableSeeder extends Seeder
+class PostsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,33 +15,33 @@ class NumberTableSeeder extends Seeder
      */
     public function run()
     {
-      DB::table('numbers')->insert([
+      DB::table('posts')->insert([
         [
-          'number' => '1'
+          'name' => '焼きおにぎり'
         ],
         [
-          'number' => '2'
+          'name' => 'SAGA'
         ],
         [
-          'number' => '3'
+          'name' => '凱旋'
         ],
         [
-          'number' => '4'
+          'name' => 'SUGAR'
         ],
         [
-          'number' => '5'
+          'name' => 'Tiara'
         ],
         [
-          'number' => '6'
+          'name' => 'スリンキー'
         ],
         [
-          'number' => '7'
+          'name' => 'がんがん'
         ],
         [
-          'number' => '8'
+          'name' => 'HSVC'
         ],
         [
-          'number' => '9'
+          'name' => '笑夢'
         ],
       ]);
     }

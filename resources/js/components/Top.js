@@ -144,209 +144,155 @@ const Top = () => {
           <div className="IndexContent__header">
             <h1>ResultSheet</h1>
           </div>
-          <div className="IndexTable">
-            <div className="IndexTable__container">
-              <div className="IndexTable__head">
-                <div className="id">No.</div>
-                <div className="name">チーム名</div>
-                <div className="point">予選<br />勝ち点</div>
-                <div className="score">予選<br />得失点</div>
-                <div className="court">予選<br />コート</div>
-                <div className="point">中間<br />勝ち点</div>
-                <div className="score">中間<br />得失点</div>
-                <div className="court">中間<br />コート</div>
-                <div className="point">最終<br />勝ち点</div>
-                <div className="score">最終<br />得失点</div>
-                <div className="court">最終<br />コート</div>
-                <div className="sum">総合<br />勝ち点</div>
-                <div className="sum">総合<br />得失点</div>
-                <div className="rank"></div>
+          <div className="IndexContent__flex">
+            <div className="IndexTable">
+              <div className="IndexTable__container">
+                <div className="IndexTable__head">
+                  <div className="id">No.</div>
+                  <div className="name">チーム名</div>
+                  <div className="court">くじ<br />番号</div>
+                  <div className="sum">総合<br />勝ち点</div>
+                  <div className="sum">総合<br />得失点</div>
+                  <div className="rank"></div>
+                </div>
+                <div className="IndexButton>">
+                  <Sort
+                    key={keys[0]}
+                    button={keys[0]}
+                    handleSort={handleSort}
+                    name="▼"
+                  />
+                  <Sort
+                    key={keys[1]}
+                    button={keys[1]}
+                    handleSort={handleSort}
+                    name="▼"
+                  />
+                  <Sort
+                    key={keys[5]}
+                    button={keys[5]}
+                    handleSort={handleSort}
+                    name="▼"
+                  />
+                  <Sort
+                    key={keys[14]}
+                    button={keys[14]}
+                    handleSort={handleSort}
+                    name="▼"
+                  />
+                  <Sort
+                    key={keys[15]}
+                    button={keys[15]}
+                    handleSort={handleSort}
+                    name="▼"
+                  />
+                </div>
               </div>
-              <div className="IndexButton>">
-                <Sort
-                  key={keys[0]}
-                  button={keys[0]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[1]}
-                  button={keys[1]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[2]}
-                  button={keys[2]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[3]}
-                  button={keys[3]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[4]}
-                  button={keys[4]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[5]}
-                  button={keys[5]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[6]}
-                  button={keys[6]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[7]}
-                  button={keys[7]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[8]}
-                  button={keys[8]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[9]}
-                  button={keys[9]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[10]}
-                  button={keys[10]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[11]}
-                  button={keys[11]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[12]}
-                  button={keys[12]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[13]}
-                  button={keys[13]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[14]}
-                  button={keys[14]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-                <Sort
-                  key={keys[15]}
-                  button={keys[15]}
-                  handleSort={handleSort}
-                  name="▼"
-                />
-              </div>
+              <ul className="IndexTable__body">
+                {team.map(team=>(
+                    <li key={team.id}>
+                      <div className="ItemData">
+                        <div className="FlexLeft">
+                          <div className="id">{team.id}</div>
+                          <div className="name">{team.name}</div>
+                        </div>
+                        <div className="FlexRight">
+                          <div className="change">
+                            <form onClick={handleChangeNumber} method="post" action="/api/changenumber">
+                              <select className="number" defaultValue={team.number} name="itemNumber" onChange={(e) => {setTeamId(team.id); setChangeNumber(e.target.value); }}>
+                                {number.map(number=>(
+                                  <option menuitem={number.number} key={number.id} name={number.id} value={number.number}>{number.number}</option>
+                                ))}
+                                  <option hidden={team.number}>{team.number}</option>
+                              </select>
+                            </form>
+                          </div>
+                          <div className="point">{team.sum_point}</div>
+                          <div className="score">{team.sum_score}</div>
+                          <form action="/api/del" method="POST" onSubmit={handleDelete}>
+                            <input type="submit" className="edit" value="削除" name={team.id} onClick={() => setId(team.id)}></input>
+                          </form>
+                        </div>
+                      </div>
+                    </li>
+                ))}
+              </ul>
+              <Form />
             </div>
-            <ul className="IndexTable__body">
-              {team.map(team=>(
-                  <li key={team.id}>
-                    <div className="ItemData">
-                      <div className="FlexLeft">
-                        <div className="id">{team.id}</div>
-                        <div className="name">{team.name}</div>
+            <div className="IndexTable">
+              <div className="IndexTable__container">
+                <div className="IndexTable__head">
+                  <div className="id">No.</div>
+                  <div className="name">チーム名</div>
+                  <div className="court">くじ<br />番号</div>
+                  <div className="sum">総合<br />勝ち点</div>
+                  <div className="sum">総合<br />得失点</div>
+                  <div className="rank"></div>
+                </div>
+                <div className="IndexButton>">
+                  <Sort
+                    key={keys[0]}
+                    button={keys[0]}
+                    handleSort={handleSort}
+                    name="▼"
+                  />
+                  <Sort
+                    key={keys[1]}
+                    button={keys[1]}
+                    handleSort={handleSort}
+                    name="▼"
+                  />
+                  <Sort
+                    key={keys[5]}
+                    button={keys[5]}
+                    handleSort={handleSort}
+                    name="▼"
+                  />
+                  <Sort
+                    key={keys[14]}
+                    button={keys[14]}
+                    handleSort={handleSort}
+                    name="▼"
+                  />
+                  <Sort
+                    key={keys[15]}
+                    button={keys[15]}
+                    handleSort={handleSort}
+                    name="▼"
+                  />
+                </div>
+              </div>
+              <ul className="IndexTable__body">
+                {team.map(team=>(
+                    <li key={team.id}>
+                      <div className="ItemData">
+                        <div className="FlexLeft">
+                          <div className="id">{team.id}</div>
+                          <div className="name">{team.name}</div>
+                        </div>
+                        <div className="FlexRight">
+                          <div className="change">
+                            <form onClick={handleChangeNumber} method="post" action="/api/changenumber">
+                              <select className="number" defaultValue={team.number} name="itemNumber" onChange={(e) => {setTeamId(team.id); setChangeNumber(e.target.value); }}>
+                                {number.map(number=>(
+                                  <option menuitem={number.number} key={number.id} name={number.id} value={number.number}>{number.number}</option>
+                                ))}
+                                  <option hidden={team.number}>{team.number}</option>
+                              </select>
+                            </form>
+                          </div>
+                          <div className="point">{team.sum_point}</div>
+                          <div className="score">{team.sum_score}</div>
+                          <form action="/api/del" method="POST" onSubmit={handleDelete}>
+                            <input type="submit" className="edit" value="削除" name={team.id} onClick={() => setId(team.id)}></input>
+                          </form>
+                        </div>
                       </div>
-                      <div className="FlexRight">
-                        <div className="point">{team.pre_point}</div>
-                        <div className="score">{team.pre_score}</div>
-                        <div className="change">
-                          <form onClick={handleChangeCourt} method="post" action="/api/changecourt">
-                            <select className="court" defaultValue={team.court} name="itemCourt" onInput={(e) => {setTeamId(team.id); setChangeCourt(e.target.value); }}>
-                              {court.map(court=>(
-                                <option menuitem={court.court} key={court.id} name={court.id} value={court.court}>{court.court}</option>
-                              ))}
-                                <option hidden={team.court}>{team.court}</option>
-                            </select>
-                          </form>
-                        </div>
-                        <div className="change">
-                          <form onClick={handleChangeNumber} method="post" action="/api/changenumber">
-                            <select className="number" defaultValue={team.number} name="itemNumber" onChange={(e) => {setTeamId(team.id); setChangeNumber(e.target.value); }}>
-                              {number.map(number=>(
-                                <option menuitem={number.number} key={number.id} name={number.id} value={number.number}>{number.number}</option>
-                              ))}
-                                <option hidden={team.number}>{team.number}</option>
-                            </select>
-                          </form>
-                        </div>
-                        <div className="point">{team.mid_point}</div>
-                        <div className="score">{team.mid_score}</div>
-                        <div className="change">
-                          <form onClick={handleMidChangeCourt} method="post" action="/api/midchangecourt">
-                            <select className="court" defaultValue={team.mid_court} name="itemCourt" onChange={(e) => {setTeamId(team.id); setMidChangeCourt(e.target.value); }}>
-                              {court.map(court=>(
-                                <option menuitem={court.court} key={court.id} name={court.id} value={court.court}>{court.court}</option>
-                              ))}
-                                <option hidden={team.mid_court}>{team.mid_court}</option>
-                            </select>
-                          </form>
-                        </div>
-                        <div className="change">
-                          <form onClick={handleMidChangeNumber} method="post" action="/api/midchangenumber">
-                            <select className="number" defaultValue={team.mid_number} name="itemNumber" onChange={(e) => {setTeamId(team.id); setMidChangeNumber(e.target.value); }}>
-                              {number.map(number=>(
-                                <option menuitem={number.number} key={number.id} name={number.id} value={number.number}>{number.number}</option>
-                              ))}
-                                <option hidden={team.mid_number}>{team.mid_number}</option>
-                            </select>
-                          </form>
-                        </div>
-                        <div className="point">{team.las_point}</div>
-                        <div className="score">{team.las_score}</div>
-                        <div className="change">
-                          <form onClick={handleLasChangeCourt} method="post" action="/api/laschangecourt">
-                            <select className="court" defaultValue={team.las_court} name="itemCourt" onChange={(e) => {setTeamId(team.id); setLasChangeCourt(e.target.value); }}>
-                              {court.map(court=>(
-                                <option menuitem={court.court} key={court.id} name={court.id} value={court.court}>{court.court}</option>
-                              ))}
-                                <option hidden={team.las_court}>{team.las_court}</option>
-                            </select>
-                          </form>
-                        </div>
-                        <div className="change">
-                          <form onClick={handleLasChangeNumber} method="post" action="/api/laschangenumber">
-                            <select className="number" defaultValue={team.las_number} name="itemNumber" onChange={(e) => {setTeamId(team.id); setLasChangeNumber(e.target.value); }}>
-                              {number.map(number=>(
-                                <option menuitem={number.number} key={number.id} name={number.id} value={number.number}>{number.number}</option>
-                              ))}
-                                <option hidden={team.las_number}>{team.las_number}</option>
-                            </select>
-                          </form>
-                        </div>
-                        <div className="point">{team.sum_point}</div>
-                        <div className="score">{team.sum_score}</div>
-                        <form action="/api/del" method="POST" onSubmit={handleDelete}>
-                          <input type="submit" className="edit" value="削除" name={team.id} onClick={() => setId(team.id)}></input>
-                        </form>
-                      </div>
-                    </div>
-                  </li>
-              ))}
-            </ul>
-            <Form />
+                    </li>
+                ))}
+              </ul>
+              <Form />
+            </div>
           </div>
         </div>
       </div>

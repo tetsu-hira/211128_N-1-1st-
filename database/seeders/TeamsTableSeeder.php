@@ -15,60 +15,24 @@ class TeamsTableSeeder extends Seeder
    */
   public function run()
   {
-    DB::table('posts')->insert([
-      [
-        'name' => 'HSVC'
-      ],
-      [
-        'name' => 'MAD'
-      ],
-      [
-        'name' => '鬼気'
-      ],
-      [
-        'name' => 'なはっはー。'
-      ],
-      [
-        'name' => 'SAGA'
-      ],
-      [
-        'name' => '岩娘'
-      ],
-      [
-        'name' => '碔鬼'
-      ],
-      [
-        'name' => 'ZetZ'
-      ],
-      [
-        'name' => 'TARUTO'
-      ],
-      [
-        'name' => 'スリンキー'
-      ],
+    DB::table('teams')->insert([
       [
         'name' => 'エンジョイ'
       ],
       [
-        'name' => 'Tiara'
+        'name' => 'ジンリッキー'
       ],
       [
-        'name' => 'ELDORADO'
-      ],
-      [
-        'name' => 'SUGAR'
-      ],
-      [
-        'name' => '翔舞'
+        'name' => '4C'
       ],
       [
         'name' => 'ぴあーず。'
       ],
       [
-        'name' => 'GOLDEN EGGS'
+        'name' => 'スコッチ'
       ],
       [
-        'name' => '無鉄砲'
+        'name' => 'アンダースタンス'
       ],
     ]);
   }
