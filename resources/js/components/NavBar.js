@@ -15,10 +15,10 @@ const NavBar = () => {
             <li className="HeaderButton">総合結果</li>
           </Link>
           <Link to="/pre">
-            <li className="HeaderButton">予選リーグ</li>
+            <li className="HeaderButton">招待部門</li>
           </Link>
           <Link to="mid">
-            <li className="HeaderButton">中間リーグ</li>
+            <li className="HeaderButton">一般部門</li>
           </Link>
           <Link to="las">
             <li className="HeaderButton">最終リーグ</li>

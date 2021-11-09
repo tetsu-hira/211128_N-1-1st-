@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Team;
 use App\Models\First;
 use App\Models\Second;
 use App\Models\Third;
@@ -93,7 +94,7 @@ class PostController extends Controller
   {
     $id = $request->input('id');
     $name = $request->input('name');
-    $add = new Post;
+    $add = new Team;
     $add->id = $id;
     $add->name = $name;
     $add->timestamps = false;
@@ -104,24 +105,43 @@ class PostController extends Controller
   public function delTeam(Request $request)
   {
     $id = $request->input('id');
+    $del = new Team;
+    $del->where('id', $id)->delete();
+    return redirect('/');
+  }
+  // チーム登録機能
+  public function addPost(Request $request)
+  {
+    $id = $request->input('id');
+    $name = $request->input('name');
+    $add = new Post;
+    $add->id = $id;
+    $add->name = $name;
+    $add->timestamps = false;
+    $add->save();
+    return redirect('/');
+  }
+  // チーム削除機能
+  public function delPost(Request $request)
+  {
+    $id = $request->input('id');
     $del = new Post;
     $del->where('id', $id)->delete();
     return redirect('/');
   }
-  // 予選リーグ用
-  // コート変更機能
+  // 一般部門のくじ引き番号を登録
   public function changecourt(Request $request)
   {
       // header("Access-Control-Allow-Origin: *");  //CORS
       // header("Access-Control-Allow-Headers: Origin, X-Requested-With");
       $id = $request->input('id');
       $court = $request->input('court');
-      $changecourt = new Post;
+      $changecourt = new Team;
       $changecourt->timestamps =false;
-      $changecourt->where('id', $id)->update(['court'=>$court]);
+      $changecourt->where('id', $id)->update(['number'=>$court]);
       // $changecourt->save();
   }
-  // 番号変更機能
+  // 招待部門のくじ引き番号を登録
   public function changenumber(Request $request)
   {
       // header("Access-Control-Allow-Origin: *");  //CORS

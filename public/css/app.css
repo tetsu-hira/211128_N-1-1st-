@@ -10278,6 +10278,7 @@ input {
 }
 .IndexContainer .IndexContent__header h1 {
   padding-top: 10px;
+  margin: auto;
 }
 .IndexContainer .IndexContent__header .NavList {
   line-height: 24px;

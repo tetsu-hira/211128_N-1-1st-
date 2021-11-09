@@ -23,6 +23,10 @@ Route::get('/post',function (Request $request) {
   $posts = App\Models\post::all();
   return response()->json(['posts'=> $posts]);
 });
+Route::get('/team',function (Request $request) {
+  $teams = App\Models\team::all();
+  return response()->json(['teams'=> $teams]);
+});
 Route::get('/court',function (Request $request) {
   $courts = App\Models\court::all();
   return response()->json(['courts'=> $courts]);
@@ -48,9 +52,12 @@ Route::get('/third',function (Request $request) {
 // 追加機能
 Route::group(['middleware' => 'api'], function(){
   // Route::get('get', 'PostController@addTeam');
-  Route::post('add', 'PostController@addTeam');
-  Route::get('del', 'PostController@delTeam');
-  Route::post('del', 'PostController@delTeam');
+  Route::post('addTeam', 'PostController@addTeam');
+  Route::get('delTeam', 'PostController@delTeam');
+  Route::post('delTeam', 'PostController@delTeam');
+  Route::post('addPost', 'PostController@addPost');
+  Route::get('delPost', 'PostController@delPost');
+  Route::post('delPost', 'PostController@delPost');
   // Route::get('changecourt', 'PostController@changecourt');
   Route::post('changecourt', 'PostController@changecourt');
   Route::post('changenumber', 'PostController@changenumber');

@@ -16,6 +16,9 @@ use app\Http\Controllers\PostController;
 // ルートを追加する※Laravel8の場合
 // Route::get('/hello', "PostController");
 
+// ADRのサンプルで作成
+Route::get('/sample', \App\Http\Actions\SampleIndexAction::class);
+
 Route::get('/{any}', function () {
     return view('welcome');
 })->where('any','.*');
@@ -27,5 +30,3 @@ Route::get('/{any}', function () {
 // Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-

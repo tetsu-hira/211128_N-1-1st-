@@ -2,71 +2,49 @@ import React from "react";
 import { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import Form from "./Form";
+import Add from "./Add";
 import Sort from "./Sort";
 
 
 const Top = () => {
   const [team, setTeam] = useState([]);
+  const [post, setPost] = useState([]);
   const [court, setCourt] = useState([]);
   const [number, setNumber] = useState([]);
   const [id, setId] = useState();
   const [changeCourt, setChangeCourt] = useState("");
   const [changeNumber, setChangeNumber] = useState("");
-  const [midchangeCourt, setMidChangeCourt] = useState("");
-  const [midchangeNumber, setMidChangeNumber] = useState("");
-  const [laschangeCourt, setLasChangeCourt] = useState("");
-  const [laschangeNumber, setLasChangeNumber] = useState("");
+  // const [midchangeCourt, setMidChangeCourt] = useState("");
+  // const [midchangeNumber, setMidChangeNumber] = useState("");
+  // const [laschangeCourt, setLasChangeCourt] = useState("");
+  // const [laschangeNumber, setLasChangeNumber] = useState("");
   const [teamId, setTeamId] = useState();
   const [keys, setKeys] = useState([]);
   const [sort, setSort] =useState({});
   
   console.log(team);
   const handleDelete = () => {
-    axios.post('/api/del', {
+    axios.post('/api/delPost', {
       id: id
     });
   };
-  // 予選リーグ用
+  const handleDelTeam = () => {
+    axios.post('/api/delTeam', {
+      id: id
+    });
+  };
+  // 一般部門のくじ引き
   const handleChangeCourt = () => {
     axios.post('/api/changecourt', {
       id: teamId,
       court: changeCourt
     });
   };
+  // 招待部門のくじ引き
   const handleChangeNumber = () => {
     axios.post('/api/changenumber', {
       id: teamId,
       number: changeNumber
-    });
-  };
-  // 中間リーグ用
-  const handleMidChangeCourt = () => {
-    axios.post('/api/changemidcourt', {
-      id: teamId,
-      midcourt: midchangeCourt
-    });
-    console.log(teamId);
-    console.log(midchangeCourt);
-  };
-  const handleMidChangeNumber = () => {
-    axios.post('/api/changemidnumber', {
-      id: teamId,
-      midnumber: midchangeNumber
-    });
-  };
-  // 最終リーグ用
-  const handleLasChangeCourt = () => {
-    axios.post('/api/changelascourt', {
-      id: teamId,
-      lascourt: laschangeCourt
-    });
-    console.log(teamId);
-    console.log(laschangeCourt);
-  };
-  const handleLasChangeNumber = () => {
-    axios.post('/api/changelasnumber', {
-      id: teamId,
-      lasnumber: laschangeNumber
     });
   };
   // ソート機能
@@ -113,12 +91,20 @@ const Top = () => {
 
 
   useEffect(() => {
-    getUsers()
+    getPosts()
   },[])
-  const getUsers = async () => {
+  const getPosts = async () => {
     const response = await axios.get('/api/post');
-    setTeam(response.data.posts);
+    setPost(response.data.posts);
     setKeys(Object.keys(response.data.posts[0]));
+  }
+  useEffect(() => {
+    getTeams()
+  },[])
+  const getTeams = async () => {
+    const response = await axios.get('/api/team');
+    setTeam(response.data.teams);
+    setKeys(Object.keys(response.data.teams[0]));
   }
 
   useEffect(() => {
@@ -141,11 +127,11 @@ const Top = () => {
     <>
       <div className="Index">
         <div className="IndexContainer">
-          <div className="IndexContent__header">
-            <h1>ResultSheet</h1>
-          </div>
           <div className="IndexContent__flex">
             <div className="IndexTable">
+              <div className="IndexContent__header">
+                <h1>Invitation Category</h1>
+              </div>
               <div className="IndexTable__container">
                 <div className="IndexTable__head">
                   <div className="id">No.</div>
@@ -189,28 +175,28 @@ const Top = () => {
                 </div>
               </div>
               <ul className="IndexTable__body">
-                {team.map(team=>(
-                    <li key={team.id}>
+                {post.map(post=>(
+                    <li key={post.id}>
                       <div className="ItemData">
                         <div className="FlexLeft">
-                          <div className="id">{team.id}</div>
-                          <div className="name">{team.name}</div>
+                          <div className="id">{post.id}</div>
+                          <div className="name">{post.name}</div>
                         </div>
                         <div className="FlexRight">
                           <div className="change">
                             <form onClick={handleChangeNumber} method="post" action="/api/changenumber">
-                              <select className="number" defaultValue={team.number} name="itemNumber" onChange={(e) => {setTeamId(team.id); setChangeNumber(e.target.value); }}>
+                              <select className="number" defaultValue={post.number} name="itemNumber" onChange={(e) => {setTeamId(post.id); setChangeNumber(e.target.value); }}>
                                 {number.map(number=>(
                                   <option menuitem={number.number} key={number.id} name={number.id} value={number.number}>{number.number}</option>
                                 ))}
-                                  <option hidden={team.number}>{team.number}</option>
+                                  <option hidden={post.number}>{post.number}</option>
                               </select>
                             </form>
                           </div>
-                          <div className="point">{team.sum_point}</div>
-                          <div className="score">{team.sum_score}</div>
-                          <form action="/api/del" method="POST" onSubmit={handleDelete}>
-                            <input type="submit" className="edit" value="削除" name={team.id} onClick={() => setId(team.id)}></input>
+                          <div className="point">{post.sum_point}</div>
+                          <div className="score">{post.sum_score}</div>
+                          <form action="/api/delPost" method="POST" onSubmit={handleDelete}>
+                            <input type="submit" className="edit" value="削除" name={post.id} onClick={() => setId(post.id)}></input>
                           </form>
                         </div>
                       </div>
@@ -220,6 +206,9 @@ const Top = () => {
               <Form />
             </div>
             <div className="IndexTable">
+              <div className="IndexContent__header">
+                <h1>General Category</h1>
+              </div>
               <div className="IndexTable__container">
                 <div className="IndexTable__head">
                   <div className="id">No.</div>
@@ -272,8 +261,8 @@ const Top = () => {
                         </div>
                         <div className="FlexRight">
                           <div className="change">
-                            <form onClick={handleChangeNumber} method="post" action="/api/changenumber">
-                              <select className="number" defaultValue={team.number} name="itemNumber" onChange={(e) => {setTeamId(team.id); setChangeNumber(e.target.value); }}>
+                            <form onClick={handleChangeCourt} method="post" action="/api/changecourt">
+                              <select className="number" defaultValue={team.number} name="itemNumber" onChange={(e) => {setTeamId(team.id); setChangeCourt(e.target.value); }}>
                                 {number.map(number=>(
                                   <option menuitem={number.number} key={number.id} name={number.id} value={number.number}>{number.number}</option>
                                 ))}
@@ -283,7 +272,7 @@ const Top = () => {
                           </div>
                           <div className="point">{team.sum_point}</div>
                           <div className="score">{team.sum_score}</div>
-                          <form action="/api/del" method="POST" onSubmit={handleDelete}>
+                          <form action="/api/delTeam" method="POST" onSubmit={handleDelTeam}>
                             <input type="submit" className="edit" value="削除" name={team.id} onClick={() => setId(team.id)}></input>
                           </form>
                         </div>
@@ -291,7 +280,7 @@ const Top = () => {
                     </li>
                 ))}
               </ul>
-              <Form />
+              <Add />
             </div>
           </div>
         </div>
