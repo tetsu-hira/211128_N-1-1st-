@@ -21,7 +21,7 @@ const Top = () => {
   const [teamId, setTeamId] = useState();
   const [keys, setKeys] = useState([]);
   const [sort, setSort] =useState({});
-  
+
   console.log(team);
   const handleDelete = () => {
     axios.post('/api/delPost', {

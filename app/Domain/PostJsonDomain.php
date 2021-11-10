@@ -3,19 +3,17 @@ declare(strict_types=1);
 
 namespace App\Domain;
 
-class SampleIndexDomain
+class PostJsonDomain
 {
   public function get()
   {
     /*
       * 必要な処理あれこれ
-      * .
-      * .
-      * .
-      */
+    */
+    $post = \DB::table('posts')->get();
 
     return [
-      'name' => 'Laravel ADR Sample'
+      $post
     ];
   }
 }

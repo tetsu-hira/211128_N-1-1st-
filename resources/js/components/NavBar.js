@@ -21,7 +21,7 @@ const NavBar = () => {
             <li className="HeaderButton">一般部門</li>
           </Link>
           <Link to="las">
-            <li className="HeaderButton">最終リーグ</li>
+            <li className="HeaderButton">サンプル</li>
           </Link>
         </ul>
         <ul className="JumpList">

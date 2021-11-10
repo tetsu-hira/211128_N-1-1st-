@@ -10651,3 +10651,7 @@ input {
 table {
   width: 1200px;
 }
+
+.Sample {
+  padding-top: 5em;
+}
