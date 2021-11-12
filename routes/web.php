@@ -19,6 +19,8 @@ use app\Http\Controllers\PostController;
 // ADRのサンプルで作成
 Route::get('/api/posts', \App\Http\Actions\PostJsonAction::class);
 Route::get('/api/teams', \App\Http\Actions\TeamJsonAction::class);
+Route::get('/api/numbers', \App\Http\Actions\NumberJsonAction::class);
+Route::post('/api/adds', \App\Http\Actions\AddJsonAction::class);
 
 Route::get('/{any}', function () {
     return view('welcome');

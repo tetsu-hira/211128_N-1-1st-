@@ -2,18 +2,24 @@ import axios from "axios";
 import React from "react";
 import { useState, useEffect } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll/";
+import Add from "./Add";
+
 
 const Las = () => {
   const [post, setPost] = useState([]);
   const [team, setTeam] = useState([]);
+  const [number, setNumber] = useState([]);
+  const [keys, setKeys] = useState([]);
   const [id, setId] = useState();
+
 
   useEffect(() => {
     getPost()
   },[])
   const getPost = async () => {
-    const response = await axios.get('/api/posts');
+    const response = await axios.get('/api/posts'); 
     setPost(response.data.data[0])
+    setKeys(Object.keys(response.data.data[0]));
   }
 
   useEffect(() => {
@@ -22,6 +28,15 @@ const Las = () => {
   const getTeam = async () => {
     const response = await axios.get('/api/teams');
     setTeam(response.data.data[0])
+    setKeys(Object.keys(response.data.data[0]));
+  }
+
+  useEffect(() => {
+    getNumber()
+  },[])
+  const getNumber = async () => {
+    const response = await axios.get('/api/numbers');
+    setNumber(response.data.data[0])
   }
 
   return (
@@ -55,6 +70,9 @@ const Las = () => {
                         <div className="change">
                           <form /* onClick={handleChangeNumber} method="post" action="/api/changenumber" */>
                             <select className="number" defaultValue={post.number} name="itemNumber" /* onChange={(e) => {setTeamId(post.id); setChangeNumber(e.target.value); }} */>
+                              {number.map(number=>(
+                                <option menuitem={number.number} key={number.id} name={number.id} value={number.number}>{number.number}</option>
+                              ))}
                               <option hidden={post.number}>{post.number}</option>
                             </select>
                           </form>
@@ -69,6 +87,7 @@ const Las = () => {
                   </li>
                 ))}
               </ul>
+              <Add />
             </div>
             <div className="IndexTable">
               <div className="IndexContent__header">
@@ -96,6 +115,9 @@ const Las = () => {
                         <div className="change">
                           <form /* onClick={handleChangeNumber} method="team" action="/api/changenumber" */>
                             <select className="number" defaultValue={team.number} name="itemNumber" /* onChange={(e) => {setTeamId(team.id); setChangeNumber(e.target.value); }} */>
+                              {number.map(number=>(
+                                <option menuitem={number.number} key={number.id} name={number.id} value={number.number}>{number.number}</option>
+                              ))}
                               <option hidden={team.number}>{team.number}</option>
                             </select>
                           </form>

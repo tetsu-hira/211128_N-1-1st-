@@ -3,7 +3,7 @@ import React from "react";
 const Add = () => {
 
   return (
-    <form className="Form" method="POST" action="/api/addTeam">
+    <form className="Form" method="POST" action="/api/adds">
       <div className="FormContent">
         <label htmlFor="id"></label>
         <input type="text" className="FormContent__id" name="id" id="id" />
