@@ -193,8 +193,8 @@ const Top = () => {
                               </select>
                             </form>
                           </div>
-                          <div className="point">{post.sum_point}</div>
-                          <div className="score">{post.sum_score}</div>
+                          <div className="point">{post.pre_point}</div>
+                          <div className="score">{post.pre_score}</div>
                           <form action="/api/delPost" method="POST" onSubmit={handleDelete}>
                             <input type="submit" className="edit" value="削除" name={post.id} onClick={() => setId(post.id)}></input>
                           </form>
@@ -270,8 +270,8 @@ const Top = () => {
                               </select>
                             </form>
                           </div>
-                          <div className="point">{team.sum_point}</div>
-                          <div className="score">{team.sum_score}</div>
+                          <div className="point">{team.pre_point}</div>
+                          <div className="score">{team.pre_score}</div>
                           <form action="/api/delTeam" method="POST" onSubmit={handleDelTeam}>
                             <input type="submit" className="edit" value="削除" name={team.id} onClick={() => setId(team.id)}></input>
                           </form>

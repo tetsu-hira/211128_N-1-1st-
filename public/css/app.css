@@ -10074,7 +10074,7 @@ input {
   min-width: 1600px;
   display: flex;
   position: fixed;
-  box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 3px 4px -1px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 0 rgba(255, 255, 255, 0.3), 1px 1px 3px -1px rgba(0, 0, 0, 0.3);
   z-index: 100;
 }
 .Header .nav {
@@ -10083,6 +10083,7 @@ input {
 .HeaderButton {
   font-weight: 600;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 56px;
   color: #6c7686;
   display: inline-block;
@@ -10150,11 +10151,12 @@ input {
   font-weight: 600;
   font-size: 16px;
   line-height: 56px;
+  font-family: Arial, Helvetica, sans-serif;
   color: #6c7686;
   display: inline-block;
   background-color: #dfe7f1;
   padding: 0 8px;
-  padding-bottom: 4px;
+  padding-bottom: 1px;
   width: 120px;
   text-align: center;
   text-shadow: -4px 7px 1px rgba(200, 200, 200, 0.9);

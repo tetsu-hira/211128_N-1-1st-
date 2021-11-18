@@ -6,7 +6,7 @@ namespace App\Http\Responders;
 use Illuminate\Http\Response;
 use SYmfony\Component\HttpFoundation\JsonResponse;
 
-class AddJsonResponder
+class FirstJsonResponder
 {
   /**
    * @param $data

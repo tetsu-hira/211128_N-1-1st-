@@ -7,31 +7,29 @@ use illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use App\Http\Controllers\Controller;
 
-use App\Domain\AddJsonDomain AS Domain;
-use App\Http\Responders\AddJsonResponder AS Responder;
+use App\Domain\FirstJsonDomain AS Domain;
+use App\Http\Responders\FirstJsonResponder AS Responder;
 
-class AddJsonAction extends Controller
+class FirstJsonAction extends Controller
 {
   protected $Domain;
   protected $Responder;
 
-  public function __construct(Request $request)
+  public function __construct(Domain $Domain, Responder $Responder)
   {
-    // $this->Domain   = $Domain;
-    // $this->Responder  = $Responder;
-    logger($request);
+    $this->Domain   = $Domain;
+    $this->Responder  = $Responder;
     $this->middleware('JpJsonResponse');
   }
 
   /**
-   * @param Request $request
+   * @param Request $requeset
    * @return  JsonResponse
    */
   public function __invoke(Request $request): JsonResponse
   {
-    logger($request);
     return $this->Responder->response(
-      $this->Domain->add($request)
+      $this->Domain->get()
     );
   }
 }

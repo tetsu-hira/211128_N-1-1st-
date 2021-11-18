@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import NavBar from "./NavBar.js";
 import Top from "./Top.js";
-import Pre from "./Pre.js";
+import Act from "./Act.js";
 import Mid from "./Mid.js";
 import Las from "./Las.js";
 import {
@@ -20,7 +20,7 @@ function App() {
         <NavBar />
         <Switch>
           <Top path="/" exact component={Top} />
-          <Pre path="/pre" component={Pre} />
+          <Act path="/act" component={Act} />
           <Mid path="/mid" component={Mid} />
           <Las path="/las" component={Las} />
         </Switch>

@@ -16,12 +16,15 @@ use app\Http\Controllers\PostController;
 // ルートを追加する※Laravel8の場合
 // Route::get('/hello', "PostController");
 
-// ADRのサンプルで作成
-Route::get('/api/posts', \App\Http\Actions\PostJsonAction::class);
-Route::get('/api/teams', \App\Http\Actions\TeamJsonAction::class);
-Route::get('/api/numbers', \App\Http\Actions\NumberJsonAction::class);
-Route::post('/api/adds', \App\Http\Actions\AddJsonAction::class);
+// // ADRのサンプルで作成
+// Route::get('/api/posts', \App\Http\Actions\PostJsonAction::class);
+// Route::get('/api/teams', \App\Http\Actions\TeamJsonAction::class);
+// Route::get('/api/numbers', \App\Http\Actions\NumberJsonAction::class);
+// Route::get('/api/firsts', \App\Http\Actions\FirstJsonAction::class);
 
+
+// Route::post('/api/adds', \App\Http\Actions\PostAddAction::class);
+// Route::get('/api/adds', \App\Http\Actions\PostAddAction::class);
 Route::get('/{any}', function () {
     return view('welcome');
 })->where('any','.*');
