@@ -2735,24 +2735,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA1(countA1 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA1(countA1 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA1(countA1 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA1(countA1 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -2768,24 +2772,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA2(countA2 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA2(countA2 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA2(countA2 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA2(countA2 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -2795,24 +2803,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA3(countA3 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA3(countA3 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA3(countA3 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA3(countA3 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -2828,24 +2840,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA4(countA4 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA4(countA4 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA4(countA4 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA4(countA4 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       })]
@@ -2882,24 +2898,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA5(countA5 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA5(countA5 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA5(countA5 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA5(countA5 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -2915,24 +2935,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA6(countA6 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA6(countA6 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA6(countA6 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA6(countA6 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -2942,24 +2966,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA7(countA7 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA7(countA7 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA7(countA7 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA7(countA7 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -2975,24 +3003,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA8(countA8 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA8(countA8 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA8(countA8 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA8(countA8 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       })]
@@ -3029,24 +3061,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA9(countA9 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA9(countA9 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA9(countA9 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA9(countA9 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -3062,24 +3098,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA10(countA10 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA10(countA10 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA10(countA10 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA10(countA10 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -3089,24 +3129,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA11(countA11 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA11(countA11 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA11(countA11 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA11(countA11 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -3122,24 +3166,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA12(countA12 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA12(countA12 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA12(countA12 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA12(countA12 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       })]
@@ -3176,24 +3224,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA13(countA13 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA13(countA13 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA13(countA13 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA13(countA13 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -3209,24 +3261,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA14(countA14 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA14(countA14 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA14(countA14 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA14(countA14 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -3236,24 +3292,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA15(countA15 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA15(countA15 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA15(countA15 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA15(countA15 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -3269,24 +3329,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA16(countA16 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA16(countA16 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA16(countA16 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA16(countA16 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       })]
@@ -3323,24 +3387,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA17(countA17 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA17(countA17 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA17(countA17 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA17(countA17 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -3356,24 +3424,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA18(countA18 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA18(countA18 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA18(countA18 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA18(countA18 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -3383,24 +3455,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA19(countA19 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA19(countA19 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA19(countA19 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA19(countA19 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -3416,24 +3492,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA20(countA20 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA20(countA20 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA20(countA20 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA20(countA20 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       })]
@@ -3470,24 +3550,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA21(countA21 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA21(countA21 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA21(countA21 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA21(countA21 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -3503,24 +3587,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA22(countA22 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA22(countA22 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA22(countA22 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA22(countA22 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -3530,24 +3618,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA23(countA23 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA23(countA23 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA23(countA23 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA23(countA23 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -3563,24 +3655,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA24(countA24 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA24(countA24 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA24(countA24 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA24(countA24 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       })]
@@ -3617,24 +3713,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA25(countA25 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA25(countA25 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA25(countA25 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA25(countA25 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -3650,24 +3750,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA26(countA26 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA26(countA26 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA26(countA26 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA26(countA26 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -3677,24 +3781,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA27(countA27 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA27(countA27 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA27(countA27 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA27(countA27 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -3710,24 +3818,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA28(countA28 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA28(countA28 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA28(countA28 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA28(countA28 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       })]
@@ -3764,24 +3876,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA29(countA29 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA29(countA29 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA29(countA29 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA29(countA29 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -3797,24 +3913,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA30(countA30 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA30(countA30 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA30(countA30 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA30(countA30 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -3824,24 +3944,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA31(countA31 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA31(countA31 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA31(countA31 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA31(countA31 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -3857,24 +3981,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA32(countA32 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA32(countA32 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA32(countA32 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA32(countA32 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       })]
@@ -3911,24 +4039,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA33(countA33 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA33(countA33 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA33(countA33 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA33(countA33 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -3944,24 +4076,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA34(countA34 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA34(countA34 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA34(countA34 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA34(countA34 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -3971,24 +4107,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA35(countA35 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA35(countA35 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA35(countA35 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA35(countA35 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -4004,24 +4144,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA36(countA36 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA36(countA36 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA36(countA36 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA36(countA36 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       })]
@@ -4058,24 +4202,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA37(countA37 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA37(countA37 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA37(countA37 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA37(countA37 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -4091,24 +4239,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA38(countA38 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA38(countA38 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA38(countA38 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA38(countA38 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -4118,24 +4270,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA39(countA39 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA39(countA39 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA39(countA39 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA39(countA39 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -4151,24 +4307,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA40(countA40 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA40(countA40 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA40(countA40 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA40(countA40 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       })]
@@ -4205,24 +4365,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA41(countA41 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA41(countA41 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA41(countA41 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA41(countA41 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -4238,24 +4402,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA42(countA42 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA42(countA42 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA42(countA42 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA42(countA42 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -4265,24 +4433,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA43(countA43 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA43(countA43 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA43(countA43 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA43(countA43 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -4298,24 +4470,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA44(countA44 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA44(countA44 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA44(countA44 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA44(countA44 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       })]
@@ -4352,24 +4528,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA45(countA45 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA45(countA45 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA45(countA45 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA45(countA45 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -4385,24 +4565,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA46(countA46 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA46(countA46 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA46(countA46 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA46(countA46 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)("div", {
@@ -4412,24 +4596,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA47(countA47 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA47(countA47 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA47(countA47 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA47(countA47 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
                           className: "CountPoint",
@@ -4445,24 +4633,28 @@ var Act = function Act() {
                           onClick: function onClick() {
                             setCountA48(countA48 * 0);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "C"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA48(countA48 - 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "-1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA48(countA48 + 1);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+1"
                         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("button", {
                           className: "CountButton",
                           onClick: function onClick() {
                             setCountA48(countA48 + 5);
                           },
+                          onMouseLeave: handleChangeCount,
                           children: "+5"
                         })]
                       })]
@@ -8792,6 +8984,7 @@ var NavBar = function NavBar() {
     setAct(false);
     setMid(false);
     setLas(false);
+    axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/getResult');
   };
 
   var handleOnPre = function handleOnPre() {
@@ -8799,6 +8992,7 @@ var NavBar = function NavBar() {
     setAct(true);
     setMid(false);
     setLas(false);
+    axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/getResult');
   };
 
   var handleOnMid = function handleOnMid() {
@@ -8806,6 +9000,7 @@ var NavBar = function NavBar() {
     setAct(false);
     setMid(true);
     setLas(false);
+    axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/getResult');
   };
 
   var handleOnLas = function handleOnLas() {
@@ -8813,6 +9008,7 @@ var NavBar = function NavBar() {
     setAct(false);
     setMid(false);
     setLas(true);
+    axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/getResult');
   };
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
@@ -9312,10 +9508,10 @@ var Top = function Top() {
                         })
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
                         className: "point",
-                        children: post.pre_point
+                        children: post.sum_point
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
                         className: "score",
-                        children: post.pre_score
+                        children: post.sum_score
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("form", {
                         action: "/api/delPost",
                         method: "POST",
@@ -9434,10 +9630,10 @@ var Top = function Top() {
                         })
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
                         className: "point",
-                        children: team.pre_point
+                        children: team.sum_point
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("div", {
                         className: "score",
-                        children: team.pre_score
+                        children: team.sum_score
                       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_6__.jsx)("form", {
                         action: "/api/delTeam",
                         method: "POST",

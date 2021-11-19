@@ -12,28 +12,32 @@ const NavBar = () => {
   const [las, setLas] = useState(false);
 
   const handleOnTop = () => {
-    setTop(true)
-    setAct(false)
-    setMid(false)
-    setLas(false)
+    setTop(true);
+    setAct(false);
+    setMid(false);
+    setLas(false);
+    axios.post('/api/getResult');
   }
   const handleOnPre = () => {
     setTop(false)
     setAct(true)
     setMid(false)
     setLas(false)
+    axios.post('/api/getResult');
   }
   const handleOnMid = () => {
     setTop(false)
     setAct(false)
     setMid(true)
     setLas(false)
+    axios.post('/api/getResult');
   }
   const handleOnLas = () => {
     setTop(false)
     setAct(false)
     setMid(false)
     setLas(true)
+    axios.post('/api/getResult');
   }
 
   return (

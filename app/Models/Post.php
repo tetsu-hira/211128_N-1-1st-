@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     use HasFactory;
+    protected $fillable = ['sum_point']; //保存したいカラム名が1つの場合
+    protected $casts = [
+      'pre_point' => 'integer',
+      'pre_score' => 'integer',
+      'mid_point' => 'integer',
+      'mid_score' => 'integer',
+      'las_point' => 'integer',
+      'las_score' => 'integer',
+      'sum_point' => 'integer',
+      'sum_score' => 'integer',
+    ];
 }

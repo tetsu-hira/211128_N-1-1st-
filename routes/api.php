@@ -68,4 +68,6 @@ Route::group(['middleware' => 'api'], function(){
   Route::post('changecount', 'PostController@changecount');
   Route::post('changecount2', 'PostController@changecount2');
   Route::post('changecount3', 'PostController@changecount3');
+  Route::get('getResult', 'PostController@getResult');
+  Route::post('getResult', 'PostController@getResult');
 });
