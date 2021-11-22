@@ -8,7 +8,7 @@ const Act = () => {
   const [game, setGame] = useState([]);
   const [keys, setKeys] = useState([]);
   const [id, setId] = useState();
-  const [countA1, setCountA1] = useState([]);
+  const [countA1, setCountA1] = useState(0);
   const [countA2, setCountA2] = useState(0);
   const [countA3, setCountA3] = useState(0);
   const [countA4, setCountA4] = useState(0);
@@ -217,8 +217,7 @@ const Act = () => {
       <div className="Pre">
         <div className="PreContainer">
           <div className="PreMain">
-            <h2>Aコート</h2>
-            <button className="updateButton" onClick={handleChangeCount}>登録</button>
+            <h2>- Aコート -</h2>
             <div className="Table">
               <table border="1">
                 <thead>

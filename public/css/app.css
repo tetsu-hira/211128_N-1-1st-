@@ -10098,6 +10098,7 @@ input {
   border-right: 2px solid #d0e0ee;
   border-left: 1px solid #87a2ba;
   transition: 0.1s;
+  height: 57px;
 }
 .Header .JumpList {
   display: flex;

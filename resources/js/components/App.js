@@ -3,8 +3,8 @@ import ReactDOM from "react-dom";
 import NavBar from "./NavBar.js";
 import Top from "./Top.js";
 import Act from "./Act.js";
-import Mid from "./Mid.js";
-import Las from "./Las.js";
+import Bct from "./Bct.js";
+import Cct from "./Cct.js";
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,8 +21,8 @@ function App() {
         <Switch>
           <Top path="/" exact component={Top} />
           <Act path="/act" component={Act} />
-          <Mid path="/mid" component={Mid} />
-          <Las path="/las" component={Las} />
+          <Bct path="/bct" component={Bct} />
+          <Cct path="/cct" component={Cct} />
         </Switch>
       </div>
     </Router>
