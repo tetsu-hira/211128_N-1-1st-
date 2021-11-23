@@ -3,7 +3,8 @@ import { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import Form from "./Form";
 import Add from "./Add";
-import Sort from "./Sort";
+import Sort1 from "./Sort1";
+import Sort2 from "./Sort2";
 
 
 const Top = () => {
@@ -48,7 +49,37 @@ const Top = () => {
     });
   };
   // ソート機能
-  const handleSort = (key) => {
+  const handleSort1 = (key) => {
+    if (sort.key === key) {
+      setSort({ ...sort, order: -sort.order });
+    } else {
+      setSort({
+        key: key,
+        order: 1
+      })
+    }
+  };
+  let sortedPosts = useMemo(() => {
+    let _sortedPosts = post;
+    if (sort.key) {
+      _sortedPosts = _sortedPosts.sort((a, b) => {
+        a = a[sort.key];
+        b = b[sort.key];
+
+        if(a === b) {
+          return 0;
+        }
+        if(a > b) {
+          return 1 * sort.order;
+        }
+        if(a < b) {
+          return -1 * sort.order;
+        }
+      });
+    }
+    return _sortedPosts;
+  }, [sort]);
+  const handleSort2 = (key) => {
     if (sort.key === key) {
       setSort({ ...sort, order: -sort.order });
     } else {
@@ -142,34 +173,34 @@ const Top = () => {
                   <div className="rank"></div>
                 </div>
                 <div className="IndexButton>">
-                  <Sort
+                  <Sort1
                     key={keys[0]}
                     button={keys[0]}
-                    handleSort={handleSort}
+                    handleSort1={handleSort1}
                     name="▼"
                   />
-                  <Sort
+                  <Sort1
                     key={keys[1]}
                     button={keys[1]}
-                    handleSort={handleSort}
+                    handleSort1={handleSort1}
                     name="▼"
                   />
-                  <Sort
+                  <Sort1
                     key={keys[5]}
                     button={keys[5]}
-                    handleSort={handleSort}
+                    handleSort1={handleSort1}
                     name="▼"
                   />
-                  <Sort
+                  <Sort1
                     key={keys[14]}
                     button={keys[14]}
-                    handleSort={handleSort}
+                    handleSort1={handleSort1}
                     name="▼"
                   />
-                  <Sort
+                  <Sort1
                     key={keys[15]}
                     button={keys[15]}
-                    handleSort={handleSort}
+                    handleSort1={handleSort1}
                     name="▼"
                   />
                 </div>
@@ -219,34 +250,34 @@ const Top = () => {
                   <div className="rank"></div>
                 </div>
                 <div className="IndexButton>">
-                  <Sort
+                  <Sort2
                     key={keys[0]}
                     button={keys[0]}
-                    handleSort={handleSort}
+                    handleSort2={handleSort2}
                     name="▼"
                   />
-                  <Sort
+                  <Sort2
                     key={keys[1]}
                     button={keys[1]}
-                    handleSort={handleSort}
+                    handleSort2={handleSort2}
                     name="▼"
                   />
-                  <Sort
+                  <Sort2
                     key={keys[5]}
                     button={keys[5]}
-                    handleSort={handleSort}
+                    handleSort2={handleSort2}
                     name="▼"
                   />
-                  <Sort
+                  <Sort2
                     key={keys[14]}
                     button={keys[14]}
-                    handleSort={handleSort}
+                    handleSort2={handleSort2}
                     name="▼"
                   />
-                  <Sort
+                  <Sort2
                     key={keys[15]}
                     button={keys[15]}
-                    handleSort={handleSort}
+                    handleSort2={handleSort2}
                     name="▼"
                   />
                 </div>

@@ -5,6 +5,8 @@ import Top from "./Top.js";
 import Act from "./Act.js";
 import Bct from "./Bct.js";
 import Cct from "./Cct.js";
+import Dct from "./Dct.js";
+import Ect from "./Ect.js";
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,6 +25,8 @@ function App() {
           <Act path="/act" component={Act} />
           <Bct path="/bct" component={Bct} />
           <Cct path="/cct" component={Cct} />
+          <Dct path="/dct" component={Dct} />
+          <Ect path="/ect" component={Ect} />
         </Switch>
       </div>
     </Router>

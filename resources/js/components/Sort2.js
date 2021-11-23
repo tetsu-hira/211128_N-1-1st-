@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Sort = ({ button, handleSort, name }) => {
+const Sort2 = ({ button, handleSort2, name }) => {
   return (
     <div className="SortButton">
       <button
-        onClick={() => handleSort(button)}
+        onClick={() => handleSort2(button)}
         className={button} value={name}>
         {name}
       </button>
@@ -12,4 +12,4 @@ const Sort = ({ button, handleSort, name }) => {
   )
 }
 
-export default Sort;
+export default Sort2;

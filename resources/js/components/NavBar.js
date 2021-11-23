@@ -10,31 +10,57 @@ const NavBar = () => {
   const [act, setAct] = useState(false);
   const [bct, setBct] = useState(false);
   const [cct, setCct] = useState(false);
+  const [dct, setDct] = useState(false);
+  const [ect, setEct] = useState(false);
 
   const handleOnTop = () => {
     setTop(true);
     setAct(false);
     setBct(false);
     setCct(false);
+    setDct(false);
+    setEct(false);
     axios.post('/api/getResult');
   }
-  const handleOnPre = () => {
+  const handleOnAct = () => {
     setTop(false)
     setAct(true)
     setBct(false)
     setCct(false)
+    setDct(false)
+    setEct(false)
   }
-  const handleOnMid = () => {
+  const handleOnBct = () => {
     setTop(false)
     setAct(false)
     setBct(true)
     setCct(false)
+    setDct(false)
+    setEct(false)
   }
-  const handleOnLas = () => {
+  const handleOnCct = () => {
     setTop(false)
     setAct(false)
     setBct(false)
     setCct(true)
+    setDct(false)
+    setEct(false)
+  }
+  const handleOnDct = () => {
+    setTop(false)
+    setAct(false)
+    setBct(false)
+    setCct(false)
+    setDct(true)
+    setEct(false)
+  }
+  const handleOnEct = () => {
+    setTop(false)
+    setAct(false)
+    setBct(false)
+    setCct(false)
+    setDct(false)
+    setEct(true)
   }
 
   return (
@@ -44,14 +70,20 @@ const NavBar = () => {
           <Link to="/" onClick={handleOnTop}>
             <li className={top ? 'SelectedButton' : 'HeaderButton'}>総合結果</li>
           </Link>
-          <Link to="act" onClick={handleOnPre}>
+          <Link to="act" onClick={handleOnAct}>
             <li className={act ? 'SelectedButton' : 'HeaderButton'}>Aコート</li>
           </Link>
-          <Link to="bct" onClick={handleOnMid}>
+          <Link to="bct" onClick={handleOnBct}>
             <li className={bct ? 'SelectedButton' : 'HeaderButton'}>Bコート</li>
           </Link>
-          <Link to="cct" onClick={handleOnLas}>
+          <Link to="cct" onClick={handleOnCct}>
             <li className={cct ? 'SelectedButton' : 'HeaderButton'}>Cコート</li>
+          </Link>
+          <Link to="dct" onClick={handleOnDct}>
+            <li className={dct ? 'SelectedButton' : 'HeaderButton'}>Dコート</li>
+          </Link>
+          <Link to="ect" onClick={handleOnEct}>
+            <li className={ect ? 'SelectedButton' : 'HeaderButton'}>Eコート</li>
           </Link>
         </ul>
         {/* <ul className="JumpList"> 

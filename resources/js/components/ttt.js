@@ -1,357 +1,355 @@
-  // Cコート予選結果計算機能
-  public function changecount3(Request $request)
+  // Eコート予選結果計算機能
+  public function changecount5(Request $request)
   {
-    $countC1 = $request->input('countC1');
-    $countC2 = $request->input('countC2');
-    $countC3 = $request->input('countC3');
-    $countC4 = $request->input('countC4');
-    $countC5 = $request->input('countC5');
-    $countC6 = $request->input('countC6');
-    $countC7 = $request->input('countC7');
-    $countC8 = $request->input('countC8');
-    $countC9 = $request->input('countC9');
-    $countC10 = $request->input('countC10');
-    $countC11 = $request->input('countC11');
-    $countC12 = $request->input('countC12');
-    $countC13 = $request->input('countC13');
-    $countC14 = $request->input('countC14');
-    $countC15 = $request->input('countC15');
-    $countC16 = $request->input('countC16');
-    $countC17 = $request->input('countC17');
-    $countC18 = $request->input('countC18');
-    $countC19 = $request->input('countC19');
-    $countC20 = $request->input('countC20');
-    $countC21 = $request->input('countC21');
-    $countC22 = $request->input('countC22');
-    $countC23 = $request->input('countC23');
-    $countC24 = $request->input('countC24');
-    $countC25 = $request->input('countC25');
-    $countC26 = $request->input('countC26');
-    $countC27 = $request->input('countC27');
-    $countC28 = $request->input('countC28');
-    $countC29 = $request->input('countC29');
-    $countC30 = $request->input('countC30');
-    $countC31 = $request->input('countC31');
-    $countC32 = $request->input('countC32');
-    $countC33 = $request->input('countC33');
-    $countC34 = $request->input('countC34');
-    $countC35 = $request->input('countC35');
-    $countC36 = $request->input('countC36');
-    $countC37 = $request->input('countC37');
-    $countC38 = $request->input('countC38');
-    $countC39 = $request->input('countC39');
-    $countC40 = $request->input('countC40');
-    $countC41 = $request->input('countC41');
-    $countC42 = $request->input('countC42');
-    $countC43 = $request->input('countC43');
-    $countC44 = $request->input('countC44');
-    $countC45 = $request->input('countC45');
-    $countC46 = $request->input('countC46');
-    $countC47 = $request->input('countC47');
-    $countC48 = $request->input('countC48');
+    $countE1 = $request->input('countE1');
+    $countE2 = $request->input('countE2');
+    $countE3 = $request->input('countE3');
+    $countE4 = $request->input('countE4');
+    $countE5 = $request->input('countE5');
+    $countE6 = $request->input('countE6');
+    $countE7 = $request->input('countE7');
+    $countE8 = $request->input('countE8');
+    $countE9 = $request->input('countE9');
+    $countE10 = $request->input('countE10');
+    $countE11 = $request->input('countE11');
+    $countE12 = $request->input('countE12');
+    $countE13 = $request->input('countE13');
+    $countE14 = $request->input('countE14');
+    $countE15 = $request->input('countE15');
+    $countE16 = $request->input('countE16');
+    $countE17 = $request->input('countE17');
+    $countE18 = $request->input('countE18');
+    $countE19 = $request->input('countE19');
+    $countE20 = $request->input('countE20');
+    $countE21 = $request->input('countE21');
+    $countE22 = $request->input('countE22');
+    $countE23 = $request->input('countE23');
+    $countE24 = $request->input('countE24');
+    $countE25 = $request->input('countE25');
+    $countE26 = $request->input('countE26');
+    $countE27 = $request->input('countE27');
+    $countE28 = $request->input('countE28');
+    $countE29 = $request->input('countE29');
+    $countE30 = $request->input('countE30');
+    $countE31 = $request->input('countE31');
+    $countE32 = $request->input('countE32');
+    $countE33 = $request->input('countE33');
+    $countE34 = $request->input('countE34');
+    $countE35 = $request->input('countE35');
+    $countE36 = $request->input('countE36');
+    $countE37 = $request->input('countE37');
+    $countE38 = $request->input('countE38');
+    $countE39 = $request->input('countE39');
+    $countE40 = $request->input('countE40');
+    $countE41 = $request->input('countE41');
+    $countE42 = $request->input('countE42');
+    $countE43 = $request->input('countE43');
+    $countE44 = $request->input('countE44');
+    $countE45 = $request->input('countE45');
+    $countE46 = $request->input('countE46');
+    $countE47 = $request->input('countE47');
+    $countE48 = $request->input('countE48');
 
-    $changecountC = new First;
-    $changecountC->timestamps = false;
-    $changecountC->where('id', 25)->update(['result1'=>$countC1, 'result2'=>$countC2, 'result3'=>$countC3, 'result4'=>$countC4]);
-    $changecountC->where('id', 26)->update(['result1'=>$countC5, 'result2'=>$countC6, 'result3'=>$countC7, 'result4'=>$countC8]);
-    $changecountC->where('id', 27)->update(['result1'=>$countC9, 'result2'=>$countC10, 'result3'=>$countC11, 'result4'=>$countC12]);
-    $changecountC->where('id', 28)->update(['result1'=>$countC13, 'result2'=>$countC14, 'result3'=>$countC15, 'result4'=>$countC16]);
-    $changecountC->where('id', 29)->update(['result1'=>$countC17, 'result2'=>$countC18, 'result3'=>$countC19, 'result4'=>$countC20]);
-    $changecountC->where('id', 30)->update(['result1'=>$countC21, 'result2'=>$countC22, 'result3'=>$countC23, 'result4'=>$countC24]);
-    $changecountC->where('id', 31)->update(['result1'=>$countC25, 'result2'=>$countC26, 'result3'=>$countC27, 'result4'=>$countC28]);
-    $changecountC->where('id', 32)->update(['result1'=>$countC29, 'result2'=>$countC30, 'result3'=>$countC31, 'result4'=>$countC32]);
-    $changecountC->where('id', 33)->update(['result1'=>$countC33, 'result2'=>$countC34, 'result3'=>$countC35, 'result4'=>$countC36]);
-    $changecountC->where('id', 34)->update(['result1'=>$countC37, 'result2'=>$countC38, 'result3'=>$countC39, 'result4'=>$countC40]);
-    $changecountC->where('id', 35)->update(['result1'=>$countC41, 'result2'=>$countC42, 'result3'=>$countC43, 'result4'=>$countC44]);
-    $changecountC->where('id', 36)->update(['result1'=>$countC45, 'result2'=>$countC46, 'result3'=>$countC47, 'result4'=>$countC48]);
+    $changecountE = new Second;
+    $changecountE->timestamps = false;
+    $changecountE->where('id', 13)->update(['result1'=>$countE1, 'result2'=>$countE2, 'result3'=>$countE3, 'result4'=>$countE4]);
+    $changecountE->where('id', 14)->update(['result1'=>$countE5, 'result2'=>$countE6, 'result3'=>$countE7, 'result4'=>$countE8]);
+    $changecountE->where('id', 15)->update(['result1'=>$countE9, 'result2'=>$countE10, 'result3'=>$countE11, 'result4'=>$countE12]);
+    $changecountE->where('id', 16)->update(['result1'=>$countE13, 'result2'=>$countE14, 'result3'=>$countE15, 'result4'=>$countE16]);
+    $changecountE->where('id', 17)->update(['result1'=>$countE17, 'result2'=>$countE18, 'result3'=>$countE19, 'result4'=>$countE20]);
+    $changecountE->where('id', 18)->update(['result1'=>$countE21, 'result2'=>$countE22, 'result3'=>$countE23, 'result4'=>$countE24]);
+    $changecountE->where('id', 19)->update(['result1'=>$countE25, 'result2'=>$countE26, 'result3'=>$countE27, 'result4'=>$countE28]);
+    $changecountE->where('id', 20)->update(['result1'=>$countE29, 'result2'=>$countE30, 'result3'=>$countE31, 'result4'=>$countE32]);
+    $changecountE->where('id', 21)->update(['result1'=>$countE33, 'result2'=>$countE34, 'result3'=>$countE35, 'result4'=>$countE36]);
+    $changecountE->where('id', 22)->update(['result1'=>$countE37, 'result2'=>$countE38, 'result3'=>$countE39, 'result4'=>$countE40]);
+    $changecountE->where('id', 23)->update(['result1'=>$countE41, 'result2'=>$countE42, 'result3'=>$countE43, 'result4'=>$countE44]);
+    $changecountE->where('id', 24)->update(['result1'=>$countE45, 'result2'=>$countE46, 'result3'=>$countE47, 'result4'=>$countE48]);
 
     // 勝ち点と得失点をteamテーブルに入れる
-    $c1point_A = 0;
-    $c1point_B = 0;
-    if (intval($countC1) > intval($countC2) && intval($countC3) > intval($countC4)) {
-      $c1point_A = 3;
-      $c1point_B = 0;
-    } elseif (intval($countC1) < intval($countC2) && intval($countC3) < intval($countC4)) {
-      $c1point_A = 0;
-      $c1point_B = 3;
-    } elseif ((intval($countC1) > intval($countC2) && intval($countC3) < intval($countC4)) || (intval($countC1) < intval($countC2) && intval($countC3) > intval($countC4))) {
-      if ((intval($countC1) + intval($countC3)) > (intval($countC2) + intval($countC4))) {
-        $c1point_A = 2;
-        $c1point_B = 1;
-      } elseif ((intval($countC1) + intval($countC3)) < (intval($countC2) + intval($countC4))) {
-        $c1point_A = 1;
-        $c1point_B = 2;
+    $e1point_A = 0;
+    $e1point_B = 0;
+    if (intval($countE1) > intval($countE2) && intval($countE3) > intval($countE4)) {
+      $e1point_A = 3;
+      $e1point_B = 0;
+    } elseif (intval($countE1) < intval($countE2) && intval($countE3) < intval($countE4)) {
+      $e1point_A = 0;
+      $e1point_B = 3;
+    } elseif ((intval($countE1) > intval($countE2) && intval($countE3) < intval($countE4)) || (intval($countE1) < intval($countE2) && intval($countE3) > intval($countE4))) {
+      if ((intval($countE1) + intval($countE3)) > (intval($countE2) + intval($countE4))) {
+        $e1point_A = 2;
+        $e1point_B = 1;
+      } elseif ((intval($countE1) + intval($countE3)) < (intval($countE2) + intval($countE4))) {
+        $e1point_A = 1;
+        $e1point_B = 2;
       } else {
-        $c1point_A = 1;
-        $c1point_B = 1;
+        $e1point_A = 1;
+        $e1point_B = 1;
       }
     } else {
-      $c1point_A = 0;
-      $c1point_B = 0;
+      $e1point_A = 0;
+      $e1point_B = 0;
     }
-    $c2point_A = 0;
-    $c2point_B = 0;
-    if (intval($countC5) > intval($countC6) && intval($countC7) > intval($countC8)) {
-      $c2point_A = 3;
-      $c2point_B = 0;
-    } elseif (intval($countC5) < intval($countC6) && intval($countC7) < intval($countC8)) {
-      $c2point_A = 0;
-      $c2point_B = 3;
-    } elseif ((intval($countC5) > intval($countC6) && intval($countC7) < intval($countC8)) || (intval($countC5) < intval($countC6) && intval($countC7) > intval($countC8))) {
-      if ((intval($countC5) + intval($countC7)) > (intval($countC6) + intval($countC8))) {
-        $c2point_A = 2;
-        $c2point_B = 1;
-      } elseif ((intval($countC5) + intval($countC7)) < (intval($countC6) + intval($countC8))) {
-        $c2point_A = 1;
-        $c2point_B = 2;
+    $e2point_A = 0;
+    $e2point_B = 0;
+    if (intval($countE5) > intval($countE6) && intval($countE7) > intval($countE8)) {
+      $e2point_A = 3;
+      $e2point_B = 0;
+    } elseif (intval($countE5) < intval($countE6) && intval($countE7) < intval($countE8)) {
+      $e2point_A = 0;
+      $e2point_B = 3;
+    } elseif ((intval($countE5) > intval($countE6) && intval($countE7) < intval($countE8)) || (intval($countE5) < intval($countE6) && intval($countE7) > intval($countE8))) {
+      if ((intval($countE5) + intval($countE7)) > (intval($countE6) + intval($countE8))) {
+        $e2point_A = 2;
+        $e2point_B = 1;
+      } elseif ((intval($countE5) + intval($countE7)) < (intval($countE6) + intval($countE8))) {
+        $e2point_A = 1;
+        $e2point_B = 2;
       } else {
-        $c2point_A = 1;
-        $c2point_B = 1;
+        $e2point_A = 1;
+        $e2point_B = 1;
       }
     } else {
-      $c2point_A = 0;
-      $c2point_B = 0;
+      $e2point_A = 0;
+      $e2point_B = 0;
     }
-    $c3point_A = 0;
-    $c3point_B = 0;
-    if (intval($countC9) > intval($countC10) && intval($countC11) > intval($countC12)) {
-      $c3point_A = 3;
-      $c3point_B = 0;
-    } elseif (intval($countC9) < intval($countC10) && intval($countC11) < intval($countC12)) {
-      $c3point_A = 0;
-      $c3point_B = 3;
-    } elseif ((intval($countC9) > intval($countC10) && intval($countC11) < intval($countC12)) || (intval($countC9) < intval($countC10) && intval($countC11) > intval($countC12))) {
-      if ((intval($countC9) + intval($countC11) )> (intval($countC10) + intval($countC12))) {
-        $c3point_A = 2;
-        $c3point_B = 1;
-      } elseif ((intval($countC9) + intval($countC11) )< (intval($countC10) + intval($countC12))) {
-        $c3point_A = 1;
-        $c3point_B = 2;
+    $e3point_A = 0;
+    $e3point_B = 0;
+    if (intval($countE9) > intval($countE10) && intval($countE11) > intval($countE12)) {
+      $e3point_A = 3;
+      $e3point_B = 0;
+    } elseif (intval($countE9) < intval($countE10) && intval($countE11) < intval($countE12)) {
+      $e3point_A = 0;
+      $e3point_B = 3;
+    } elseif ((intval($countE9) > intval($countE10) && intval($countE11) < intval($countE12)) || (intval($countE9) < intval($countE10) && intval($countE11) > intval($countE12))) {
+      if ((intval($countE9) + intval($countE11) )> (intval($countE10) + intval($countE12))) {
+        $e3point_A = 2;
+        $e3point_B = 1;
+      } elseif ((intval($countE9) + intval($countE11) )< (intval($countE10) + intval($countE12))) {
+        $e3point_A = 1;
+        $e3point_B = 2;
       } else {
-        $c3point_A = 1;
-        $c3point_B = 1;
+        $e3point_A = 1;
+        $e3point_B = 1;
       }
     } else {
-      $c3point_A = 0;
-      $c3point_B = 0;
+      $e3point_A = 0;
+      $e3point_B = 0;
     }
-    $c4point_A = 0;
-    $c4point_B = 0;
-    if (intval($countC13) > intval($countC14) && intval($countC15) > intval($countC16)) {
-      $c4point_A = 3;
-      $c4point_B = 0;
-    } elseif (intval($countC13) < intval($countC14) && intval($countC15) < intval($countC16)) {
-      $c4point_A = 0;
-      $c4point_B = 3;
-    } elseif ((intval($countC13) > intval($countC14) && intval($countC15) < intval($countC16)) || (intval($countC13) < intval($countC14) && intval($countC15) > intval($countC16))) {
-      if ((intval($countC13) + intval($countC15) )> (intval($countC14) + intval($countC16))) {
-        $c4point_A = 2;
-        $c4point_B = 1;
-      } elseif ((intval($countC13) + intval($countC15) )< (intval($countC14) + intval($countC16))) {
-        $c4point_A = 1;
-        $c4point_B = 2;
+    $e4point_A = 0;
+    $e4point_B = 0;
+    if (intval($countE13) > intval($countE14) && intval($countE15) > intval($countE16)) {
+      $e4point_A = 3;
+      $e4point_B = 0;
+    } elseif (intval($countE13) < intval($countE14) && intval($countE15) < intval($countE16)) {
+      $e4point_A = 0;
+      $e4point_B = 3;
+    } elseif ((intval($countE13) > intval($countE14) && intval($countE15) < intval($countE16)) || (intval($countE13) < intval($countE14) && intval($countE15) > intval($countE16))) {
+      if ((intval($countE13) + intval($countE15) )> (intval($countE14) + intval($countE16))) {
+        $e4point_A = 2;
+        $e4point_B = 1;
+      } elseif ((intval($countE13) + intval($countE15) )< (intval($countE14) + intval($countE16))) {
+        $e4point_A = 1;
+        $e4point_B = 2;
       } else {
-        $c4point_A = 1;
-        $c4point_B = 1;
+        $e4point_A = 1;
+        $e4point_B = 1;
       }
     } else {
-      $c4point_A = 0;
-      $c4point_B = 0;
+      $e4point_A = 0;
+      $e4point_B = 0;
     }
-    $c5point_A = 0;
-    $c5point_B = 0;
-    if (intval($countC17) > intval($countC18) && intval($countC19) > intval($countC20)) {
-      $c5point_A = 3;
-      $c5point_B = 0;
-    } elseif (intval($countC17) < intval($countC18) && intval($countC19) < intval($countC20)) {
-      $c5point_A = 0;
-      $c5point_B = 3;
-    } elseif ((intval($countC17) > intval($countC18) && intval($countC19) < intval($countC20)) || (intval($countC17) < intval($countC18) && intval($countC19) > intval($countC20))) {
-      if ((intval($countC17) + intval($countC19) )> (intval($countC18) + intval($countC20))) {
-        $c5point_A = 2;
-        $c5point_B = 1;
-      } elseif ((intval($countC17) + intval($countC19) )< (intval($countC18) + intval($countC20))) {
-        $c5point_A = 1;
-        $c5point_B = 2;
+    $e5point_A = 0;
+    $e5point_B = 0;
+    if (intval($countE17) > intval($countE18) && intval($countE19) > intval($countE20)) {
+      $e5point_A = 3;
+      $e5point_B = 0;
+    } elseif (intval($countE17) < intval($countE18) && intval($countE19) < intval($countE20)) {
+      $e5point_A = 0;
+      $e5point_B = 3;
+    } elseif ((intval($countE17) > intval($countE18) && intval($countE19) < intval($countE20)) || (intval($countE17) < intval($countE18) && intval($countE19) > intval($countE20))) {
+      if ((intval($countE17) + intval($countE19) )> (intval($countE18) + intval($countE20))) {
+        $e5point_A = 2;
+        $e5point_B = 1;
+      } elseif ((intval($countE17) + intval($countE19) )< (intval($countE18) + intval($countE20))) {
+        $e5point_A = 1;
+        $e5point_B = 2;
       } else {
-        $c5point_A = 1;
-        $c5point_B = 1;
+        $e5point_A = 1;
+        $e5point_B = 1;
       }
     } else {
-      $c5point_A = 0;
-      $c5point_B = 0;
+      $e5point_A = 0;
+      $e5point_B = 0;
     }
-    $c6point_A = 0;
-    $c6point_B = 0;
-    if (intval($countC21) > intval($countC22) && intval($countC23) > intval($countC24)) {
-      $c6point_A = 3;
-      $c6point_B = 0;
-    } elseif (intval($countC21) < intval($countC22) && intval($countC23) < intval($countC24)) {
-      $c6point_A = 0;
-      $c6point_B = 3;
-    } elseif ((intval($countC21) > intval($countC22) && intval($countC23) < intval($countC24)) || (intval($countC21) < intval($countC22) && intval($countC23) > intval($countC24))) {
-      if ((intval($countC21) + intval($countC23) )> (intval($countC22) + intval($countC24))) {
-        $c6point_A = 2;
-        $c6point_B = 1;
-      } elseif ((intval($countC21) + intval($countC23) )< (intval($countC22) + intval($countC24))) {
-        $c6point_A = 1;
-        $c6point_B = 2;
+    $e6point_A = 0;
+    $e6point_B = 0;
+    if (intval($countE21) > intval($countE22) && intval($countE23) > intval($countE24)) {
+      $e6point_A = 3;
+      $e6point_B = 0;
+    } elseif (intval($countE21) < intval($countE22) && intval($countE23) < intval($countE24)) {
+      $e6point_A = 0;
+      $e6point_B = 3;
+    } elseif ((intval($countE21) > intval($countE22) && intval($countE23) < intval($countE24)) || (intval($countE21) < intval($countE22) && intval($countE23) > intval($countE24))) {
+      if ((intval($countE21) + intval($countE23) )> (intval($countE22) + intval($countE24))) {
+        $e6point_A = 2;
+        $e6point_B = 1;
+      } elseif ((intval($countE21) + intval($countE23) )< (intval($countE22) + intval($countE24))) {
+        $e6point_A = 1;
+        $e6point_B = 2;
       } else {
-        $c6point_A = 1;
-        $c6point_B = 1;
+        $e6point_A = 1;
+        $e6point_B = 1;
       }
     } else {
-      $c6point_A = 0;
-      $c6point_B = 0;
+      $e6point_A = 0;
+      $e6point_B = 0;
     }
-    $c7point_A = 0;
-    $c7point_B = 0;
-    if (intval($countC25) > intval($countC26) && intval($countC27) > intval($countC28)) {
-      $c7point_A = 3;
-      $c7point_B = 0;
-    } elseif (intval($countC25) < intval($countC26) && intval($countC27) < intval($countC28)) {
-      $c7point_A = 0;
-      $c7point_B = 3;
-    } elseif ((intval($countC25) > intval($countC26) && intval($countC27) < intval($countC28)) || (intval($countC25) < intval($countC26) && intval($countC27) > intval($countC28))) {
-      if ((intval($countC25) + intval($countC27) )> (intval($countC26) + intval($countC28))) {
-        $c7point_A = 2;
-        $c7point_B = 1;
-      } elseif ((intval($countC25) + intval($countC27) )< (intval($countC26) + intval($countC28))) {
-        $c7point_A = 1;
-        $c7point_B = 2;
+    $e7point_A = 0;
+    $e7point_B = 0;
+    if (intval($countE25) > intval($countE26) && intval($countE27) > intval($countE28)) {
+      $e7point_A = 3;
+      $e7point_B = 0;
+    } elseif (intval($countE25) < intval($countE26) && intval($countE27) < intval($countE28)) {
+      $e7point_A = 0;
+      $e7point_B = 3;
+    } elseif ((intval($countE25) > intval($countE26) && intval($countE27) < intval($countE28)) || (intval($countE25) < intval($countE26) && intval($countE27) > intval($countE28))) {
+      if ((intval($countE25) + intval($countE27) )> (intval($countE26) + intval($countE28))) {
+        $e7point_A = 2;
+        $e7point_B = 1;
+      } elseif ((intval($countE25) + intval($countE27) )< (intval($countE26) + intval($countE28))) {
+        $e7point_A = 1;
+        $e7point_B = 2;
       } else {
-        $c7point_A = 1;
-        $c7point_B = 1;
+        $e7point_A = 1;
+        $e7point_B = 1;
       }
     } else {
-      $c7point_A = 0;
-      $c7point_B = 0;
+      $e7point_A = 0;
+      $e7point_B = 0;
     }
-    $c8point_A = 0;
-    $c8point_B = 0;
-    if (intval($countC29) > intval($countC30) && intval($countC31) > intval($countC32)) {
-      $c8point_A = 3;
-      $c8point_B = 0;
-    } elseif (intval($countC29) < intval($countC30) && intval($countC31) < intval($countC32)) {
-      $c8point_A = 0;
-      $c8point_B = 3;
-    } elseif ((intval($countC29) > intval($countC30) && intval($countC31) < intval($countC32)) || (intval($countC29) < intval($countC30) && intval($countC31) > intval($countC32))) {
-      if ((intval($countC29) + intval($countC31) )> (intval($countC30) + intval($countC32))) {
-        $c8point_A = 2;
-        $c8point_B = 1;
-      } elseif ((intval($countC29) + intval($countC31) )< (intval($countC30) + intval($countC32))) {
-        $c8point_A = 1;
-        $c8point_B = 2;
+    $e8point_A = 0;
+    $e8point_B = 0;
+    if (intval($countE29) > intval($countE30) && intval($countE31) > intval($countE32)) {
+      $e8point_A = 3;
+      $e8point_B = 0;
+    } elseif (intval($countE29) < intval($countE30) && intval($countE31) < intval($countE32)) {
+      $e8point_A = 0;
+      $e8point_B = 3;
+    } elseif ((intval($countE29) > intval($countE30) && intval($countE31) < intval($countE32)) || (intval($countE29) < intval($countE30) && intval($countE31) > intval($countE32))) {
+      if ((intval($countE29) + intval($countE31) )> (intval($countE30) + intval($countE32))) {
+        $e8point_A = 2;
+        $e8point_B = 1;
+      } elseif ((intval($countE29) + intval($countE31) )< (intval($countE30) + intval($countE32))) {
+        $e8point_A = 1;
+        $e8point_B = 2;
       } else {
-        $c8point_A = 1;
-        $c8point_B = 1;
+        $e8point_A = 1;
+        $e8point_B = 1;
       }
     } else {
-      $c8point_A = 0;
-      $c8point_B = 0;
+      $e8point_A = 0;
+      $e8point_B = 0;
     }
-    $c9point_A = 0;
-    $c9point_B = 0;
-    if (intval($countC33) > intval($countC34) && intval($countC35) > intval($countC36)) {
-      $c9point_A = 3;
-      $c9point_B = 0;
-    } elseif (intval($countC33) < intval($countC34) && intval($countC35) < intval($countC36)) {
-      $c9point_A = 0;
-      $c9point_B = 3;
-    } elseif ((intval($countC33) > intval($countC34) && intval($countC35) < intval($countC36)) || (intval($countC33) < intval($countC34) && intval($countC35) > intval($countC36))) {
-      if ((intval($countC33) + intval($countC35) )> (intval($countC34) + intval($countC36))) {
-        $c9point_A = 2;
-        $c9point_B = 1;
-      } elseif ((intval($countC33) + intval($countC35) )< (intval($countC34) + intval($countC36))) {
-        $c9point_A = 1;
-        $c9point_B = 2;
+    $e9point_A = 0;
+    $e9point_B = 0;
+    if (intval($countE33) > intval($countE34) && intval($countE35) > intval($countE36)) {
+      $e9point_A = 3;
+      $e9point_B = 0;
+    } elseif (intval($countE33) < intval($countE34) && intval($countE35) < intval($countE36)) {
+      $e9point_A = 0;
+      $e9point_B = 3;
+    } elseif ((intval($countE33) > intval($countE34) && intval($countE35) < intval($countE36)) || (intval($countE33) < intval($countE34) && intval($countE35) > intval($countE36))) {
+      if ((intval($countE33) + intval($countE35) )> (intval($countE34) + intval($countE36))) {
+        $e9point_A = 2;
+        $e9point_B = 1;
+      } elseif ((intval($countE33) + intval($countE35) )< (intval($countE34) + intval($countE36))) {
+        $e9point_A = 1;
+        $e9point_B = 2;
       } else {
-        $c9point_A = 1;
-        $c9point_B = 1;
+        $e9point_A = 1;
+        $e9point_B = 1;
       }
     } else {
-      $c9point_A = 0;
-      $c9point_B = 0;
+      $e9point_A = 0;
+      $e9point_B = 0;
     }
-    $c10point_A = 0;
-    $c10point_B = 0;
-    if (intval($countC37) > intval($countC38) && intval($countC39) > intval($countC40)) {
-      $c10point_A = 3;
-      $c10point_B = 0;
-    } elseif (intval($countC37) < intval($countC38) && intval($countC39) < intval($countC40)) {
-      $c10point_A = 0;
-      $c10point_B = 3;
-    } elseif ((intval($countC37) > intval($countC38) && intval($countC39) < intval($countC40)) || (intval($countC37) < intval($countC38) && intval($countC39) > intval($countC40))) {
-      if ((intval($countC37) + intval($countC39) )> (intval($countC38) + intval($countC40))) {
-        $c10point_A = 2;
-        $c10point_B = 1;
-      } elseif ((intval($countC37) + intval($countC39) )< (intval($countC38) + intval($countC40))) {
-        $c10point_A = 1;
-        $c10point_B = 2;
+    $e10point_A = 0;
+    $e10point_B = 0;
+    if (intval($countE37) > intval($countE38) && intval($countE39) > intval($countE40)) {
+      $e10point_A = 3;
+      $e10point_B = 0;
+    } elseif (intval($countE37) < intval($countE38) && intval($countE39) < intval($countE40)) {
+      $e10point_A = 0;
+      $e10point_B = 3;
+    } elseif ((intval($countE37) > intval($countE38) && intval($countE39) < intval($countE40)) || (intval($countE37) < intval($countE38) && intval($countE39) > intval($countE40))) {
+      if ((intval($countE37) + intval($countE39) )> (intval($countE38) + intval($countE40))) {
+        $e10point_A = 2;
+        $e10point_B = 1;
+      } elseif ((intval($countE37) + intval($countE39) )< (intval($countE38) + intval($countE40))) {
+        $e10point_A = 1;
+        $e10point_B = 2;
       } else {
-        $c10point_A = 1;
-        $c10point_B = 1;
+        $e10point_A = 1;
+        $e10point_B = 1;
       }
     } else {
-      $c10point_A = 0;
-      $c10point_B = 0;
+      $e10point_A = 0;
+      $e10point_B = 0;
     }
-    $c11point_A = 0;
-    $c11point_B = 0;
-    if (intval($countC41) > intval($countC42) && intval($countC43) > intval($countC44)) {
-      $c11point_A = 3;
-      $c11point_B = 0;
-    } elseif (intval($countC41) < intval($countC42) && intval($countC43) < intval($countC44)) {
-      $c11point_A = 0;
-      $c11point_B = 3;
-    } elseif ((intval($countC41) > intval($countC42) && intval($countC43) < intval($countC44)) || (intval($countC41) < intval($countC42) && intval($countC43) > intval($countC44))) {
-      if ((intval($countC41) + intval($countC43) )> (intval($countC42) + intval($countC44))) {
-        $c11point_A = 2;
-        $c11point_B = 1;
-      } elseif ((intval($countC41) + intval($countC43) )< (intval($countC42) + intval($countC44))) {
-        $c11point_A = 1;
-        $c11point_B = 2;
+    $e11point_A = 0;
+    $e11point_B = 0;
+    if (intval($countE41) > intval($countE42) && intval($countE43) > intval($countE44)) {
+      $e11point_A = 3;
+      $e11point_B = 0;
+    } elseif (intval($countE41) < intval($countE42) && intval($countE43) < intval($countE44)) {
+      $e11point_A = 0;
+      $e11point_B = 3;
+    } elseif ((intval($countE41) > intval($countE42) && intval($countE43) < intval($countE44)) || (intval($countE41) < intval($countE42) && intval($countE43) > intval($countE44))) {
+      if ((intval($countE41) + intval($countE43) )> (intval($countE42) + intval($countE44))) {
+        $e11point_A = 2;
+        $e11point_B = 1;
+      } elseif ((intval($countE41) + intval($countE43) )< (intval($countE42) + intval($countE44))) {
+        $e11point_A = 1;
+        $e11point_B = 2;
       } else {
-        $c11point_A = 1;
-        $c11point_B = 1;
+        $e11point_A = 1;
+        $e11point_B = 1;
       }
     } else {
-      $c11point_A = 0;
-      $c11point_B = 0;
+      $e11point_A = 0;
+      $e11point_B = 0;
     }
-    $c12point_A = 0;
-    $c12point_B = 0;
-    if (intval($countC45) > intval($countC46) && intval($countC47) > intval($countC48)) {
-      $c12point_A = 3;
-      $c12point_B = 0;
-    } elseif (intval($countC45) < intval($countC46) && intval($countC47) < intval($countC48)) {
-      $c12point_A = 0;
-      $c12point_B = 3;
-    } elseif ((intval($countC45) > intval($countC46) && intval($countC47) < intval($countC48)) || (intval($countC45) < intval($countC46) && intval($countC47) > intval($countC48))) {
-      if ((intval($countC45) + intval($countC47) )> (intval($countC46) + intval($countC48))) {
-        $c12point_A = 2;
-        $c12point_B = 1;
-      } elseif ((intval($countC45) + intval($countC47) )< (intval($countC46) + intval($countC48))) {
-        $c12point_A = 1;
-        $c12point_B = 2;
+    $e12point_A = 0;
+    $e12point_B = 0;
+    if (intval($countE45) > intval($countE46) && intval($countE47) > intval($countE48)) {
+      $e12point_A = 3;
+      $e12point_B = 0;
+    } elseif (intval($countE45) < intval($countE46) && intval($countE47) < intval($countE48)) {
+      $e12point_A = 0;
+      $e12point_B = 3;
+    } elseif ((intval($countE45) > intval($countE46) && intval($countE47) < intval($countE48)) || (intval($countE45) < intval($countE46) && intval($countE47) > intval($countE48))) {
+      if ((intval($countE45) + intval($countE47) )> (intval($countE46) + intval($countE48))) {
+        $e12point_A = 2;
+        $e12point_B = 1;
+      } elseif ((intval($countE45) + intval($countE47) )< (intval($countE46) + intval($countE48))) {
+        $e12point_A = 1;
+        $e12point_B = 2;
       } else {
-        $c12point_A = 1;
-        $c12point_B = 1;
+        $e12point_A = 1;
+        $e12point_B = 1;
       }
     } else {
-      $c12point_A = 0;
-      $c12point_B = 0;
+      $e12point_A = 0;
+      $e12point_B = 0;
     }
 
     // 得失点と勝ち点を入力
-    $totalpoint = new Post;
+    $totalpoint = new Team;
     $totalpoint->timestamps =false;
-    $totalpoint->where('number', 2)->update(['las_score'=>((intval($countC41) + intval($countC43))-(intval($countC42) + intval($countB44))), 'las_point'=>($c11point_A)]);
-    $totalpoint->where('number', 3)->update(['las_score'=>((intval($countC29) + intval($countC31))-(intval($countC30) + intval($countC32))), 'las_point'=>($c8point_A)]);
-    $totalpoint->where('number', 4)->update(['las_score'=>((intval($countC13) + intval($countC15) + intval($countC21) + intval($countC23)+ intval($countC25) + intval($countC27) + intval($countC42) + intval($countC44))-(intval($countC14) + intval($countC16) + intval($countC22) + intval($countC24) + intval($countC26) + intval($countC28) + intval($countC41) + intval($countC43))), 'las_point'=>($c4point_A + $c6point_A + $c7point_A + $c11point_B)]);
-    $totalpoint->where('number', 5)->update(['las_score'=>((intval($countC37) + intval($countC39) + intval($countC45) + intval($countC47))-(intval($countC38) + intval($countC40) + intval($countC46) + intval($countC48))), 'las_point'=>($c10point_A + $c12point_A)]);
-    $totalpoint->where('number', 6)->update(['las_score'=>((intval($countC17) + intval($countC19) + intval($countC33) + intval($countC35))-(intval($countC18) + intval($countC20) + intval($countC34) + intval($countC36))), 'las_point'=>($b2point_B + $b3point_B + $c5point_A + $b6point_B + $b8point_B + $c9point_A + $b11point_A + $b12point_A)]);
-    $totalpoint->where('number', 7)->update(['las_score'=>((intval($countC1) + intval($countC3) + intval($countC9) + intval($countC11) + intval($countB14) + intval($countB16) + intval($countA22) + intval($countA24)+ intval($countC26) + intval($countC28) + intval($countC34) + intval($countC36) + intval($countC38) + intval($countC40) + intval($countA46) + intval($countA48))-(intval($countC2) + intval($countC4) + intval($countC10) + intval($countC12) + intval($countB13) + intval($countB15) + intval($countA21) + intval($countA23) + intval($countC25) + intval($countC27) + intval($countC33) + intval($countC35) + intval($countC37) + intval($countC39) + intval($countA45) + intval($countA47))), 'las_point'=>($c1point_A + $c3point_A + $b4point_B + $a6point_B + $c7point_B + $c9point_B + $c10point_B + $a12point_B)]);
-    $totalpoint->where('number', 8)->update(['las_score'=>((intval($countC2) + intval($countC4) + intval($countC5) + intval($countC7) + intval($countC10) + intval($countC12) + intval($countB18) + intval($countB20)+ intval($countA25) + intval($countA27) + intval($countA29) + intval($countA31) + intval($countA42) + intval($countA44) + intval($countB46) + intval($countB48))-(intval($countC1) + intval($countC3) + intval($countC6) + intval($countC8) + intval($countC13) + intval($countC15) + intval($countB17) + intval($countB19) + intval($countA25) + intval($countA27) + intval($countA30) + intval($countA32) + intval($countA41) + intval($countA43) + intval($countB45) + intval($countB47))), 'las_point'=>($c1point_B + $c2point_A + $c4point_B + $b5point_B + $a7point_B + $a8point_A + $a11point_B + $b12point_B)]);
-    $totalpoint->where('number', 9)->update(['las_score'=>((intval($countC6) + intval($countC8) + intval($countC10) + intval($countC12) + intval($countC18) + intval($countC20) + intval($countC22) + intval($countC24)+ intval($countC30) + intval($countC32) + intval($countA34) + intval($countA36) + intval($countB38) + intval($countB40) + intval($countC46) + intval($countC48))-(intval($countC5) + intval($countC7) + intval($countC9) + intval($countC11) + intval($countC18) + intval($countC20) + intval($countC22) + intval($countC24) + intval($countC30) + intval($countC32) + intval($countA34) + intval($countA36) + intval($countB38) + intval($countB40) + intval($countC46) + intval($countC48))), 'las_point'=>($c2point_B + $c3point_B + $c5point_B + $c6point_B + $c8point_B + $a9point_B + $b10point_B + $c12point_B)]);
+    $totalpoint->where('number', 1)->update(['mid_score'=>((intval($countE5) + intval($countE7) + intval($countE29) + intval($countE31))-(intval($countE6) + intval($countE8) + intval($countE30) + intval($countE32))), 'mid_point'=>($e2point_A + $e8point_A)]);
+    $totalpoint->where('number', 2)->update(['mid_score'=>((intval($countE13) + intval($countE15))-(intval($countE14) + intval($countE16))), 'mid_point'=>($e4point_A)]);
+    $totalpoint->where('number', 3)->update(['mid_score'=>((intval($countE1) + intval($countE3) + intval($countE6) + intval($countE8) + intval($countE14) + intval($countE16) + intval($countE17) + intval($countE19) + intval($countE25) + intval($countE27) + intval($countE30) + intval($countE32) + intval($countE37) + intval($countE39) + intval($countE41) + intval($countE43))-(intval($countE2) + intval($countE4) + intval($countE5) + intval($countE7) + intval($countE14) + intval($countE16) + intval($countE17) + intval($countE19) + intval($countE25) + intval($countE27) + intval($countE30) + intval($countE32) + intval($countE37) + intval($countE39) + intval($countE41) + intval($countE43))), 'mid_point'=>($e1point_A + $e2point_B + $e4point_B + $e5point_A + $e7point_A + $e8point_B + $e10point_A + $e11point_A)]);
+    $totalpoint->where('number', 4)->update(['mid_score'=>((intval($countE2) + intval($countE4) + intval($countE9) + intval($countE11) + intval($countE21) + intval($countE23) + intval($countE33) + intval($countE35) + intval($countE42) + intval($countE44))-(intval($countE1) + intval($count3) + intval($countE10) + intval($countE12) + intval($countE22) + intval($countE24) + intval($countE34) + intval($countE36) + intval($countE41) + intval($countE43))), 'mid_point'=>($e1point_B + $e3point_A + $e6point_A+ $e9point_A+ $e11point_B)]);
+    $totalpoint->where('number', 5)->update(['mid_score'=>((intval($countE22) + intval($countE24) + intval($countE26) + intval($countE28) + intval($countE45) + intval($countE47))-(intval($countE21) + intval($countE23) + intval($countE25) + intval($countE27) + intval($countE46) + intval($countE48))), 'mid_point'=>($e6point_B + $e7point_B + $e12point_A)]);
+    $totalpoint->where('number', 6)->update(['mid_score'=>((intval($countE10) + intval($countE12) + intval($countE18) + intval($countE20) + intval($countE34) + intval($countE36) + intval($countE34) + intval($countE36) + intval($countE38) + intval($countE40) + intval($countE46) + intval($countE48))-(intval($countE9) + intval($countE11) + intval($countE17) + intval($countE19) + intval($countE33) + intval($countE35) + intval($countE37) + intval($countE39) + intval($countE45) + intval($countE47))), 'mid_point'=>($e3point_B + $e5point_B + $e9point_B + $e10point_B + $e12point_B)]);
   }
